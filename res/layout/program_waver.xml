@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.wildmind.fanwave.widget.ProgramWaver xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="#DD000000"
+	android:clickable="true" >
+
+	<!-- Wavein Layout -->
+	<LinearLayout android:id="@+id/wave_in_layout"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:orientation="vertical" 
+		android:gravity="center_horizontal"
+		android:padding="20dp" >
+	
+		<!-- Title Layout -->
+		<LinearLayout android:id="@+id/title_layout"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+				
+			<!-- Wavein Text View -->
+			<TextView android:id="@+id/wavein_textview"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="@string/program_wavein" 
+				android:textColor="@color/white"
+				android:textSize="20sp" 
+				android:textStyle="bold"
+				android:layout_gravity="center" />
+					
+			<!-- Program Title Text View -->
+			<TextView android:id="@+id/program_title_textview"
+				android:layout_width="fill_parent" 
+				android:layout_height="36dp" 
+				android:gravity="center" 
+				android:text="Glee" 
+				android:textColor="@color/white"
+				android:textSize="22sp" 
+				android:textStyle="bold"
+				android:layout_gravity="center" />
+					
+		</LinearLayout>
+			
+		<!-- Wavein Present Layout -->
+		<RelativeLayout android:id="@+id/wave_in_present_layout"
+			android:layout_width="240dp"
+			android:layout_height="240dp"
+			android:gravity="center"
+			android:layout_centerInParent="true" >
+				
+				<!-- Ray Image View -->
+				<ImageView android:id="@+id/ray_imageview"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:src="@drawable/star_burst"
+					android:scaleType="fitXY"
+					android:layout_centerInParent="true" />
+				
+				<!-- TV Image View -->
+				<ImageView android:id="@+id/tv_imageview"
+					android:layout_width="93dp"
+					android:layout_height="124dp"
+					android:src="@drawable/tv_icon" 
+					android:scaleType="fitXY"
+					android:layout_centerInParent="true" />
+					
+				<!-- Success Check Image View -->
+				<ImageView android:id="@+id/success_check_imageview"
+					android:layout_width="60dp" 
+					android:layout_height="45dp"
+					android:layout_marginBottom="10dp" 
+					android:layout_marginRight="-10dp"
+					android:src="@drawable/success_check_icon" 
+					android:scaleType="fitXY"
+					android:layout_alignRight="@+id/tv_imageview"
+					android:layout_alignBottom="@+id/tv_imageview" />
+	
+		</RelativeLayout>
+	
+		<!-- Action Layout -->
+		<FrameLayout android:id="@+id/action_layout"
+			android:layout_width="fill_parent"
+			android:layout_height="160dp" 
+			android:gravity="center_horizontal" 
+			android:paddingLeft="30dp"
+			android:paddingRight="30dp" 
+			android:layout_marginTop="-40dp" >
+			
+			<!-- Wavein Layout -->
+			<LinearLayout android:id="@+id/wavein_layout"
+			 	android:orientation="vertical"
+				android:layout_width="fill_parent" 
+				android:layout_height="150dp" 
+				android:paddingTop="40dp">
+				
+				<!-- Facebook Wavein Button -->
+				<Button android:id="@+id/facebook_wavein_button"
+					android:layout_width="fill_parent" 
+					android:layout_height="50dip"
+					android:background="@drawable/black_frame_facebook_selector"
+					android:text="@string/program_wavein" 
+					android:textColor="@color/white"
+					android:textSize="20dip" 
+					android:textStyle="bold"
+					android:layout_marginLeft="30dip" 
+					android:layout_marginRight="30dip"
+					android:paddingLeft="20dip" 
+					android:layout_marginBottom="10dip" />
+				
+				<!-- Normal Wavein Button -->
+				<Button android:id="@+id/wavein_button"
+					android:layout_width="fill_parent" 
+					android:layout_height="50dip"
+					android:background="@drawable/black_frame_button_selector"
+					android:text="@string/program_wavein" 
+					android:textColor="@color/white"
+					android:textSize="20dip" 
+					android:textStyle="bold"
+					android:layout_marginLeft="30dip"
+					android:layout_marginRight="30dip" />
+					
+				
+			</LinearLayout>
+	
+			<!-- Success Text View -->
+			<TextView android:id="@+id/wavein_success_textview"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:paddingTop="80dp"
+				android:text="@string/program_wavein_success" 
+				android:textColor="@color/white"
+				android:textSize="30sp" 
+				android:textStyle="bold"
+				android:layout_gravity="center_horizontal" 
+				android:visibility="invisible" />
+	
+			<!-- Retry Layout -->
+			<LinearLayout android:id="@+id/wavein_retry_layout"
+				android:layout_width="fill_parent" 
+				android:layout_height="150dp"
+				android:orientation="vertical" 
+				android:visibility="invisible" >
+					
+				<!-- Retry Text View -->
+				<TextView android:id="@+id/wavein_retry_textview"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp" 
+					android:layout_gravity="center_horizontal"
+					android:gravity="center" 
+					android:text="@string/program_wavein_fail"
+					android:textColor="@color/white" 
+					android:textSize="16dip"/>
+					
+				<!-- Retry Button -->
+				<Button android:id="@+id/wavein_retry_button"
+					android:layout_width="fill_parent" 
+					android:layout_height="50dip"
+					android:layout_marginTop="10dp" 
+					android:layout_marginBottom="10dp" 
+					android:layout_marginLeft="30dip" 
+					android:layout_marginRight="30dip"
+					android:background="@drawable/black_frame_button_selector"
+					android:text="@string/action_retry" 
+					android:textColor="@color/white"
+					android:textSize="20dip" 
+					android:textStyle="bold" />
+				
+				<!-- Cancel Button -->
+				<Button android:id="@+id/wavein_cancel_button"
+					android:layout_width="fill_parent" 
+					android:layout_height="50dip" 
+					android:layout_marginLeft="30dip" 
+					android:layout_marginRight="30dip"
+					android:background="@drawable/black_frame_wavein_cancel_selector"
+					android:text="@string/action_cancel" 
+					android:textColor="@color/white"
+					android:textSize="20dip" 
+					android:textStyle="bold" />
+			</LinearLayout>
+			
+		</FrameLayout>
+	
+	</LinearLayout>
+	
+	<!-- Loading Indicator -->
+	<include android:id="@+id/loading_indicator" layout="@layout/program_loading_indicator" />
+
+</com.wildmind.fanwave.widget.ProgramWaver>

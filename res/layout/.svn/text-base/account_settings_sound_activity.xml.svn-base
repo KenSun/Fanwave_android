@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/fanwave_background_white"  >
+	
+	
+	<!-- Title Bar Layout -->
+	<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+			
+		<RelativeLayout android:id="@+id/title_sense_region"
+            style="@style/title_bar_sense_region" >
+            <!-- Title Image View -->
+            <ImageView android:id="@+id/title_imageview"
+            style="@style/title_bar_image" />
+            
+            <!-- Title Text View -->	
+            <TextView android:id="@+id/title_textview"
+			style="@style/title_bar_text"
+			android:text="@string/main_page_account_settings_sound" />
+        </RelativeLayout>			
+		
+				
+		<!-- Back Image Button -->
+		<ImageButton android:id="@+id/back_imagebutton" 
+			style="@style/title_bar_back"
+			android:src="@drawable/settings_icon" />
+					
+	</RelativeLayout>
+	
+	<!-- android:background="@drawable/account_settings_activity_linearlayout_shape" -->
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:gravity="center_horizontal" 
+		android:orientation="vertical"
+        android:layout_marginTop="-3dp">
+		
+        <LinearLayout 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal" 
+            android:paddingLeft="10dp" 
+            android:paddingRight="10dp" 
+            android:paddingTop="5dp" 
+            android:paddingBottom="5dp" 
+            android:background="@color/white" >
+            
+            <TextView 
+            android:layout_width="0dip"  
+            android:layout_height="50dp" 
+            android:layout_weight="1" 
+            android:gravity="left|center_vertical" 
+            android:text="@string/main_page_account_settings_sound_notification" 
+            android:textColor="@color/orange" 
+            android:textSize="18sp" 
+            android:textStyle="bold" />
+            
+            <LinearLayout 
+                android:layout_width="0dp" 
+                android:layout_height="50dp" 
+                android:layout_weight="1" 
+                android:paddingLeft="20dp" 
+                android:gravity="right" >
+                <ToggleButton android:id="@+id/notification_toggle_button" 
+                android:layout_width="60dip" 
+                android:layout_height="50dp" 
+                android:text="ToggleButton" 
+                android:layout_marginLeft="25dip" />
+            </LinearLayout>
+            
+        </LinearLayout>
+		
+        <ImageView 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:background="@drawable/list_divider" />
+		
+        <LinearLayout 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal" 
+            android:paddingLeft="10dp" 
+            android:paddingRight="10dp" 
+            android:paddingTop="5dp" 
+            android:paddingBottom="5dp" 
+            android:background="@color/white" 
+            android:visibility="gone" >
+            
+            <TextView 
+            android:layout_width="0dip"  
+            android:layout_height="50dp" 
+            android:layout_weight="1" 
+            android:gravity="left|center_vertical" 
+            android:text="@string/main_page_splash" 
+            android:textColor="@color/orange" 
+            android:textSize="18sp" 
+            android:textStyle="bold" />
+            
+            <LinearLayout 
+                android:layout_width="0dp" 
+                android:layout_height="50dp" 
+                android:layout_weight="1" 
+                android:paddingLeft="20dp" 
+                android:gravity="right" >
+                <ToggleButton android:id="@+id/splash_toggle_button" 
+                android:layout_width="60dip" 
+                android:layout_height="50dp" 
+                android:text="ToggleButton" 
+                android:layout_marginLeft="25dip" />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <ImageView 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:background="@drawable/list_divider" 
+        android:visibility="gone" />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal"
+            android:paddingLeft="10dp" 
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" 
+            android:paddingBottom="5dp" 
+            android:background="@color/white" 
+            android:visibility="gone" >
+            
+            <TextView 
+            android:layout_width="0dip"  
+            android:layout_height="50dp" 
+            android:layout_weight="1" 
+            android:gravity="left|center_vertical" 
+            android:text="@string/main_page_account_settings_gaincredits" 
+            android:textColor="@color/orange" 
+            android:textSize="18sp" 
+            android:textStyle="bold" />
+            
+            <LinearLayout 
+                android:layout_width="0dp" 
+                android:layout_height="50dp" 
+                android:layout_weight="1" 
+                android:paddingLeft="20dp" 
+                android:gravity="right" >
+                <ToggleButton android:id="@+id/gaincredits_toggle_button" 
+                android:layout_width="60dip" 
+                android:layout_height="50dp" 
+                android:text="ToggleButton" 
+                android:layout_marginLeft="25dip" />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <ImageView 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:background="@drawable/list_divider" 
+        android:visibility="gone" />
+	</LinearLayout>
+</LinearLayout>

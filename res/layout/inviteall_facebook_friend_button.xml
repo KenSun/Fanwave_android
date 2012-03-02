@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"    
+	android:layout_width="fill_parent"   
+	android:layout_height="wrap_content" 
+	android:background="@drawable/inviteall_button_selector" 
+	android:gravity="center"	
+	android:clickable="true"  >  		       	  	         
+	
+	<TextView 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:gravity="center" 
+		android:text="@string/fb_friend_invite_all_title" 
+		android:textSize="16sp" 
+		android:textStyle="bold"
+		android:textColor="@drawable/color_orange_white_selector" 
+		android:duplicateParentState="true" />
+</LinearLayout>

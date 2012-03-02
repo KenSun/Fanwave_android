@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobileware_tvguide/!svn/ver/5107/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/xmpp/muc
+END
+FWChatroomListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/mobileware_tvguide/!svn/ver/5061/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/xmpp/muc/FWChatroomListener.java
+END
+FWMultiUserChat.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mobileware_tvguide/!svn/ver/5107/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/xmpp/muc/FWMultiUserChat.java
+END
+FWMucManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/mobileware_tvguide/!svn/ver/5061/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/xmpp/muc/FWMucManager.java
+END

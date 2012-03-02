@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"    
+	android:layout_width="fill_parent"   
+	android:layout_height="wrap_content">  		       	  	         
+	
+	<LinearLayout android:id="@+id/hot_layout"
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="4dp"
+		android:layout_marginRight="5dp" 
+		android:layout_marginTop="5dp" 
+		android:layout_marginBottom="5dp" 
+		android:weightSum="1" >
+		
+		<!-- Ranking Text View -->
+		<TextView android:id="@+id/ranking_textview" 
+			android:layout_width="30dp" 
+			android:layout_height="wrap_content" 
+			android:text="20" 
+			android:textColor="@color/hot_top_color" 
+			android:textSize="20sp" 
+			android:textStyle="bold" 
+			android:gravity="center" 
+			android:layout_gravity="center" />
+		
+		<!-- Program Icon Image View -->
+		<ImageView android:id="@+id/pgicon_imageview"
+			style="@style/program_small"
+			android:layout_width="45dp"
+			android:layout_height="45dp" 
+			android:layout_marginLeft="4dp" 
+			android:layout_gravity="center"/>
+			
+		<!-- Hot Content Layout -->
+		<LinearLayout android:id="@+id/hot_content_layout"
+			android:layout_height="wrap_content" 
+			android:layout_width="0dp"
+			android:layout_weight="1" 
+			android:layout_marginLeft="5dp"
+			android:orientation="vertical" 
+			android:layout_gravity="center" >
+				
+			<!-- Program Title Text View -->
+			<TextView android:id="@+id/title_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:text="ProgramProgramProgramProgramProgramProgramProgramProgramProgramProgram"
+				android:textSize="15sp"
+				android:textColor="@color/orange" 
+				android:textStyle="bold" 
+                android:singleLine="true" 
+				android:gravity="center_vertical" 
+				android:layout_gravity="center_vertical" />
+			
+			
+			<!-- Channel Text View -->
+			<TextView android:id="@+id/channel_textview" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="channelchannelchannel"
+				android:textColor="@color/hot_time_color" 
+				android:textSize="13sp" 
+				android:visibility="gone" />
+				
+		</LinearLayout>
+		
+		<!-- Topfan Layout -->
+		<LinearLayout android:id="@+id/topfan_layout"
+			android:layout_width="50dp"
+		    android:layout_height="fill_parent"   		   
+			android:paddingTop="2dp"   		   
+			android:orientation="vertical"   
+		    android:gravity="center">
+		    
+		    <!-- Crown Image View -->		  
+			<ImageView android:id="@+id/crown_imageview"
+				android:layout_width="15dp"
+				android:layout_height="7dp" 
+				android:src="@drawable/crown" 
+				android:scaleType="fitXY" />
+			
+			<!-- Avatar Image View -->	
+			<ImageView android:id="@+id/avatar_imageview"
+				android:layout_width="35dp"
+				android:layout_height="35dp"
+				android:layout_marginTop="2dp"   		 
+				android:padding="2dp"
+				android:src="@drawable/avatar_loading" 
+				android:background="@drawable/avatar_frame_small"
+				android:scaleType="fitXY" />
+				
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+	<!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+	
+</LinearLayout>

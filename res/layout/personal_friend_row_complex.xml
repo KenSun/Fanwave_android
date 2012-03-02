@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" >
+
+	<LinearLayout android:id="@+id/content_layout"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_margin="5dp"
+		android:gravity="center"
+		android:weightSum="1" >
+		
+		<!-- Avatar Image View -->
+		<ImageView android:id="@+id/avatar_imageview"
+			style="@style/avatar_small"
+			android:layout_height="50dp" 
+			android:layout_width="50dp" />
+
+
+		<LinearLayout android:id="@+id/name_Layout"
+			android:orientation="vertical"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="fill_parent"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="6dp"
+			android:layout_marginBottom="3dp" >
+		
+			<!-- Nickname Text View -->
+			<TextView android:id="@+id/nickname_textview"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:text="Kencool" 
+				android:singleLine="true"  
+				android:textColor="@color/light_blue" 
+				android:textSize="15sp" 
+				android:textStyle="bold" 
+				android:gravity="center_vertical" />
+			
+			<!-- Mood Text View -->	
+			<TextView android:id="@+id/mood_textview"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:text="what the fuck" 
+				android:singleLine="true" 
+				android:textColor="@color/mood_color" 
+				android:textSize="10sp" 
+				android:gravity="center_vertical" />
+		
+		</LinearLayout>
+
+		<!-- Friend Action Layout -->
+		<LinearLayout android:id="@+id/action_layout"
+			android:orientation="horizontal"
+			android:layout_width="66dp"
+			android:layout_height="32dp"
+			android:layout_marginLeft="4dip"
+			android:background="@drawable/button_selector"
+			android:gravity="center"
+			android:clickable="true" >
+					
+			<ImageView android:id="@+id/action_imageview"
+				android:layout_width="13dip"
+				android:layout_height="13dip"
+				android:layout_marginLeft="1dip"
+				android:layout_marginRight="1dip"
+				android:background="@drawable/add_icon_selector"
+				android:scaleType="fitXY"
+				android:layout_gravity="center"
+				android:duplicateParentState="true" />
+						 
+						 
+			<TextView android:id="@+id/action_textview" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/personal_action_invite"
+				android:textSize="14sp"
+				android:textColor="@drawable/color_light_brown_white_selector"
+				android:textStyle="bold"
+				android:layout_gravity="center"
+				android:duplicateParentState="true" />
+				
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+	<!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+
+</LinearLayout>

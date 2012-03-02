@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center" >
+	
+	
+		<!-- Tutorial Image View -->
+	<ImageView android:id="@+id/tutorial_imageview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:src="@drawable/fanwavetutorial_start8"/>				
+
+
+				
+	<!--  Button -->
+	<Button android:id="@+id/ok_button"
+			android:layout_width="200dp"
+			android:layout_height="60dp"
+			android:layout_marginBottom ="40dp"	
+			android:background="@drawable/black_frame_button_selector"
+			android:text="@string/tutorial_buttom"
+			android:textSize="20dp"
+			android:textColor="@color/white"
+			android:textStyle="bold"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true"
+			android:visibility="gone"/>
+				
+	<!-- number Text View -->
+	<TextView android:id="@+id/number_textview"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom ="10dp"			
+				android:paddingLeft="30dp"
+				android:paddingRight="30dp"
+				android:text="1/2"
+				android:textColor="@color/white_gray"
+				android:textSize="15sp"
+				android:gravity="center" 
+				android:layout_alignParentBottom="true"/>								
+			
+</RelativeLayout>

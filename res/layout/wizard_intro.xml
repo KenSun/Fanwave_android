@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom" 
+    android:weightSum="10" 
+    android:background="@drawable/fanwave_background" >
+	
+	
+		<ImageView  
+			android:layout_width="200dp" 
+			android:layout_height="90dp" 
+			android:src="@drawable/fanwave_logo_large" 
+			android:scaleType="fitXY" 
+			android:layout_marginBottom="40dp"
+			android:layout_gravity="center"  />
+			
+	<ImageView android:id="@+id/wizard_ball_processing_imageview"
+		android:layout_width="fill_parent" 
+		android:layout_height="30dp" 
+     	android:background="@anim/wizard_processing_animation" />
+     	 		
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="160dp" 
+		android:layout_marginLeft="40dp" 
+		android:layout_marginRight="40dp" 
+		android:gravity="top" 
+		android:orientation="vertical" >
+		
+		
+		<TextView 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginBottom="30dp" 
+			android:text="@string/wizard_intro_msg" 
+			android:textColor="@color/orange" 
+			android:textSize="18sp" 
+			android:paddingTop="10dp" 
+			android:gravity="center" 
+			android:paddingLeft="4dp" 
+			android:paddingRight="4dp" />
+		
+		
+		
+		<RelativeLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" >
+			<!-- Cancel Button -->	
+			<Button android:id="@+id/wizard_cancel_button"
+				android:layout_width="100dip"
+				android:layout_height="40dip"
+				android:text="@string/wizard_intro_cancel"
+				android:textSize="18sp"
+				android:textColor="@color/white"
+				android:background="@drawable/login_signin_selector" 
+				android:layout_alignParentLeft="true"/>
+				
+			<!-- Start Button -->	
+			<Button android:id="@+id/wizard_start_button"
+				android:layout_width="100dip"
+				android:layout_height="40dip"
+				android:text="@string/wizard_intro_start"
+				android:textSize="18sp"
+				android:textColor="@color/white"
+				android:background="@drawable/login_signin_selector" 
+				android:layout_alignParentRight="true"  />
+		</RelativeLayout>
+	</LinearLayout>
+	
+	<LinearLayout	
+		android:layout_marginTop="40dp"
+		android:layout_width="fill_parent" 
+		android:layout_height="0dp" 
+		android:layout_weight="1" />
+</LinearLayout>

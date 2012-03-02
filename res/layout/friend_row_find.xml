@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" >
+
+	<LinearLayout android:id="@+id/content_layout"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp" 
+		android:layout_marginTop="5dp" 
+		android:layout_marginBottom="5dp" 
+		android:weightSum="1" >
+		
+		<!-- Avatar Image View -->
+		<ImageView android:id="@+id/avatar_imageview"
+			android:layout_height="50dp" 
+			android:layout_width="50dp"
+			android:src="@drawable/fanwave_avatar"
+			android:scaleType="fitXY" />
+
+		<!-- Platform Text View -->
+		<TextView android:id="@+id/platform_textview"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="fill_parent"
+			android:layout_marginLeft="10dp"
+			android:text="Fanwave" 
+			android:textColor="@color/light_blue" 
+			android:textSize="15sp" 
+			android:textStyle="bold"
+			android:gravity="center_vertical" />
+
+		<!-- Action Button -->
+		<Button android:id="@+id/find_button"
+			android:layout_height="32dp" 
+			android:layout_width="66dp"
+			android:focusable="false"
+			android:textColor="@drawable/color_light_brown_white_selector"
+			android:text="@string/action_search" 
+			android:textStyle="bold"
+			android:background="@drawable/button_selector"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp" />
+		
+	</LinearLayout>
+	
+	<!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+
+</LinearLayout>

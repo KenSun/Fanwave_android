@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/activity_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#000000"
+	android:clickable="true" >
+	
+	<RelativeLayout android:id="@+id/image_present_layout"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		
+		<ImageView android:id="@+id/image_present_imageview"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_marginBottom="100dp"
+			android:layout_centerInParent="true"
+			android:scaleType="centerInside" />
+			
+		<TextView android:id="@+id/image_title_textview"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:textColor="@color/white"
+			android:maxHeight="100dp"
+			android:layout_marginBottom="10dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:gravity="center" />
+		
+	</RelativeLayout>
+	
+	<!-- Loading Indicator Layout -->
+	<include android:id="@+id/loading_indicator" layout="@layout/loading_indicator_white" />
+
+</FrameLayout>

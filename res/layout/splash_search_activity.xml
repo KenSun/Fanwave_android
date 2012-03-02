@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:background="@drawable/fanwave_background_white" >
+	
+	<!-- Title Bar Layout -->
+	<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+		
+		<RelativeLayout android:id="@+id/title_sense_region"
+            style="@style/title_bar_sense_region" >
+            <!-- Title Image View -->
+            <ImageView android:id="@+id/title_imageview"
+            style="@style/title_bar_image" />
+            
+            <!-- Title Text View -->	
+            <TextView android:id="@+id/title_textview"
+			style="@style/title_bar_text"
+			android:text="@string/splash_friend_title"  />
+        </RelativeLayout>
+        
+		<!-- Back Image Button -->
+		<ImageButton android:id="@+id/back_imagebutton" 
+        style="@style/title_bar_back"
+        android:src="@drawable/splash_icon" />
+        
+	</RelativeLayout>
+	
+	<!-- Search Bar Layout -->
+	<LinearLayout android:id="@+id/search_layout" style="@style/search_bar_layout"
+		android:layout_marginTop="-3dp" >
+		
+		<!-- Search Edit Text -->
+		<EditText android:id="@+id/search_edittext" style="@style/search_bar"
+        android:hint="@string/splash_friend_search_hint" />
+		
+		<!-- Search Icon Image View -->
+		<ImageView android:id="@+id/search_imageview" style="@style/search_button" />
+		
+	</LinearLayout>
+	
+	<FrameLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" >
+		
+		<!-- Wave List View -->
+		<ListView android:id="@+id/splash_list_listview"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/fanwave_row_press"
+        android:cacheColorHint="#00000000" />
+		
+		<!-- Description Text View -->
+		<TextView android:id="@+id/descr_textview" style="@style/description_textview_style"
+			android:text="@string/friend_no_friends" />
+		
+	</FrameLayout>
+	
+</LinearLayout>

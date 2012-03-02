@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+	android:background="@drawable/fanwave_background_white" >
+	
+    <!-- Title Bar Layout -->	
+    <RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+        
+        <RelativeLayout android:id="@+id/title_sense_region"
+            style="@style/title_bar_sense_region" >
+            <!-- Title Image View -->
+            <ImageView android:id="@+id/title_imageview"
+            style="@style/title_bar_image" />
+            
+            <!-- Title Text View -->	
+            <TextView android:id="@+id/title_textview"
+            style="@style/title_bar_text"/>
+        </RelativeLayout>	
+        
+        <!-- Back Image Button -->
+        <ImageButton android:id="@+id/back_imagebutton" 
+        style="@style/title_bar_back"
+        android:src="@drawable/guide_icon" />
+        
+    </RelativeLayout>	
+	
+	
+	<!-- android:background="@drawable/account_settings_activity_linearlayout_shape" -->
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" 
+        android:orientation="horizontal" 
+        android:background="@drawable/tabbar_background" 
+        android:layout_marginTop="-3dp">
+        
+        <LinearLayout android:id="@+id/gudie_epg_provider"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent" 
+            android:layout_weight="1" 
+            android:gravity="center" >
+            <ImageView android:id="@+id/guide_epg_channel_imageview" 
+            android:layout_width="wrap_content" 
+            android:layout_height="40dip" 
+            android:scaleType="fitXY" 
+            android:layout_marginLeft="3dp"/>
+            
+        </LinearLayout>
+        <LinearLayout android:id="@+id/gudie_epg_time_linearlayout"
+            android:layout_width="0dp" 
+            android:layout_height="fill_parent" 
+            android:layout_weight="2" 
+            android:orientation="horizontal" 
+            android:clickable="true" 
+            android:background="@drawable/guide_settime_pgbych_selector" 
+            android:layout_margin="4dp" >
+            
+            <TextView android:id="@+id/gudie_epg_time_date"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent" 
+            android:layout_weight="2" 
+            android:text="2011.08.09 TUE" 
+            android:textColor="@color/light_brown" 
+            android:textSize="16sp" 
+            android:textStyle="bold" 
+            android:gravity="center" 
+            android:duplicateParentState="true" />
+            
+            
+        </LinearLayout>
+    </LinearLayout>
+    
+	<!-- pgbych List Layout -->
+	<FrameLayout android:id="@+id/hot_list_layout" 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		<!-- pgbych List View -->
+		<ListView android:id="@+id/gudie_epg_channel_listview" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:focusable="false"  
+        android:listSelector="@drawable/fanwave_row_press"
+        android:divider="@drawable/guide_line"
+        android:cacheColorHint="#00000000"/>
+        
+		<!-- Loading Indicator Layout -->
+		<include android:id="@+id/loading_indicator" layout="@layout/loading_indicator" />
+        
+        
+		<!-- Description Text View -->
+		<TextView android:id="@+id/descr_textview" style="@style/description_textview_style" />
+	</FrameLayout>							    	 	  
+</LinearLayout>

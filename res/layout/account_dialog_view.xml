@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp" >
+    
+	<FrameLayout 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent" >
+    	
+    	<TextView 
+	    	android:id="@+id/account_dialog_textview" 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="50dp" 
+	    	android:text="Account Settings" 
+	    	android:textColor="@drawable/color_black_white_selector" 
+	    	android:gravity="center_vertical" 
+	    	android:paddingLeft="8dp" />
+	    	
+	 <LinearLayout android:id="@+id/help_layout"
+	 	android:layout_width="fill_parent" 
+	 	android:layout_height="50dp" 
+	 	android:orientation="horizontal" 
+	 	android:layout_marginLeft="8dp" 
+	 	android:visibility="invisible" >
+	 	
+	 	<ImageView 
+	 		android:layout_width="20dp" 
+	 		android:layout_height="24dp" 
+	 		android:layout_gravity="center_vertical" 
+	 		android:layout_marginLeft="10dp" 
+	 		android:layout_marginRight="10dp" 
+	 		android:src="@drawable/helpcenter_icon_orange" 
+	 		android:scaleType="fitXY" />
+	 	
+	 	<TextView android:id="@+id/account_dialog_help_center_textview" 
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="fill_parent" 
+		    	android:text="Help Center" 
+		    	android:textColor="@drawable/color_orange_white_selector" 
+		    	android:textSize="16sp" 
+		    	android:textStyle="bold" 
+		    	android:gravity="center_vertical" />
+	 </LinearLayout>
+	 
+    </FrameLayout>
+</LinearLayout>

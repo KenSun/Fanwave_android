@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/fanwave_background_white"  >
+	
+	<!-- Title Bar Layout -->
+	<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+			
+		<RelativeLayout android:id="@+id/title_sense_region"
+            style="@style/title_bar_sense_region" >
+            <!-- Title Image View -->
+            <ImageView android:id="@+id/title_imageview"
+            style="@style/title_bar_image" />
+            
+            <!-- Title Text View -->	
+            <TextView android:id="@+id/title_textview"
+			style="@style/title_bar_text"
+			android:text="@string/main_page_account_settings" />
+        </RelativeLayout>
+			
+						
+		<!-- Back Image Button -->
+		<ImageButton android:id="@+id/back_imagebutton" 
+			style="@style/title_bar_back"
+			android:src="@drawable/home_icon" />
+						
+	</RelativeLayout>
+			
+	<!-- android:background="@drawable/account_settings_activity_linearlayout_shape" -->
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:orientation="vertical" 
+		android:paddingBottom="20dip"  >
+		<LinearLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:orientation="vertical" >
+			
+			<RelativeLayout android:id="@+id/icon_username_relativelayout" 
+				android:layout_width="fill_parent" 
+				android:layout_height="50dip" 
+				android:clickable="true" 
+				android:background="@color/white" >
+				<ImageView android:id="@+id/icon_username_imageview"
+                android:layout_width="50dip" 
+                android:layout_height="46dp" 
+                android:padding="12dip" 
+                android:src="@drawable/username" 
+                android:scaleType="fitXY" 
+                android:duplicateParentState="true" />
+				<TextView 
+                android:layout_width="wrap_content" 
+                android:layout_height="fill_parent" 
+                android:text="@string/main_page_account_settings_username" 
+                android:textColor="@drawable/textcolor_gray_orange_selector" 
+                android:textSize="18sp" 
+                android:textStyle="bold" 
+                android:gravity="center_vertical" 
+                android:layout_marginLeft="3dp" 
+                android:layout_centerVertical="true" 
+                android:layout_toRightOf="@+id/icon_username_imageview" 
+                android:duplicateParentState="true" />
+			</RelativeLayout>
+			<ImageView 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:background="@drawable/list_divider" />
+			
+			<RelativeLayout android:id="@+id/icon_password_relativelayout" 
+				android:layout_width="fill_parent" 
+				android:layout_height="50dip" 
+				android:clickable="true" 
+				android:background="@color/white" >
+				<ImageView android:id="@+id/icon_password_imageview"
+                android:layout_width="50dip" 
+                android:layout_height="46dp" 
+                android:padding="12dip" 
+                android:src="@drawable/password" 
+                android:scaleType="fitXY" 
+                android:duplicateParentState="true" />
+				<TextView 
+                android:layout_width="wrap_content" 
+                android:layout_height="fill_parent" 
+                android:text="@string/main_page_account_settings_password" 
+                android:textColor="@drawable/textcolor_gray_orange_selector" 
+                android:textSize="18sp" 
+                android:textStyle="bold" 
+                android:layout_marginLeft="3dp" 
+                android:gravity="center_vertical" 
+                android:layout_centerVertical="true" 
+                android:layout_toRightOf="@+id/icon_password_imageview" 
+                android:duplicateParentState="true" />
+			</RelativeLayout>
+			
+			<ImageView android:id="@+id/icon_password_divider" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:background="@drawable/list_divider" />
+			
+			<RelativeLayout  android:id="@+id/icon_sound_relativelayout"
+				android:layout_width="fill_parent" 
+				android:layout_height="50dip" 
+				android:clickable="true" 
+				android:background="@color/white" >
+				<ImageView android:id="@+id/icon_sound_imageview"
+                android:layout_width="50dip" 
+                android:layout_height="46dp"
+                android:padding="12dip" 
+                android:src="@drawable/sound" 
+                android:scaleType="fitXY" 
+                android:duplicateParentState="true" />
+				<TextView 
+                android:layout_width="wrap_content" 
+                android:layout_height="fill_parent" 
+                android:text="@string/main_page_account_settings_sound" 
+                android:textColor="@drawable/textcolor_gray_orange_selector"  
+                android:textSize="18sp" 
+                android:textStyle="bold" 
+                android:layout_marginLeft="3dp" 
+                android:gravity="center_vertical" 
+                android:layout_centerVertical="true" 
+                android:layout_toRightOf="@+id/icon_sound_imageview" 
+                android:duplicateParentState="true" />
+				
+			</RelativeLayout>
+			
+			<ImageView 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:background="@drawable/list_divider" />
+			
+			<RelativeLayout  android:id="@+id/icon_privacy_relativelayout"
+				android:layout_width="fill_parent" 
+				android:layout_height="50dip" 
+				android:clickable="true" 
+				android:background="@color/white" >
+				<ImageView android:id="@+id/icon_privacy_imageview"
+                android:layout_width="50dip" 
+                android:layout_height="46dp" 
+                android:padding="12dip" 
+                android:src="@drawable/privacy" 
+                android:scaleType="fitXY" 
+                android:duplicateParentState="true" />
+				<TextView 
+                android:layout_width="wrap_content" 
+                android:layout_height="46dp" 
+                android:text="@string/main_page_account_settings_privacy" 
+                android:textColor="@drawable/textcolor_gray_orange_selector"  
+                android:textSize="18sp" 
+                android:textStyle="bold" 
+                android:layout_marginLeft="3dp" 
+                android:gravity="center_vertical" 
+                android:layout_centerVertical="true" 
+                android:layout_toRightOf="@+id/icon_privacy_imageview" 
+                android:duplicateParentState="true" />
+				
+			</RelativeLayout>
+			
+			<ImageView 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:background="@drawable/list_divider" />
+			
+			<RelativeLayout  android:id="@+id/icon_socialnetwork_relativelayout"
+				android:layout_width="fill_parent" 
+				android:layout_height="50dip" 
+				android:clickable="true" 
+				android:background="@color/white" >
+				<ImageView android:id="@+id/icon_socialnetwork_imageview"
+                android:layout_width="50dip" 
+                android:layout_height="46dp" 
+                android:padding="12dip" 
+                android:src="@drawable/socialnetwork" 
+                android:scaleType="fitXY" 
+                android:duplicateParentState="true" />
+				<TextView 
+                android:layout_width="wrap_content" 
+                android:layout_height="46dp" 
+                android:text="@string/main_page_account_settings_socialnetwork" 
+                android:textColor="@drawable/textcolor_gray_orange_selector"  
+                android:textSize="18sp" 
+                android:textStyle="bold" 
+                android:layout_marginLeft="3dp" 
+                android:gravity="center_vertical" 
+                android:layout_centerVertical="true" 
+                android:layout_toRightOf="@+id/icon_socialnetwork_imageview" 
+                android:duplicateParentState="true" />
+				
+			</RelativeLayout>
+			<ImageView 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:background="@drawable/list_divider" />
+            
+            <RelativeLayout  android:id="@+id/icon_tutorial_relativelayout"
+				android:layout_width="fill_parent" 
+				android:layout_height="50dip" 
+				android:clickable="true" 
+				android:background="@color/white" >
+				<ImageView android:id="@+id/icon_tutorial_imageview"
+                android:layout_width="50dip" 
+                android:layout_height="46dp" 
+                android:padding="12dip" 
+                android:src="@drawable/reset_tutorial" 
+                android:scaleType="fitXY" 
+                android:duplicateParentState="true" />
+				<TextView 
+                android:layout_width="wrap_content" 
+                android:layout_height="46dp" 
+                android:text="@string/main_page_account_settings_tutorial" 
+                android:textColor="@drawable/textcolor_gray_orange_selector"  
+                android:textSize="18sp" 
+                android:textStyle="bold" 
+                android:layout_marginLeft="3dp" 
+                android:gravity="center_vertical" 
+                android:layout_centerVertical="true" 
+                android:layout_toRightOf="@+id/icon_tutorial_imageview" 
+                android:duplicateParentState="true" />
+				
+			</RelativeLayout>
+			<ImageView 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:background="@drawable/list_divider" />
+		</LinearLayout>
+		
+	</LinearLayout>
+
+</LinearLayout>

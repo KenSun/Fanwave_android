@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom" 
+    android:weightSum="10" 
+    android:background="@drawable/fanwave_background" >
+	
+	<ImageView  
+		android:layout_width="200dp" 
+		android:layout_height="90dp" 
+		android:src="@drawable/fanwave_logo_large" 
+		android:scaleType="fitXY" 
+		android:layout_marginBottom="20dp"
+		android:layout_gravity="center"  />
+			
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="190dp" 
+		android:layout_marginLeft="40dp" 
+		android:layout_marginRight="40dp" 
+		android:gravity="bottom" 
+		android:orientation="vertical" >
+		
+		<TextView 
+			android:layout_width="fill_parent" 
+			android:layout_height="0dp" 
+			android:layout_weight="1" 
+			android:layout_marginBottom="20dp" 
+			android:text="@string/fb_sign_email" 
+			android:textColor="@color/orange" 
+			android:textSize="18sp" 
+			android:textStyle="bold" 
+			android:gravity="center" />
+		
+		<LinearLayout
+			android:layout_width="fill_parent" 
+			android:layout_height="40dp" 
+			android:orientation="horizontal" 
+			android:layout_marginBottom="30dp" >
+			
+			<TextView 
+				android:layout_width="60dp" 
+				android:layout_height="fill_parent" 
+				android:text="@string/login_email" 
+				android:textColor="@color/orange" 
+				android:textSize="14sp" 
+				android:textStyle="bold" 
+				android:gravity="center" />
+				
+			<!-- Email Edit Text -->	
+			<EditText android:id="@+id/email_edittext"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:singleLine="true" 
+				android:textSize="15sp"
+				android:inputType="textEmailAddress" />
+				
+		</LinearLayout>
+		
+		<!-- Submit Button -->	
+		<Button android:id="@+id/submit_button"
+			android:layout_width="100dip"
+			android:layout_height="40dip"
+			android:text="@string/wizard_email_submit"
+			android:textSize="@dimen/wizard_button_textsize"
+			android:textColor="@color/white"
+			android:background="@drawable/login_signin_selector" 
+			android:layout_gravity="right" />
+	</LinearLayout>
+	
+	<LinearLayout	
+		android:layout_marginTop="60dp"
+		android:layout_width="fill_parent" 
+		android:layout_height="0dp" 
+		android:layout_weight="1" />
+</LinearLayout>

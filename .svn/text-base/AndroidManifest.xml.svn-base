@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.wildmind.fanwave.activity" android:installLocation="auto" android:versionCode="4" android:versionName="1.0.3">
+	<uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.READ_CALENDAR" />
+	<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	
+	<!-- Only this application can receive the messages and registration result --> 
+   	<permission android:name="com.wildmind.fanwave.activity.permission.C2D_MESSAGE" 
+   		android:protectionLevel="signature" />
+   	<uses-permission android:name="com.wildmind.fanwave.activity.permission.C2D_MESSAGE" />
+   
+   	<!-- This app has permission to register and receive message -->
+   	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+   
+	<supports-screens android:anyDensity="true"
+		android:resizeable="true" 
+		android:normalScreens="true"
+		android:smallScreens="true" 
+		android:largeScreens="true" />
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:name="com.wildmind.fanwave.activity.FanwaveApplication">
+
+		<!-- Only C2DM servers can send messages for the app. 
+			 If permission is not set - any other app can generate it --> 
+	    <receiver android:name="com.wildmind.fanwave.c2dm.C2DMReceiver"
+	    	android:permission="com.google.android.c2dm.permission.SEND" > 	
+		  	<!-- Receive actual message -->
+		    <intent-filter>
+		    	<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+		        <category android:name="com.wildmind.fanwave.activity" />
+		   	</intent-filter>
+		   	<!-- Receive registration id -->
+		    <intent-filter>
+		   		<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+		      	<category android:name="com.wildmind.fanwave.activity" />
+		   	</intent-filter>  
+	   	</receiver>
+	   	
+	   	<!-- Urban Airship Core Receiver -->
+        <receiver android:name="com.urbanairship.CoreReceiver">
+            <!-- REQUIRED IntentFilter - For Helium and Hybrid -->
+            <intent-filter>
+              <action android:name="android.intent.action.BOOT_COMPLETED" />
+              <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+        <!--Urban Airship C2DM Receiver -->
+        <receiver android:name="com.urbanairship.push.c2dm.C2DMPushReceiver"
+                android:permission="com.google.android.c2dm.permission.SEND">
+          <!-- Receive the actual message -->
+          <intent-filter>
+              <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+              <category android:name="com.wildmind.fanwave.activity" />
+          </intent-filter>
+          <!-- Receive the registration id -->
+          <intent-filter>
+              <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+              <category android:name="com.wildmind.fanwave.activity" />
+          </intent-filter>
+        </receiver>
+        
+        <!-- REQUIRED -->
+        <!-- The 'android:process' parameter is optional. Set it to a value starting
+            with a colon (:) to make it run in a separate,
+            private process -->
+        <service android:name="com.urbanairship.push.PushService"
+                android:process=":com.urbanairship.push.process"/>
+        
+        <!-- Urban Airship Intent Receiver -->
+        <receiver android:name="com.wildmind.fanwave.c2dm.UrbanAirshipReceiver" />
+        
+		<!-- Main Activity -->
+		<activity android:name=".Main" 
+			android:label="@string/app_name"
+			android:configChanges="keyboardHidden|orientation"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:noHistory="true" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		
+		<!-- Launching Activity -->
+		<activity android:name="LaunchingActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+			
+		<!-- Login Activities -->
+		<activity android:name="LoginActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="LoginFanwaveActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="LoginFacebookEmailActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="SignUpActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+			
+			
+		<!-- Main Page Activity -->
+		<activity android:name="MainPageActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:launchMode="singleTask" />
+			
+		<!-- Account Settings Activities -->
+		<activity android:name="AccountSettingsActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="AccountSettingsUsernameActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="AccountSettingsPasswordActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="AccountSettingsPrivacyActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="AccountSettingsSocialNetworkActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="AccountSettingsSoundActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="AccountSettingsTutorialActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+			
+		<!-- Waves Activities -->
+		<activity android:name="WavesActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="CommentActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+						
+		<!-- Friends Activities -->
+		<activity android:name="FriendsActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="FriendsSearchActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="FriendsFacebookActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+			
+		<!-- Personal Activities -->
+		<activity android:name="PersonalActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="PersonalExtraInfoActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+
+		<!-- Hot Activities -->
+		<activity android:name="HotActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+			
+		<!-- Badge Activities -->
+		<activity android:name="BadgeTypeActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="BadgeProgramActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="BadgePlayerActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@style/Theme.Transparent" />
+
+		<!-- Program Activities -->
+		<activity android:name="ProgramActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="ProgramExtraInfoActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="TopfanActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="HowBeTopFanActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="ProgramSofaActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="ProgramSearchActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+			
+		<!-- Guide Activities -->
+		<activity android:name="GuideActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="GuideSettingsActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="GuideSettingsProviderActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="GuideSettingsHidderActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="GuideSettingsReorderActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />	
+		<activity android:name="GuideEpgforPgbyChActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />	
+						
+		<!-- Image Present Activity -->
+		<activity android:name="ImagePresentActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+			
+		<!-- Web View Activity -->
+		<activity android:name="WebViewActivity"
+			android:theme="@android:style/Theme.NoTitleBar" />
+			
+		<!-- Splash Activities -->
+		<activity android:name="SplashActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="SplashSearchActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name="SplashSearchResultActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".SplashPrivateActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".SplashProgramActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+
+		<!-- Wizard Activities -->
+		<activity android:name="WizardActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+            
+		
+		<!-- About Activities -->
+		<activity android:name="AboutActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@android:style/Theme.NoTitleBar" />
+		
+		<!-- Notification Activity -->
+		<activity android:name="NotificationActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@style/Theme.Notification" />
+					
+		<!-- Tutorial Activities -->
+		<activity android:name=".TutorialActivity"
+			android:screenOrientation="portrait" 
+			android:theme="@style/Theme.Transparent_75" />
+
+	</application>
+</manifest>

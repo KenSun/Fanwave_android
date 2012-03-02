@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical"  
+	android:background="@drawable/fanwave_background_white" >
+	
+	<!-- Title Bar Layout -->
+	<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+		
+		<RelativeLayout android:id="@+id/title_sense_region"
+            style="@style/title_bar_sense_region" >
+            <!-- Title Image View -->
+            <ImageView android:id="@+id/title_imageview"
+            style="@style/title_bar_image" />
+            
+            <!-- Title Text View -->	
+            <TextView android:id="@+id/title_textview"
+			style="@style/title_bar_text"
+			android:text="KencoolKencoolKencoolKencoolKencoolKencool" />
+        </RelativeLayout>
+        
+		<!-- Back Image Button -->
+		<ImageButton android:id="@+id/back_imagebutton" 
+        style="@style/title_bar_back"
+        android:src="@drawable/home_icon" />
+        
+		<!-- Next Button -->
+		<ImageButton android:id="@+id/next_imagebutton" 
+        style="@style/title_bar_next"
+        android:src="@drawable/personal_extrainfo_icon" />
+        
+	</RelativeLayout>
+    
+	<!-- User Info Layout -->
+	<RelativeLayout android:id="@+id/userinfo_layout"
+		android:layout_width="fill_parent" 
+		android:layout_height="94dp" 
+		android:paddingTop="6dip" 
+		android:paddingBottom="8dip" 
+		android:paddingLeft="6dip" 
+		android:paddingRight="4dip"
+		android:layout_gravity="center" >
+        
+		<!-- Avatar Image View -->
+		<ImageView android:id="@+id/avatar_imageview"
+        style="@style/avatar"
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:layout_centerVertical="true" />
+		
+		<!-- Social Layout -->		
+		<FrameLayout android:id="@+id/social_layout"
+			android:layout_height="fill_parent"
+			android:layout_width="150dip" 
+			android:layout_toRightOf="@+id/avatar_imageview"  
+			android:layout_marginLeft="2dp" 
+			android:layout_marginRight="8dp" 
+			android:layout_centerVertical="true"  >
+			
+			<!-- Self Social Text View -->
+			<TextView android:id="@+id/self_social_textview" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            android:background="@drawable/chat_dialog_large" 
+            android:text="hi everyone!" 
+            android:textColor="@color/light_gray" 
+            android:textSize="14sp" 
+            android:lines="3"  
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="20dp" 
+            android:paddingRight="4dp"
+            android:layout_gravity="center" />
+			
+			<!-- Other Social Layout -->
+			<LinearLayout android:id="@+id/other_social_layout"
+				android:orientation="vertical"
+				android:layout_height="fill_parent" 
+				android:layout_width="fill_parent"
+				android:clipChildren="false"
+				android:weightSum="2" >
+				
+				<!-- Social Action Layout -->
+				<LinearLayout android:id="@+id/social_action_layout"
+					android:orientation="horizontal"
+					android:layout_height="0dp"
+					android:layout_weight="0.9"
+					android:layout_width="fill_parent"
+					android:layout_marginTop="2dp"
+					android:layout_marginLeft="10dp"
+					android:paddingBottom="5dp"
+					android:weightSum="2" >
+					
+					<!-- Splash Action Layout -->
+					<LinearLayout android:id="@+id/splash_social_layout"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:layout_height="fill_parent"
+						android:background="@drawable/button_selector"
+						android:gravity="center"
+						android:clickable="true" >
+                        
+						<ImageView android:id="@+id/splash_social_imageview"
+                        android:layout_width="13dip"
+                        android:layout_height="13dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:src="@drawable/splash_icon_selector"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:duplicateParentState="true" />
+						
+						<TextView android:id="@+id/splash_social_textview" 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_page_splash"
+                        android:textSize="14sp"
+                        android:textColor="@drawable/color_light_brown_white_selector"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:duplicateParentState="true" />
+                        
+					</LinearLayout>
+					
+					<!-- Friend Action Layout -->
+					<LinearLayout android:id="@+id/friend_action_layout"
+						android:orientation="horizontal"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:layout_height="fill_parent"
+						android:layout_marginLeft="4dip"
+						android:background="@drawable/button_selector"
+						android:gravity="center"
+						android:clickable="true" >
+                        
+						<ImageView android:id="@+id/friend_social_add_imageview"
+                        android:layout_width="13dip"
+                        android:layout_height="13dip"
+                        android:layout_marginLeft="2dip"
+                        android:layout_marginRight="2dip"
+                        android:background="@drawable/add_icon_selector"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:duplicateParentState="true" />
+                        
+						<TextView android:id="@+id/friend_social_action_textview" 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/personal_action_invite"
+                        android:textSize="14sp"
+                        android:textColor="@drawable/color_light_brown_white_selector"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:duplicateParentState="true" />
+                        
+					</LinearLayout>
+					
+				</LinearLayout>
+				
+				<!-- Social Text View -->
+				<TextView android:id="@+id/other_social_textview" 
+                android:layout_width="fill_parent" 
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="4dp"
+                android:background="@drawable/chat_dialog_small" 
+                android:text="hi everyone ! hi everyone!" 
+                android:textColor="@color/light_gray" 
+                android:textSize="10sp" 
+                android:lines="2" />
+                
+			</LinearLayout>
+            
+		</FrameLayout>
+        
+		<!-- Badge Image View -->
+		<ImageView android:id="@+id/badge_imageview"
+        android:layout_width="70dp" 
+        android:layout_height="70dp" 
+        android:src="@drawable/badge_loading" 
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true" 
+        android:layout_centerVertical="true"  />
+        
+	</RelativeLayout>
+    
+	<!-- Tab Bar Layout -->
+	<LinearLayout android:id="@+id/tabbar_layout"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:paddingTop="6dip"
+		android:paddingBottom="6dip"
+		android:paddingLeft="5dip"
+		android:paddingRight="5dip"
+		android:background="@drawable/tabbar_background" >
+		
+		<!-- Wave Tab Image Button -->
+		<ImageButton android:id="@+id/wave_tab_button"
+        android:layout_width="58dip"
+        android:layout_height="fill_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/tabbar_button_selector"
+        android:src="@drawable/personal_wave_selector" 
+        android:scaleType="fitXY" />
+		
+		<LinearLayout
+			android:layout_width="0dip" 
+			android:layout_weight="1" 
+			android:layout_height="fill_parent" 
+			android:gravity="center" >
+			<!-- Badge Tab Image Button -->
+			<ImageButton android:id="@+id/badge_tab_button"
+            android:layout_width="58dip"
+            android:layout_height="fill_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/tabbar_button_selector"
+            android:src="@drawable/personal_badge_selector"
+            android:scaleType="fitXY" />
+		</LinearLayout>
+		
+		<!-- Friend Tab Image Button -->
+		<ImageButton android:id="@+id/friend_tab_button"
+        android:layout_width="58dip"
+        android:layout_height="fill_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/tabbar_button_selector"
+        android:src="@drawable/personal_friend_selector"
+        android:scaleType="fitXY" />
+		
+		<LinearLayout
+			android:layout_width="0dip" 
+			android:layout_weight="1" 
+			android:layout_height="fill_parent" 
+			android:gravity="center" >
+			<!-- Favorite Tab Image Button -->
+			<ImageButton android:id="@+id/favorite_tab_button"
+            android:layout_width="58dip"
+            android:layout_height="fill_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/tabbar_button_selector"
+            android:src="@drawable/personal_favorite_selector"
+            android:scaleType="fitXY" />
+		</LinearLayout>
+		
+		<!-- Reminder Tab Image Button -->
+		<ImageButton android:id="@+id/reminder_tab_button"
+        android:layout_width="58dip"
+        android:layout_height="fill_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/tabbar_button_selector"
+        android:src="@drawable/personal_reminder_selector"
+        android:scaleType="fitXY" />
+        
+	</LinearLayout>
+	
+	<!-- Personal List Layout -->
+	<FrameLayout android:id="@+id/personal_list_layout" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/fanwave_background_content" >
+		
+		<!-- Personal List View -->
+		<ListView android:id="@+id/personal_list_listview"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/fanwave_row_press"
+        android:cacheColorHint="#00000000" />
+        
+		<!-- Loading Indicator Layout -->
+		<include android:id="@+id/loading_indicator" layout="@layout/loading_indicator" />
+		
+		<!-- Description Text View -->
+		<TextView android:id="@+id/descr_textview" style="@style/description_textview_style" />
+        
+	</FrameLayout>	
+    
+</LinearLayout>

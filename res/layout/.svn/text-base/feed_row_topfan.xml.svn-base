@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:paddingTop="5dip" >
+	
+	<LinearLayout 
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="10dp" >
+	
+		<!-- Avatar Image View -->
+		<ImageView android:id="@+id/avatar_imageview"
+			android:layout_width="50dip"
+			android:layout_height="50dip" 
+			android:layout_marginRight="10dip" 
+			android:padding="3dp"
+			android:src="@drawable/avatar_loading" 
+			android:background="@drawable/avatar_frame_small"
+			android:scaleType="fitXY" />
+			
+		<LinearLayout android:id="@+id/comment_content_layout"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content" 
+			android:layout_weight="8" 
+			android:orientation="vertical" >
+				
+			<RelativeLayout android:id="@+id/nickname_layout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:layout_marginBottom="12dp" >
+				
+				<!-- Nickname Text View -->
+				<TextView android:id="@+id/nickname_textview"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:maxWidth="170dip"
+					android:text="Nickname"
+					android:textSize="14sp"
+					android:textColor="@color/light_blue" 
+					android:textStyle="bold" 
+					android:layout_marginRight="8dip" 
+					android:singleLine="true" />
+					
+				<!-- In Constant Text View -->
+				<TextView android:id="@+id/in_constant_textview" 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:maxWidth="180dip"
+					android:text="@string/feed_row_in"
+					android:textColor="@color/gray" 
+					android:textSize="14sp"
+					android:layout_alignLeft="@+id/nickname_textview"
+					android:layout_below="@+id/nickname_textview" />
+					
+				<!-- Earned Text View -->
+				<TextView android:id="@+id/program_title_textview" 
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:text="Program name"
+					android:textColor="@color/gray" 
+					android:textSize="14sp" 
+					android:layout_marginRight="10dip" 
+					android:textStyle="bold" 
+					android:layout_below="@+id/nickname_textview" 
+					android:layout_toRightOf="@+id/in_constant_textview" 
+					android:layout_toLeftOf="@+id/topfan_imageview" />
+				
+				<!-- Earned Text View -->
+				<TextView android:id="@+id/gain_constant_textview" 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/feed_row_topfan"
+					android:textColor="@color/gray" 
+					android:textSize="14sp" 
+					android:layout_marginRight="10dip" 
+					android:layout_below="@+id/program_title_textview" />
+				
+				<!-- Bage Image View -->
+				<ImageView android:id="@+id/topfan_imageview"
+					android:layout_width="50dip"
+					android:layout_height="50dip" 
+					android:src="@drawable/badge_loading"
+					android:scaleType="fitXY" 
+					android:layout_alignParentRight="true" 
+					android:layout_alignParentBottom="true" />
+			</RelativeLayout>
+	
+			
+			
+			<RelativeLayout android:id="@+id/resource_layout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" >
+				
+				<!-- Created Time Image View -->
+				<ImageView android:id="@+id/created_time_imageview" 
+					android:layout_width="12dp" 
+					android:layout_height="12dp" 
+					android:layout_centerVertical="true" 
+					android:src="@drawable/waves_smallicon_time" 
+					android:scaleType="fitXY" 
+					android:layout_marginRight="4dp" />
+				
+				<!-- Created Time Text View -->
+				<TextView android:id="@+id/created_time_textview"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="yy/mm/dd hh:mm:ss"
+					android:textColor="@color/light_gray" 
+					android:gravity="right" 
+					android:textSize="10sp" 
+					android:layout_toRightOf="@+id/created_time_imageview" />
+					
+			</RelativeLayout>
+				
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+	<!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview"
+		android:layout_height="2dp"
+		android:layout_width="fill_parent"
+		android:layout_marginTop="5dp"
+		android:src="@drawable/list_divider" />
+	
+</LinearLayout>

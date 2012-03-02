@@ -1,0 +1,7 @@
+developmentAppKey = IViFzH_BT-Oy1ic3Het_Ew
+developmentAppSecret = 7dQJw-BoRe2rX4scJ5AOdA
+productionAppKey = IViFzH_BT-Oy1ic3Het_Ew
+productionAppSecret = 7dQJw-BoRe2rX4scJ5AOdA
+inProduction = true
+analyticsEnabled = false
+iapEnabled = false

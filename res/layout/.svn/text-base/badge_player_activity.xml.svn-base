@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/activity_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:clickable="true" >
+	
+	<LinearLayout android:id="@+id/content_layout"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="-50dp"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:gravity="center" >
+	
+		<!-- Badge Layout -->
+		<RelativeLayout android:id="@+id/badge_layout"
+			android:layout_width="300dp"
+			android:layout_height="300dp"
+			android:gravity="center"
+			android:layout_centerInParent="true" >
+			
+			<!-- Ray Image View -->
+			<ImageView android:id="@+id/ray_imageview"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:src="@drawable/star_burst"
+				android:scaleType="fitXY"
+				android:layout_centerInParent="true" />
+				
+			<!-- Badge Image View -->
+			<ImageView android:id="@+id/badge_imageview"
+				android:layout_width="150dp"
+				android:layout_height="150dp"
+				android:src="@drawable/badge_loading"
+				android:scaleType="fitXY"
+				android:layout_centerInParent="true" />
+			
+		</RelativeLayout>
+		
+		<!-- Badge Title Layout -->
+		<LinearLayout android:id="@+id/badge_title_layout" 
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/badge_layout" >
+			
+			<!-- Badge Icon Image View -->
+			<ImageView android:src="@drawable/badge_icon_white"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:scaleType="fitXY" />
+			
+			<!-- Badge Title Text View -->	
+			<TextView android:id="@+id/badge_title_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:text="Rookie Surfer"
+				android:textColor="@color/white"
+				android:textSize="22sp"
+				android:textStyle="bold" />
+		
+		</LinearLayout>
+		
+		<!-- Description Text View -->
+		<TextView android:id="@+id/description_textview"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:paddingLeft="30dp"
+			android:paddingRight="30dp"
+			android:lines="2"
+			android:text="Earned 1 point from a Wave-in or Comment."
+			android:textColor="@color/white_gray"
+			android:textSize="15sp"
+			android:gravity="center" />
+		
+		<!-- Program Title Text View -->
+		<TextView android:id="@+id/program_title_textview"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:paddingLeft="30dp"
+			android:paddingRight="30dp"
+			android:singleLine="true"
+			android:text="ProgramProgramProgramProgramProgramProgramProgramProgram"
+			android:textColor="@color/white_gray"
+			android:textSize="15sp"
+			android:gravity="center" />
+			
+	</LinearLayout>
+	
+	<!-- Wear Button 
+	<Button android:id="@+id/wear_button"
+		android:layout_width="150dp"
+		android:layout_height="40dp"
+		android:layout_marginTop="20dp"
+		android:background="@drawable/black_frame_button_selector"
+		android:text="Wear"
+		android:textSize="20dp"
+		android:textColor="@color/white"
+		android:textStyle="bold"
+		android:layout_below="@+id/content_layout"
+		android:layout_centerHorizontal="true" />
+	-->
+	
+</RelativeLayout>

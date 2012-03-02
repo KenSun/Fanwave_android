@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"    
+	android:layout_width="fill_parent"   
+	android:layout_height="wrap_content">  		       	  	         
+	
+	<LinearLayout android:id="@+id/notification_layout"
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp" 
+		android:layout_marginTop="5dp" 
+		android:layout_marginBottom="5dp" >
+		
+		
+		<!-- Icon Image View -->
+		<ImageView android:id="@+id/icon_imageview"
+			style="@style/program_small"
+			android:layout_width="45dp"
+			android:layout_height="45dp" 
+			android:src="@drawable/announce_icon" />
+			
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:orientation="vertical" 
+				android:layout_marginLeft="5dp" 
+				android:layout_gravity="center_vertical" >
+				<!-- Nickname Text View -->
+				<TextView android:id="@+id/nickname_textview"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:maxWidth="200dip"
+					android:text="@string/main_page_notification_fanwave"
+					android:textSize="15sp"
+					android:textColor="@color/light_blue" 
+					android:textStyle="bold" 
+					android:singleLine="true" />
+					
+				<!-- Announcements Text View -->
+				<TextView android:id="@+id/title_textview"
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"  
+					android:text="AnnouncementsAnnouncementsAnnouncementsAnnouncementsAnnouncementsAnnouncementsAnnouncementsAnnouncementsAnnouncementsAnnouncementsAnnouncementsAnnouncementsAnnouncementsAnnouncementsAnnouncements"
+					android:textSize="14sp"
+					android:textColor="@color/gray" />
+			</LinearLayout>
+		
+		
+		
+	</LinearLayout>
+	
+	<!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+	
+</LinearLayout>

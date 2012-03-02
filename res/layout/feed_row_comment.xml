@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:paddingTop="5dip" >
+	
+	<LinearLayout android:id="@+id/comment_layout"
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="10dp" >
+	
+		<!-- Avatar Image View -->
+		<ImageView android:id="@+id/avatar_imageview"
+			style="@style/avatar_small"
+			android:layout_width="50dip"
+			android:layout_height="50dip" 
+			android:layout_marginRight="5dip" />
+			
+		<LinearLayout android:id="@+id/comment_content_layout"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content" 
+			android:layout_weight="8" 
+			android:layout_marginRight="8dip" 
+			android:orientation="vertical" >
+				
+			<!-- Nickname Text View -->
+			<TextView android:id="@+id/nickname_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:maxWidth="170dip"
+				android:text="Nickname"
+				android:textSize="14sp"
+				android:textColor="@color/light_blue" 
+				android:textStyle="bold" 
+				android:singleLine="true" />
+	
+			<LinearLayout android:orientation="vertical" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:layout_marginBottom="12dip" >
+				
+				<!-- Content Text View -->
+				<TextView android:id="@+id/content_textview" 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="comment comment comment comment comment comment"
+					android:textColor="@color/gray" 
+					android:textSize="14dip" 
+					android:layout_marginRight="10dip" />
+				
+				<!-- Attack Image View -->	
+				<ImageView android:id="@+id/attach_image_imageview" 
+					android:layout_width="50dip" 
+					android:layout_height="50dip" 
+					android:src="@drawable/attach_default" 
+					android:scaleType="fitXY" 
+					android:layout_marginTop="8dip" />
+					
+				<!-- Attach Link Text View -->
+				<TextView android:id="@+id/attach_link_textview" 
+					android:layout_width="fill_parent"
+					android:layout_height="40dp"
+					android:text="link"
+					android:textColor="#4878b9" 
+					android:textSize="14sp" 
+					android:gravity="center_vertical"/>
+					
+			</LinearLayout>
+			
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:orientation="horizontal" 
+				android:layout_marginBottom="8dip" >
+				
+				<ImageView android:id="@+id/like_imageview"
+					android:layout_width="12dip" 
+					android:layout_height="12dip" 
+					android:src="@drawable/waves_activity_feed_like" 
+					android:scaleType="fitXY" 
+					android:layout_gravity="center" />
+					
+				<TextView android:id="@+id/like_count_textview" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:text="(8)" 
+					android:textColor="@color/light_blue" 
+					android:textSize="10sp" 
+					android:layout_marginLeft="2dip" 
+					android:layout_marginRight="8dip"/>
+					
+				<ImageView android:id="@+id/dislike_imageview"
+					android:layout_width="12dip" 
+					android:layout_height="12dip" 
+					android:src="@drawable/waves_activity_feed_dislike" 
+					android:scaleType="fitXY" 
+					android:layout_gravity="center" />
+					
+				<TextView android:id="@+id/dislike_count_textview" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:text="(0)" 
+					android:textColor="@color/dark_red" 
+					android:textSize="10sp" 
+					android:layout_marginLeft="2dip" />
+			</LinearLayout>
+			
+			<RelativeLayout android:id="@+id/resource_layout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" >
+				
+				<!-- Created Time Image View -->
+				<ImageView android:id="@+id/created_time_imageview" 
+					android:layout_width="12dp" 
+					android:layout_height="12dp" 
+					android:layout_centerVertical="true" 
+					android:src="@drawable/waves_smallicon_time" 
+					android:scaleType="fitXY" 
+					android:layout_marginRight="4dp" />
+				
+				<!-- Created Time Text View -->
+				<TextView android:id="@+id/created_time_textview"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="yy/mm/dd hh:mm:ss"
+					android:textColor="@color/light_gray" 
+					android:gravity="right" 
+					android:textSize="10sp" 
+					android:layout_toRightOf="@+id/created_time_imageview" />
+				
+				<!-- Program Image View -->
+				<ImageView android:id="@+id/program_imageview" 
+					android:layout_width="12dp" 
+					android:layout_height="12dp" 
+					android:layout_centerVertical="true" 
+					android:src="@drawable/waves_smallicon_program" 
+					android:scaleType="fitXY" 
+					android:layout_marginLeft="8dp" 
+					android:layout_marginRight="4dp" 
+					android:layout_toRightOf="@+id/created_time_textview" />
+				
+				<!-- Program Title Text View -->
+				<TextView android:id="@+id/program_title_textview"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:singleLine="true" 
+					android:text="program"
+					android:textSize="10sp"
+					android:textColor="@color/light_gray"
+					android:layout_toRightOf="@+id/program_imageview" />
+					
+			</RelativeLayout>
+				
+		</LinearLayout>
+		
+		<!-- Cloud Image View -->
+		<Button android:id="@+id/cloud_button"
+			android:layout_width="40dp"
+			android:layout_height="45dp"
+			android:focusable="false"
+			android:layout_gravity="center"
+			android:background="@drawable/waves_cloud_selector" />
+			
+	</LinearLayout>
+	
+	<!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+	
+</LinearLayout>

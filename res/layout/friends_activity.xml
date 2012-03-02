@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/fanwave_background_white" >
+    
+	<!-- Tag Layout -->
+	<LinearLayout android:id="@+id/tag_layout"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" >
+		
+		<!-- Title Bar Layout -->
+		<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+			
+			<RelativeLayout android:id="@+id/title_sense_region"
+                style="@style/title_bar_sense_region" >
+                <!-- Title Image View -->
+                <ImageView android:id="@+id/title_imageview"
+                style="@style/title_bar_image" />
+                
+                <!-- Title Text View -->	
+                <TextView android:id="@+id/title_textview"
+				style="@style/title_bar_text"
+				android:text="@string/main_page_friends" />
+            </RelativeLayout>	
+            
+			<!-- Back Image Button -->
+			<ImageButton android:id="@+id/back_imagebutton" 
+            style="@style/title_bar_back"
+            android:src="@drawable/home_icon" />
+            
+		</RelativeLayout>
+		
+		<!-- Friends Segment Control Layout -->
+		<FrameLayout android:id="@+id/segment_control_layout"
+			style="@style/option_tag_layout"
+			android:layout_below="@+id/title_bar_layout" >
+            
+			<!-- Segment Text Layout -->
+			<LinearLayout android:id="@+id/wave_segment_control_layout"
+				style="@style/option_tag_content_layout" >
+                
+				<!-- Status Text View -->
+				<TextView android:id="@+id/friend_status_textview"
+                style="@style/option_text"
+                android:text="@string/friend_status" />
+                
+				<!-- Request Text View -->
+				<TextView android:id="@+id/friend_request_textview"
+                style="@style/option_text"
+                android:text="@string/friend_request"/>
+                
+				<!-- Find Text View -->
+				<TextView android:id="@+id/friend_find_textview"
+                style="@style/option_text"
+                android:text="@string/friend_find" />
+                
+			</LinearLayout>
+            
+			<!-- Option Layout -->
+			<LinearLayout android:id="@+id/option_animation_layout" 
+				style="@style/option_tag_content_layout" >
+				
+				<FrameLayout android:id="@+id/option_layout"
+					style="@style/option_frame" >
+                    
+					<ImageView android:id="@+id/option_imageview"
+                    style="@style/option_image"
+                    android:src="@drawable/friends_activity_status_icon" />
+					
+				</FrameLayout>
+				
+			</LinearLayout>
+			
+		</FrameLayout>
+		
+	</LinearLayout>
+	
+	<!-- Friend List Layout -->
+	<FrameLayout android:id="@+id/friend_list_layout" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		
+		<!-- Wave List View -->
+		<ListView android:id="@+id/friend_list_listview"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/fanwave_row_press"
+        android:cacheColorHint="#00000000" />
+        
+		<!-- Loading Indicator Layout -->
+		<include android:id="@+id/loading_indicator" layout="@layout/loading_indicator" />
+        
+		<!-- Description Text View -->
+		<TextView android:id="@+id/descr_textview" style="@style/description_textview_style"/>
+	</FrameLayout>
+    
+</LinearLayout>

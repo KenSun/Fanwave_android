@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:background="@drawable/fanwave_background_clear"
+	android:weightSum="1" >
+	
+	<!-- Title Bar Layout -->
+	<RelativeLayout android:id="@+id/title_bar_layout" style="@style/main_title_bar_layout">
+		
+		<!-- Back Image Button -->
+		<Button android:id="@+id/account_button"  
+			style="@style/main_title_bar_back" 
+			android:background="@drawable/main_page_account_selector" />
+			
+		<!-- Logo Image -->
+		<ImageView style="@style/main_title_bar_logo" />
+			
+		<!-- Favorite Button -->
+		<Button android:id="@+id/favorite_button" 
+			style="@style/main_title_bar_next" 
+			android:background="@drawable/main_page_favorite_selector" />
+	</RelativeLayout>
+	
+	
+	<!-- Main Function Layout -->
+	<LinearLayout android:id="@+id/main_page_dunction_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="232dp" 
+		android:layout_marginTop="30dp" 
+		android:layout_marginBottom="16dp"  
+		android:orientation="vertical"  
+		android:paddingLeft="10dp" >
+		
+		<!-- First Function Row Layout -->
+		<LinearLayout android:orientation="horizontal" 
+			android:layout_width="fill_parent" 
+			android:layout_height="0dip"
+			android:layout_weight="1" 
+			android:weightSum="3" >
+			
+			<!-- Waves Function Layout -->
+			<LinearLayout android:id="@+id/waves_function_layout"
+				style="@style/main_function_icon_linearlayout" >
+				
+				<ImageView android:id="@+id/waves_function_imageview"
+					style="@style/main_function_icon_image" 
+					android:src="@drawable/main_page_waves" />
+					
+				<TextView android:id="@+id/waves_function_textview"
+					style="@style/main_function_icon_text" 
+					android:text="@string/main_page_waves"  />
+			</LinearLayout>
+			
+			<!-- Guides Function Layout -->
+			<LinearLayout android:id="@+id/guides_function_layout"
+				style="@style/main_function_icon_linearlayout" >
+				
+				<ImageView android:id="@+id/guides_function_imageview"
+					style="@style/main_function_icon_image" 
+					android:src="@drawable/main_page_guides" />
+					
+				<TextView android:id="@+id/guides_function_textview"
+					style="@style/main_function_icon_text" 
+					android:text="@string/main_page_guides" />
+			</LinearLayout>
+			
+			<!-- Hot Function Layout -->
+			<LinearLayout android:id="@+id/hot_function_layout"
+				style="@style/main_function_icon_linearlayout" >
+				
+				<ImageView android:id="@+id/hot_function_imageview"
+					style="@style/main_function_icon_image" 
+					android:src="@drawable/main_page_hot" />
+					
+				<TextView android:id="@+id/hot_function_textview"
+					style="@style/main_function_icon_text" 
+					android:text="@string/main_page_hot" />
+			</LinearLayout>
+			
+		</LinearLayout>
+	
+		<!-- Second Function Row Layout -->
+		<LinearLayout android:orientation="horizontal" 
+			android:layout_width="fill_parent" 
+			android:layout_height="0dip" 
+			android:layout_weight="1" 
+			android:weightSum="3" >
+			
+			<!-- Splach Function Layout -->
+			<LinearLayout android:id="@+id/splash_function_layout"
+				style="@style/main_function_icon_linearlayout" >
+				
+				<ImageView android:id="@+id/splash_function_imageview"
+					style="@style/main_function_icon_image" 
+					android:src="@drawable/main_page_splash" />
+				<TextView android:id="@+id/splash_function_textview"
+					style="@style/main_function_icon_text" 
+					android:text="@string/main_page_splash" />
+			</LinearLayout>
+			
+			<!-- Friends Function Layout -->
+			<LinearLayout android:id="@+id/friends_function_layout"
+				style="@style/main_function_icon_linearlayout" >
+				
+				<RelativeLayout 
+					style="@style/main_function_icon_image" >
+					<ImageView android:id="@+id/friends_function_imageview"
+						style="@style/main_function_icon_image" 
+						android:src="@drawable/main_page_friends" />
+						
+					<TextView android:id="@+id/friends_request_textview"
+						android:layout_width="wrap_content" 
+						android:layout_height="18dp" 
+						android:layout_marginLeft="58dp" 
+						android:layout_marginBottom="2dp" 
+						android:gravity="center_horizontal" 
+						android:layout_alignParentBottom="true" 
+						android:background="@drawable/main_page_friend_alarm_badge" 
+						android:text="100" 
+						android:textColor="@color/white" 
+						android:textSize="12sp" 
+						android:textStyle="bold" />
+				</RelativeLayout>
+					
+				<TextView android:id="@+id/friends_function_textview"
+					style="@style/main_function_icon_text" 
+					android:text="@string/main_page_friends" />
+			</LinearLayout>
+			
+			<!-- Profile Function Layout -->
+			<LinearLayout android:id="@+id/profile_function_layout"
+				style="@style/main_function_icon_linearlayout" >
+				
+				<ImageView android:id="@+id/profile_function_imageview"
+					style="@style/main_function_icon_image" 
+					android:background="@drawable/main_page_profile" 
+					android:paddingLeft="8dp" 
+					android:paddingRight="55dp" 
+					android:paddingTop="33dp" 
+					android:paddingBottom="11dp" 
+					android:src="@drawable/avatar_loading" />
+					
+				<TextView android:id="@+id/profile_function_textview"
+					style="@style/main_function_icon_text" 
+					android:text="小苗苗苗苗苗苗苗" 
+					android:paddingLeft="14dp"/>
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+	<!-- Media Layout -->
+	<FrameLayout android:id="@+id/main_page_media_layout" 
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent" 
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:paddingTop="8dip" 
+		android:paddingBottom="8dip" 
+		android:background="@drawable/main_page_photo_area" >
+
+		<!--  Media Gallery -->
+		<Gallery android:id="@+id/media_gallery" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" >
+		</Gallery>
+
+	</FrameLayout>
+	
+	<!-- Notification Layout -->	
+	<include android:id="@+id/notification_layout" layout="@layout/notification_bar" />
+		
+</LinearLayout>

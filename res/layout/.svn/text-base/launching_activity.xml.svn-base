@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fanwave_background" 
+    android:weightSum="10" >
+    
+    <FrameLayout android:layout_width="fill_parent" 
+			android:layout_height="0dip" 
+			android:layout_weight="2"
+			android:gravity="bottom" />
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="0dip" 
+		android:layout_weight="7" 
+		android:orientation="vertical" 
+		android:layout_marginBottom="20dp" 
+		android:gravity="center_horizontal|bottom">
+		
+		<ImageView 
+			android:layout_width="200dp" 
+			android:layout_height="90dp" 
+			android:src="@drawable/fanwave_logo_large" 
+			android:scaleType="fitXY" />
+	    
+	    <!-- Footprint Image Views -->
+	    <ImageView android:id="@+id/footprint_100"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="9dip"
+	    	android:background="@drawable/foot_100"
+	    	android:visibility="invisible"  />
+	    	
+	    	<ImageView android:id="@+id/footprint_80"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="13dip"
+	    	android:background="@drawable/foot_80" 
+	    	android:visibility="invisible" />
+	    	
+	    	<ImageView android:id="@+id/footprint_60"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="17dip"
+	    	android:background="@drawable/foot_60" 
+	    	android:visibility="invisible" />
+	    	
+	    	<ImageView android:id="@+id/footprint_40"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="24dip"
+	    	android:background="@drawable/foot_40" 
+	    	android:visibility="invisible" />
+	    
+	    <ImageView android:id="@+id/footprint_20"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="28dip"
+	    	android:background="@drawable/foot_20"
+	    	android:visibility="invisible" 
+	    	android:layout_marginBottom="50dp" 	/>
+	    	
+	    	<TextView android:id="@+id/loading_anim_activity_percent"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:maxHeight="50dp" 
+			android:text="85%"
+			android:textSize="40sp" 
+			android:textColor="@color/orange" 
+			android:textStyle="bold" 
+			android:gravity="center" />
+			
+	    	<TextView android:id="@+id/loading_anim_activity_state"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:maxHeight="24dp" 
+			android:text="@string/app_launching"
+			android:textSize="14sp" 
+			android:textColor="@color/orange" 
+			android:gravity="center" 
+			android:layout_marginTop="10dp" />
+	</LinearLayout>
+    
+	<FrameLayout android:layout_width="fill_parent" 
+			android:layout_height="0dip" 
+			android:layout_weight="1"
+			android:gravity="bottom" />
+	
+</LinearLayout>

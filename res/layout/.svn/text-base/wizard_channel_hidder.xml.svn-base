@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/fanwave_background_white" >
+	
+		<!-- Title Bar Layout -->
+		<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+			
+			<RelativeLayout android:id="@+id/title_sense_region"
+                style="@style/title_bar_sense_region">
+                <!-- Title Image View -->
+                <ImageView android:id="@+id/title_imageview"
+                style="@style/title_bar_image" />
+                
+                <!-- Title Text View -->	
+                <TextView android:id="@+id/title_textview"
+				style="@style/title_bar_text"
+				android:text="@string/guides_program_setting_channelhidder" />
+            </RelativeLayout>
+			
+
+			<!-- Setting Button -->
+			<ImageButton android:id="@+id/setting_imagebutton" 
+				style="@style/title_bar_next"
+				android:src="@drawable/select_all" />
+				
+		</RelativeLayout>	
+	
+    
+	
+		
+		
+		<!-- focus and actives List view -->
+		<ListView android:id="@+id/wizard_hidder_list_listview"
+			android:layout_width="fill_parent" 
+			android:layout_height="0dp"
+			android:layout_weight="1" 
+			android:cacheColorHint="#00000000" />
+		
+		<RelativeLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="60dp" 
+			android:padding="10dp" 
+			android:background="@drawable/wizard_bar" >
+			
+			<!-- Prevoius Button -->	
+			<Button android:id="@+id/wizard_pre_button"
+				android:layout_width="100dip"
+				android:layout_height="40dip"
+				android:text="@string/wizard_pre_step"
+				android:textSize="@dimen/wizard_button_textsize"
+				android:textColor="@color/white"
+				android:background="@drawable/login_signin_selector" 
+				android:layout_marginLeft="40dp" 
+				android:layout_alignParentLeft="true" 
+				android:paddingLeft="10dp" 
+				android:drawableLeft="@drawable/pre_arrow" 
+				android:drawablePadding="-16dp" />
+				
+			<!-- Next Button -->	
+			<Button android:id="@+id/wizard_next_button"
+				android:layout_width="100dip"
+				android:layout_height="40dip" 
+				android:layout_marginLeft="20dp" 
+				android:text="@string/wizard_next_step"
+				android:textSize="@dimen/wizard_button_textsize"
+				android:textColor="@color/white"
+				android:background="@drawable/login_signin_selector" 
+				android:layout_marginRight="40dp" 
+				android:layout_alignParentRight="true" 
+				android:paddingRight="10dp" 
+				android:drawableRight="@drawable/next_arrow" 
+				android:drawablePadding="-16dp" />
+			
+		</RelativeLayout>
+	
+</LinearLayout>

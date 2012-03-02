@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Application -->
+    <string name="app_name">Fanwave</string>
+    <string name="app_close_no_internet">抱歉，無法偵測到網路連線，請檢查網路狀態。</string>
+    <string name="app_message">訊息</string>
+    <string name="app_server_error">伺服器忙碌中，請稍候...</string>
+    <string name="app_setting" >設定</string>
+    <string name="app_use_default" >使用預設值？</string>
+    <string name="app_search_no_result">沒有符合的結果</string>
+    <string name="app_launching">Fanwave準備中，請稍候...</string>
+    <string name="app_shut_down">Fanwave 於2012年1月1日起停止服務,感謝您的支持與參與!
+再次謝謝所有的粉威們!</string>
+    
+    <!-- Tutorial -->
+    <string name="tutorial_buttom">開始探索 Fanwave !</string>
+    <string name="tutorial_skip">跳過教學</string>
+    
+    <!-- Actions -->
+    <string name="action_loading">載入中.....</string>
+    <string name="action_setting">設定中.....</string>
+    <string name="action_sending">傳送中.....</string>
+    <string name="action_saving">儲存中.....</string>
+    <string name="action_update_successfully">更新成功</string>
+    <string name="action_setting_failed">設定失敗</string>
+    <string name="action_confirm">確定</string>
+    <string name="action_modify">修改</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_remove">刪除</string>
+    <string name="action_logout">登出</string>
+    <string name="action_ignore">忽略</string>
+    <string name="action_search">搜尋</string>
+    <string name="action_link">連結</string>
+    <string name="action_retry">重試</string>
+    <string name="action_splash">潑</string>
+    <string name="action_refresh">立即更新</string>
+    
+    <!-- Country -->
+    <string name="country_tw">台灣</string>
+    
+    <!-- Login -->
+    <string name="login_new_account">註冊 Fanwave 帳號</string>
+    <string name="login_facebook_account">使用 Facebook 帳號登入</string>
+    <string name="login_fanwave_account">使用 Fanwave 帳號登入</string>
+    <string name="login_email">電子郵件</string>
+    <string name="login_password">輸入密碼</string>
+    <string name="login_forgot">忘記密碼?</string>
+    <string name="login_sign_in">登入</string>
+    <string name="login_email_required">請填入電子郵件</string>
+    <string name="login_password_required">請填入密碼</string>
+    <string name="login_submitting">登入中...</string>
+    <string name="login_wrong_data">帳號或密碼錯誤</string>
+    <string name="login_send_password_success">密碼已寄至您的電子信箱</string>
+    <string name="login_send_password_invalid">查無此帳號</string>
+    <string name="login_send_password_failure">密碼寄送失敗，請重試一次</string>
+    
+    <string name="signup_confirmation">密碼確認</string>
+    <string name="signup_name">用戶名稱</string>
+    <string name="signup_sign_up">註冊</string>
+	<string name="sign_up_err_email">請輸入您的 Email</string>
+	<string name="sign_up_err_password_null">請輸入您的密碼</string>
+	<string name="sign_up_err_password">密碼錯誤</string>
+	<string name="sign_up_err_password_match">舊密碼不符</string>
+	<string name="sign_up_err_new_password_match">新密碼不符</string>
+	<string name="sign_up_err_password_length">密碼長度不足，請輸入 4 位以上字母或數字</string>
+	<string name="sign_up_err_nickname_null">請輸入您的名稱</string>
+	<string name="sign_up_err_nickname">請最少輸入兩個中文字</string>
+	<string name="sign_up_err">Email已存在</string>
+	<string name="sign_up_successfully">密碼已傳至您的Email</string>	
+	<string name="sign_up_failed">失敗!請再試一次</string>
+    <string name="sign_up_password_hint">4 位以上字母或數字</string>
+    <string name="sign_up_confirmation_hint">請再次輸入您的密碼</string>
+	<string name="sign_up_nickname_hint">希望別人如何稱呼您？</string>   
+	
+    <!-- Main Page -->
+    <string name="main_page_waves">動態</string>
+    <string name="main_page_guides">指南</string>
+	<string name="main_page_hot">熱門</string>
+	<string name="main_page_splash">潑水</string>
+	<string name="main_page_friends">朋友</string>
+	<string name="main_page_notification">公告</string>
+    <string name="main_page_no_notification">無最新公告</string>
+	<string name="main_page_notification_fanwave">粉威公告</string>
+	<string name="main_page_account_title">帳號</string>
+	<string name="main_page_account_help">粉威服務中心</string>
+	<string name="main_page_account_settings">帳號設定</string>
+	<string name="main_page_account_about">關於 Fanwave</string>
+	<string name="main_page_account_logout">登出</string>
+	<string name="main_page_account_logout_message">您確定要登出此帳號嗎？</string>
+	<string name="main_page_account_settings_oldpassword">原密碼</string>
+	<string name="main_page_account_settings_newpassword">新密碼</string>
+	<string name="main_page_account_settings_confirm">再次輸入</string>
+	<string name="main_page_account_settings_update">更新</string>	
+    <string name="main_page_account_settings_sound">聲音效果</string>
+    <string name="main_page_account_settings_sound_notification">通知</string>
+	<string name="main_page_account_settings_gaincredits">獲得分數</string>
+	<string name="main_page_account_settings_privacy">隱私權設定</string>
+	<string name="main_page_account_settings_socialnetwork">社群網路</string>
+	<string name="main_page_account_settings_username">使用者名稱</string>
+	<string name="main_page_account_settings_password">設定密碼</string>
+	<string name="main_page_account_settings_tutorial">再次啟動教學頁面</string>
+	<string name="main_page_account_settings_tutorial_title">再次觀看教學頁面嗎?</string>
+	<string name="main_page_account_settings_tutorial_detail">教學頁面將會在首頁，進入節目及觀看檔案時再顯示一次</string>
+	<string name="main_page_account_settings_tutorial_button">再次啓動</string>
+	<string name="main_page_account_settings_tutorial_resetok">重置成功</string>
+	
+    <!-- Privacy -->
+    <string-array name="privacy_array">
+    	<item>潑水</item>
+    	<item>提醒列表</item>
+    	<item>Email</item>
+    	<item>生日</item>
+    	<item>Facebook</item>
+    	<item>性別</item>
+    </string-array>
+    
+    <string-array name="privacy_values_array">
+    	<item>公開</item>
+    	<item>只限朋友</item>
+    	<item>隱藏</item>
+    </string-array>
+    
+    <string-array name="privacy_values_birthday_array">
+    	<item>顯示全部</item>
+    	<item>不顯示年</item>
+    	<item>隱藏</item>
+    </string-array> 
+    
+	
+    <!-- Waves -->
+	<string name="waves_all">所有動態</string>
+	<string name="waves_friend">朋友動態</string>
+    <string name="waves_follow">追蹤動態</string>
+    <string name="waves_no_more">沒有更多動態</string>
+    <string name="waves_menu_refresh">立即更新動態</string>
+    <string name="waves_no_result_all">還沒有動態嗎？快去到處逛逛簽到留言吧！</string>
+    <string name="waves_no_result_friends">尚無朋友動態，快去認識大家吧！</string>
+    <string name="waves_no_result_follow">尚無追蹤節目動態，快去追蹤您喜愛的節目吧！</string>
+    
+    <!-- Guides -->
+    <string name="guides_epg">節目表</string>
+    <string name="guides_focus">強檔推薦</string>
+    <string name="guides_actives">熱門活動</string>
+    <string name="guides_noprogram">沒有資料</string>
+    <string name="guides_no_recommend">暫無強檔推薦節目</string>
+    <string name="guides_no_activity">暫無熱門活動</string>
+    <string name="guides_epg_setting">節目表設定</string>
+    <string name="guides_provider_country">請選擇國家</string>
+    <string name="guides_provider_ciy">請選擇城市</string>
+    <string name="guides_provider_zip">請選擇地區</string>
+    <string name="guides_provider_mso">請選擇第四台</string>
+    <string name="guides_program_reminder_set">設定提醒</string>
+    <string name="guides_program_reminder_modify">修改提醒</string>
+    <string name="guides_program_setting_myprovider">我的第四台</string>
+    <string name="guides_program_setting_channelreorder">頻道順序</string>
+    <string name="guides_program_setting_channelhidder">頻道顯示清單</string>
+    <string name="guides_program_setting_changemsg_title">變更第四台設定</string>
+    <string name="guides_program_setting_changemsg">變更你的第四台設定將會重置你所設定的頻道順序與顯示清單。確定要變更嗎？</string>
+    <string name="guides_program_setting_region">國家</string>
+    <string name="guides_program_setting_zipcode">分區</string>
+    <string name="guides_program_setting_provider">第四台選擇</string>
+    <string name="guides_program_follow">加入追蹤</string>
+    <string-array name="timeaialog_array">
+    	<item>選擇日期</item>
+    	<item>選擇時間</item>
+    	<item>現在</item>
+    </string-array>
+    <string-array name="timeaialog_pgbych_array">
+    	<item>選擇日期</item>
+    	<item>現在</item>
+    </string-array>
+    
+    
+    <!-- Friends -->
+    <string name="friend_status">朋友狀態</string>
+    <string name="friend_request">交友邀請</string>
+    <string name="friend_find">搜尋朋友</string>
+    <string name="friend_online">線上朋友</string>
+    <string name="friend_offline">離線朋友</string>
+    <string name="friend_no_online">無上線朋友</string>
+    <string name="friend_no_offline">無離線朋友</string>
+    <string name="friend_no_friends">尚無朋友，快去認識大家吧！</string>
+    <string name="friend_no_request">無朋友邀請</string>
+    
+    <!-- Friends Search -->
+    <string name="friend_search_nickname_title">搜尋Fanwave使用者</string>
+    <string name="friend_search_nickname_hint">片段或完整的使用者名稱</string>
+    <string name="friend_search_title">搜尋結果</string>
+    <string name="friend_search_friend_title">我的朋友</string>
+    <string name="friend_search_nonfriend_title">尚未成為朋友</string>
+    
+    <!-- Personal -->
+	<string name="personal_action_invite">朋友</string>
+    <string name="personal_action_accept">接受</string>
+    <string name="personal_action_inviting">已邀請</string>
+    <string name="personal_action_follow">追蹤</string>
+    <string name="personal_action_unfollow">取消追蹤</string>
+    <string name="personal_mood_title">我的心情</string>
+    <string name="personal_mood_update_failed">更新心情失敗</string>
+    <string name="personal_remove_friend_description">你確定要刪除這位好友嗎？</string>
+    <string name="personal_remove_follow_description">你確定要取消追蹤這個節目嗎？</string>
+    <string name="personal_view_badge_failed">徽章資訊取得失敗，請再試一次</string>
+    <string name="personal_no_result_waves" >目前沒有動態</string>
+    <string name="personal_no_result_badges" >查無徽章資料</string>
+    <string name="personal_no_result_friends" >目前沒有朋友</string>
+    <string name="personal_no_result_follows" >尚未追蹤節目</string>
+    <string name="personal_no_result_reminders" >尚未設定提醒</string>
+    <string name="personal_no_result_self_waves" >目前沒有動態，快加入節目討論吧!</string>
+    <string name="personal_no_result_self_friends" >尚無朋友，快去認識大家吧！</string>
+    <string name="personal_friend_common">共同朋友</string>
+    <string name="personal_friend_uncommon">非共同朋友</string>
+    <string name="personal_follow_common">共同追蹤的節目</string>
+    <string name="personal_follow_uncommon">未共同追蹤的節目</string>
+    <string name="personal_reminder_common">共同設定提醒</string>
+    <string name="personal_reminder_uncommon">未共同設定提醒</string>
+    
+    <!-- Personal Extra Info -->
+    <string name="personal_extrainfo_about">關於 </string>
+    <string name="personal_extrainfo_upload_title">最新上傳照片</string>
+    <string name="personal_extrainfo_segment_detail">個人資訊</string>
+    <string name="personal_extrainfo_segment_intro">自我介紹</string>
+    <string name="personal_extrainfo_segment_link">相關連結</string>
+    <string name="personal_extrainfo_detail_email">Email</string>
+    <string name="personal_extrainfo_detail_gender">性 別</string>
+    <string name="personal_extrainfo_detail_birth">生 日</string>
+    <string name="personal_extrainfo_detail_loaction">所 在</string>
+    <string name="personal_extrainfo_modify_failed">修改個人資訊失敗</string>
+    <string name="extrainfo_gender_male">男</string>
+    <string name="extrainfo_gender_female">女</string>
+    <string name="extrainfo_location_title">位置</string>
+    <string name="extrainfo_locating">定位中.....</string>
+    <string name="extrainfo_link_blog_update">更新Blog</string>
+    <string name="extrainfo_link_website_update">更新個人網站</string>
+    <string name="extrainfo_link_blog">部落格</string>
+    <string name="extrainfo_link_website">個人網站</string>
+    <string name="extrainfo_no_result_intro" >尚未新增自我介紹</string>
+    <string name="extrainfo_no_result_self_intro" >點選以新增自我介紹</string>
+	
+    <string-array name="extrainfo_avatar_array">
+    	<item>立即拍照</item>
+    	<item>從相簿選擇</item>
+    	<item>使用Facebook大頭照</item>
+    </string-array>
+    <string-array name="extrainfo_blog_array">
+    	<item>更新 Blog</item>
+    	<item>前往 Blog</item>
+    </string-array>
+    <string-array name="extrainfo_website_array">
+    	<item>更新個人網頁</item>
+    	<item>前往個人網頁</item>
+    </string-array>
+    
+    <!-- Badge -->
+    <string name="badge_activity">活動徽章</string>
+    <string name="badge_system">Fanwave徽章</string>
+    <string name="badge_program">節目徽章</string>
+    <string name="badge_title">徽章</string>
+    <string name="badge_wear">配戴</string>
+    <string name="badge_wear_failed">配戴失敗</string>
+    <string name="badge_program_earned_title">您在下列節目中獲得此徽章</string>
+    <string name="badge_program_no_result">尚未在任何節目中獲得此徽章</string>
+    
+    <!-- Feed Row -->
+    <string name="feed_row_wave_in">簽到</string>
+    <string name="feed_row_like_comment">讚了</string>
+    <string name="feed_row_for">為</string>
+    <string name="feed_row_set_reminder">設定節目提醒</string>
+    <string name="feed_row_earn">獲得徽章</string>
+    <string name="feed_row_in">在</string>
+    <string name="feed_row_topfan">成為粉絲教主</string>
+    
+    <!-- Program -->
+    <string name="program_loading">載入節目資訊中，請稍等...</string>
+    <string name="program_views">人次</string>
+    <string name="program_follow_success">追蹤成功</string>
+    <string name="program_follow_failed">追蹤失敗</string>
+    <string name="program_unfollow_success">取消追蹤成功</string>
+    <string name="program_unfollow_failed">取消追蹤失敗</string>
+    <string name="program_no_comments">無任何留言</string>
+    <string name="program_comment_no_more">沒有更多留言了</string>
+    <string name="program_notify_joining">加入聊天中，請稍候...</string>
+    <string name="program_notify_sending">傳送發言中，請稍候...</string>
+    <string name="program_notify_retry">加入失敗，立即重試？</string>
+    <string name="program_notify_reconnect">連線中斷，重新連線中，請稍候...</string>
+    <string name="program_rating">評分</string>
+    <string name="program_rating_send" >送出</string>
+    <string name="program_rating_sucess">評分成功</string>
+    <string name="program_rating_fail" >評分失敗，再試一次?</string>
+    <string name="program_wavein" >簽到</string>
+    <string name="program_wavein_success" >簽到成功</string>
+    <string name="program_wavein_fail" >簽到失敗，再試一次?</string>
+    <string name="program_sofa_list_title">朋友沙發列表</string>
+    <string name="program_sofa_no_friends">節目中沒有您的朋友，邀請他們一塊來聊天吧。</string>
+    <string-array name="program_splash_array">
+    	<item>潑粉絲</item>
+    	<item>潑朋友</item>
+    </string-array>
+    
+    <!-- Program Search -->
+    <string name="program_search_title">搜尋節目</string>
+    <string name="program_search_hint">節目名稱</string>
+    <string name="program_search_follows">追蹤的節目</string>
+    <string name="program_search_unfollows">尚未追蹤的節目</string>
+    
+	<!-- Hot -->
+	<string name="hot_now">熱映中</string>
+	<string name="hot_weekly">本週排行</string>
+	<string name="hot_upcoming">眾所期待</string>
+    <string name="hot_no_result_now" >喔喔...現在沒有討論中的節目...快進入您正收看的節目，和大家討論分享吧!</string>
+    <string name="hot_no_result_weekly" >沒有本週最熱門節目的清單。</string>
+    <string name="hot_no_result_upcoming" >目前沒有最受期待的節目清單。</string>
+    
+	<!-- Top Fan -->
+	<string name="topfan_credit">粉威積分</string>
+	<string name="topfan_wavein">簽到次數</string>
+	<string name="topfan_comments">留言次數</string>
+	<string name="topfan_rank">粉絲排名</string>
+	<string name="topfan_more">更多粉絲</string>
+	<string name="topfan_be_on_top">成為粉絲教主</string>
+	<string name="topfan_be_on_top_title">如何成為</string>
+	<string name="topfan_be_on_top_topfan">粉絲教主</string>
+	<string name="topfan_be_on_top_message">增加你在節目的分數就可以提高排名</string>
+	<string name="topfan_be_on_top_follow">追蹤這個節目是一定要的</string>
+	<string name="topfan_be_on_top_share">為節目評分也會增加不少分數</string>
+	<string name="topfan_be_on_top_wavein">三不五時簽到，分數就會穩定往上升</string>
+	<string name="topfan_be_on_top_comment">精闢的留言是得到分數最好的方法</string>
+	<string name="topfan_be_on_top_like">多賺一點讚，分數加的快;也不要忘了讚別人的留言</string>
+	<string name="topfan_no_result">尚無其他粉絲</string>
+	
+    
+	<!-- Comment -->
+	<string name="comment_like">讚</string>
+	<string name="comment_dislike">噓</string>
+	<string name="comment_title">評論</string>
+	<string name="comment_409">您已經對此發言表示過看法囉！</string>
+	<string name="comment_join">進入</string>
+    
+    
+    <!-- Program Extra Info -->
+    <string name="program_extrainfo_segment_reminder">節目提醒</string>
+    <string name="program_extrainfo_segment_intro">節目介紹</string>
+    <string name="program_extrainfo_segment_link">節目連結</string>
+    
+    <!-- Attachment -->
+    <string name="attach_finish">完成！</string>
+    <string name="attach_failed">失敗！</string>
+    <string name="attach_refuse">只能分享一個附件</string>
+    <string name="attach_title">新增附件</string>
+    <string name="attach_pending">附件尚未送出，確定要離開？</string>
+    <string name="attach_link_add">附加連結</string>
+    <string name="attach_link_uploading">上傳連結中....</string>
+    <string name="attach_link_failed">上傳連結失敗，請再試一次</string>
+    <string name="attach_image_add">附加圖片</string>
+    <string name="attach_image_failed">上傳照片失敗，請再試一次</string>
+    <string name="attach_fetch_image_failed">存取圖片失敗，請再試一次</string>
+    <string-array name="attach_image_array">
+    	<item>上傳連結</item>
+    	<item>立即拍照</item>
+    	<item>從相簿選擇</item>
+    </string-array>
+    <string-array name="reattach_image_array">
+    	<item>刪除附件</item>
+    	<item>重新拍照</item>
+    	<item>重新從相簿選擇</item>
+    </string-array>
+    
+    <!-- Message Poster -->
+    <string name="message_poster_post">送出</string>
+    <string name="message_poster_comment">發表意見....</string>
+    <string name="message_poster_no_content">說些什麼吧...</string>
+    
+	<!-- Number -->
+	<string name="first">第一個</string>
+	<string name="second">第二個</string>
+	<string name="third">第三個</string>
+	<string name="fourth">第四個</string>
+	
+	<!-- Time  -->
+	<string name="time_today">今天</string>
+	<string name="time_yesterday">昨天</string>
+	<string name="time_monday">(一)</string>
+	<string name="time_tuesday">(二)</string>
+	<string name="time_wednesday">(三)</string>
+	<string name="time_thursday">(四)</string>
+	<string name="time_friday">(五)</string>
+	<string name="time_saturday">(六)</string>
+	<string name="time_sunday">(日)</string>
+    <string name="month">月</string>
+    <string name="week">週</string>
+    <string name="day">日</string>
+    <string name="hour">小時</string>
+    <string name="minute">分鐘</string>
+    
+    <!-- Reminder -->
+    <string name="reminder_title">節目提醒</string>
+    <string name="reminder_sync_description">節目提醒與此帳號的伺服器端資料不符，您要同步伺服器上的節目提醒資料嗎？</string>
+    <string name="reminder_set">設定</string>
+    <string name="reminder_modify">修改</string>
+    <string name="once">單次</string>
+    <string name="daily">每日</string>
+    <string name="weekday">平日 (週一至週五)</string>
+    <string name="weekly">每週</string>
+    <string name="monthly">每月</string>
+    <string name="yearly">每年</string>
+    <string name="remind_prompt">提醒時間</string>
+    <string name="recurrence_prompt">重複頻率</string>
+    <string-array name="remind_array">
+    	<item>5分鐘</item>
+    	<item>15分鐘</item>
+    	<item>30分鐘</item>
+    	<item>1小時</item>
+    	<item>2小時</item>
+    </string-array>
+    <string-array name="recurrence_array">
+    	<item>單次</item>
+    	<item>每週同時</item>
+    	<item>週一至週五</item>
+    </string-array>
+    
+    <!-- Facebook -->
+    <string name="fb_sign_email">請再次輸入任一您使用的Email信箱以完成認證</string>
+    <string name="fb_sign_email_invalid">電子信箱無效，請重新輸入</string>
+    <string name="fb_sign_email_fail">註冊電子信箱失敗，請重新嘗試</string>
+    <string name="fb_link_request">使用此功能必須連結Facebook，是否立刻連結Facebook？</string>
+    <string name="fb_friend_title">邀請Facebook朋友</string>
+    <string name="fb_friend_in_app_title">Fanwave上的朋友</string>
+    <string name="fb_friend_non_app_title">尚未使用Fanwave的朋友</string>
+    <string name="fb_friend_invite_all_title">邀請所有朋友使用Fanwave</string>
+    <string name="fb_friend_invite_all">確定邀請所有Facebook朋友使用Fanwave?</string>
+    <string name="fb_friend_invite">邀請</string>
+    <string name="fb_post_wave_in">在Fanwave簽到</string>
+    <string name="fb_post_comment_in">在</string>
+    <string name="fb_post_comment_say">說</string>
+    <string name="fb_post_invite">一起來聊電視節目吧^__^</string>
+    <string name="fb_friend_no_result">未取得Facebook朋友</string>
+    
+    <!-- wizard -->
+    <string name="wizard_email_submit">送出</string>
+	<string name="wizard_intro_msg">設定精靈將協助您快速設定Fanwave，過程約需一分鐘</string>
+	<string name="wizard_intro_cancel">略過</string>
+	<string name="wizard_intro_start">開始</string>
+	<string name="wizard_location_title">請設定您所在區域</string>
+	<string name="wizard_location_country">台灣</string>
+	<string name="wizard_location_city">城市</string>
+	<string name="wizard_location_city_default">台北市</string>
+	<string name="wizard_location_postname">區域</string>
+	<string name="wizard_location_postname_default">內湖區</string>	
+	<string name="wizard_pre_step">上一步</string>
+	<string name="wizard_next_step">下一步</string>
+	<string name="wizard_finish">完成</string>
+	<string name="wizard_back">您是否要套用預設 </string>
+	<string name="wizard_back_1"> 進入Fanwave</string>
+	
+	<!-- Splash -->
+	<string name="splash_title_bar_text">潑水記錄</string>
+	<string name="splash_friend_title">選擇潑水對象</string>
+	<string name="splash_check_privacy">潑水權限檢查中...</string>
+	<string name="splash_privacy_friend">僅限朋友</string>
+	<string name="splash_privacy_none">不開放</string>
+	<string name="splash_friend_search_hint">輸入朋友名稱</string>
+	<string name="splash_group_friend_title">個朋友</string>
+	<string name="splash_group_follower_title">個粉絲</string>
+	<string name="splash_user_failed">潑水失敗</string>
+	<string name="splash_user_required">請選擇潑水對象</string>
+	<string name="splash_no_history">沒有潑水紀錄</string>
+	
+	<!-- About -->
+	<string name="about_title">關於 Fanwave</string>
+	<string name="about_email_message_1">使用者回應 </string>
+	<string name="about_email_message_2">Fanwave 團隊, \n\n\n\n\n我正使用:</string>
+	<string name="about_email_message_3">\n\n\n從我的</string>
+	<string name="about_email_message_4">傳送</string>
+	<string name="about_email_message_Attention">我的系統 : </string>
+	<string name="about_message_1"> 奇想創意 版權所有 @ 2011 Wildmind Corp. \n All Rights Reserved. </string>
+	<string name="about_message_2">本應用程式所呈現的頻道與節目相關資訊 \n 及圖片，均為原合法權力人所有。</string>
+	<string name="about_contactus_btn">連絡我們</string>
+	
+	<!-- Notification -->
+	<string name="notification_friend_request_constant">希望成為你的朋友</string>
+	<string name="notification_friend_accept_constant">接受了你的交友邀請</string>
+	<string name="notification_splash_topfan_constant">潑了你：</string>
+	<string name="notification_splash_constant">剛剛潑了你：</string>
+	<string name="notification_like_and">及</string>
+	<string name="notification_like_other">其他</string>
+	<string name="notification_like_people">人</string>
+	<string name="notification_like_constant">喜歡你在</string>
+	<string name="notification_like_comment">的留言：</string>
+	
+</resources>

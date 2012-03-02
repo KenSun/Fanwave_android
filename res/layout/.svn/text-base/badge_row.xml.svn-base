@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:minHeight="72dp" 
+	android:orientation="vertical" >
+	
+	<!-- Badge Content Layout -->
+	<LinearLayout android:id="@+id/content_layout"
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp" >
+	
+		<!-- Badge Image View -->
+		<ImageView android:id="@+id/badge_imageview" 
+			android:layout_width="60dip" 
+			android:layout_height="60dip" 
+			android:src="@drawable/badge_loading" 
+			android:scaleType="fitXY" />
+	
+		<!-- Content Layout -->
+		<LinearLayout android:id="@+id/content_layout"
+			android:layout_width="0dip" 
+			android:layout_height="wrap_content" 
+			android:layout_weight="4" 
+			android:orientation="vertical" 
+			android:layout_marginLeft="12dip" 
+			android:layout_marginBottom="4dip" 
+			android:gravity="center"
+			android:layout_gravity="center" >
+					
+			<!-- Title Text View -->
+			<TextView android:id="@+id/title_textview"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:text="Title" 
+				android:textColor="@color/light_gray" 
+				android:textSize="15sp" 
+				android:textStyle="bold" />
+		
+			<!-- Description Text View -->
+			<TextView android:id="@+id/description_textview"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:text="description" 
+				android:textColor="@color/mood_color" 
+				android:textSize="10sp" />
+				
+		</LinearLayout>
+				
+		<!-- Action Layout -->
+		<FrameLayout android:id="@+id/action_layout"
+			android:layout_width="0dp"
+			android:layout_weight="2"
+			android:layout_height="fill_parent" >
+			
+			<!-- Progress Text View -->
+			<TextView android:id="@+id/progress_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="100%"
+				android:textSize="14sp"
+				android:textColor="@color/orange"
+				android:layout_gravity="center" />
+				
+			<!-- Wear Button -->
+			<Button android:id="@+id/wear_button"
+				android:layout_width="66dp"
+				android:layout_height="32dp"
+				android:background="@drawable/button_selector"
+				android:text="@string/badge_wear"
+				android:textSize="14sp"
+				android:textColor="@drawable/color_light_brown_white_selector"
+				android:layout_gravity="center"
+				android:focusable="false" />
+			
+		</FrameLayout>	
+		
+	</LinearLayout>	
+	
+	<!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />	
+		
+</LinearLayout>

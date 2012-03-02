@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobileware_tvguide/!svn/ver/5154/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/feed
+END
+FeedListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mobileware_tvguide/!svn/ver/5154/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/feed/FeedListAdapter.java
+END
+FeedParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mobileware_tvguide/!svn/ver/4046/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/feed/FeedParser.java
+END
+Feed.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/mobileware_tvguide/!svn/ver/4046/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/feed/Feed.java
+END
+GainBadgeFeed.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mobileware_tvguide/!svn/ver/4705/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/feed/GainBadgeFeed.java
+END
+SetReminderFeed.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mobileware_tvguide/!svn/ver/4705/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/feed/SetReminderFeed.java
+END
+CommentFeed.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mobileware_tvguide/!svn/ver/4826/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/feed/CommentFeed.java
+END
+ThumbCommentFeed.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/mobileware_tvguide/!svn/ver/4826/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/feed/ThumbCommentFeed.java
+END
+TopfanFeed.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mobileware_tvguide/!svn/ver/4705/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/feed/TopfanFeed.java
+END
+WaveinFeed.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mobileware_tvguide/!svn/ver/4705/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/feed/WaveinFeed.java
+END
+FeedManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mobileware_tvguide/!svn/ver/4117/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/feed/FeedManager.java
+END

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"    
+	android:layout_width="fill_parent"   
+	android:layout_height="50dp"
+	android:paddingTop="10dp" >  		       	  	         
+	
+	<LinearLayout android:id="@+id/guide_layout"
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="5dp">
+		
+		
+		<TextView android:id="@+id/channel_id_textview" 
+			android:layout_width="30dp" 
+			android:layout_height="fill_parent"
+			android:text="065" 
+			android:textColor="@color/gray" 
+			android:textSize="12sp" 
+			android:gravity="center" />
+			
+		<ImageView android:id="@+id/channel_icon_imageview" 
+			android:layout_width="80dp" 
+			android:layout_height="fill_parent"  
+			android:gravity="center" 
+			android:scaleType="fitXY" />
+		
+		<TextView android:id="@+id/channel_title_textview" 
+			android:layout_width="0dp" 
+			android:layout_height="fill_parent" 
+			android:layout_weight="1" 
+			android:paddingLeft="4dp" 
+			android:text="TV Program" 
+			android:textColor="@color/gray" 
+			android:textSize="12sp" 
+			android:gravity="center_vertical" />
+		
+
+		<CheckBox android:id="@+id/channel_select_checkbox" 
+			android:layout_width="50dp" 
+			android:layout_height="40dp" 
+			android:button="@drawable/guide_checkbox" />
+	</LinearLayout>
+	
+	<!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview"
+		android:layout_height="2dp"
+		android:layout_width="fill_parent"
+		android:layout_marginTop="5dp"
+		android:src="@drawable/guide_line" 
+		android:scaleType="fitXY" />
+	
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	
+	<RelativeLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="60dp" 
+		android:paddingTop="4dip" 
+		android:paddingBottom="2dip" 
+		android:paddingLeft="10dip" 
+		android:paddingRight="10dip" 
+		android:background="@color/white" 
+		android:gravity="center_vertical">
+        
+		<TextView android:id="@+id/socailnetwork_title_textview" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical" 
+        android:text="Facebook" 
+        android:textColor="@color/orange" 
+        android:textSize="20sp"
+        android:textStyle="bold" />
+        
+		<TextView android:id="@+id/socialnetwork_value_textview" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical" 
+        android:text="username" 
+        android:textColor="@color/gray" 
+        android:textSize="14sp" 
+        android:layout_marginTop="2dp" 
+        android:layout_below="@+id/socailnetwork_title_textview" />
+        
+		<ToggleButton android:id="@+id/socialnetwork_toggle_button" 
+        android:layout_width="60dip" 
+        android:layout_height="50dp" 
+        android:text="ToggleButton" 
+        android:layout_marginLeft="25dip" 
+        android:layout_alignParentRight="true"  />
+	</RelativeLayout>
+
+
+</LinearLayout>

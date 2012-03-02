@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" >
+	
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:weightSum="1" >
+		
+		<!-- Channel Layout -->
+		<LinearLayout android:id="@+id/channel_layout"
+			android:orientation="vertical"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:gravity="center" 
+			android:paddingBottom="4dp">
+			
+		<!-- Channel Image View -->
+		<ImageView android:id="@+id/channel_imageview"
+			android:layout_width="55dp"
+			android:layout_height="30dp"
+			android:scaleType="fitCenter" />
+		
+		<!-- Channel Text View -->	
+		<TextView android:id="@+id/channel_textview"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="cnn"
+			android:textColor="@color/mood_color"
+			android:textSize="10dp" />
+			
+		</LinearLayout>
+		
+		<!-- Vertical Divider Image View -->
+		<ImageView android:id="@+id/vertical_divider_imageview" style="@style/list_divider_vertical" />
+		
+		<!-- Title Layout -->
+		<LinearLayout android:id="@+id/content_layout"
+			android:orientation="vertical"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content" 
+			android:gravity="center_vertical" 
+			android:layout_gravity="center"
+			android:paddingLeft="8dp" >
+			
+			<!-- Title Text View -->
+			<TextView android:id="@+id/title_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Season 1"
+				android:textColor="@color/orange"
+				android:textSize="14sp" 
+				android:layout_marginBottom="2dp" />
+				
+			<!-- Sub Title Text View -->
+			<TextView android:id="@+id/subtitle_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="08/05 (Fri) 21:00~22:00"
+				android:textColor="@color/mood_color"
+				android:textSize="12sp" />
+			
+		</LinearLayout>
+		
+		<!-- Action Button -->
+		<Button android:id="@+id/action_button"
+			android:layout_height="32dp" 
+			android:layout_width="66dp"
+			android:layout_marginRight="5dp"
+			android:text="Set"
+			android:textColor="@drawable/color_light_brown_white_selector"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:background="@drawable/button_selector" />
+		
+	</LinearLayout>
+	
+	<!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+	
+</LinearLayout>

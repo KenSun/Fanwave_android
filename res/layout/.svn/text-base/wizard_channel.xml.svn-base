@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom" 
+    android:weightSum="10" 
+    android:background="@drawable/fanwave_background" >
+	
+	
+		<ImageView  
+			android:layout_width="200dp" 
+			android:layout_height="90dp" 
+			android:src="@drawable/fanwave_logo_large" 
+			android:scaleType="fitXY" 
+			android:layout_marginBottom="2dp"
+			android:layout_gravity="center"  />
+			
+			
+	
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="208dp" 
+		android:layout_marginLeft="40dp" 
+		android:layout_marginRight="40dp" 
+		android:gravity="bottom" 
+		android:orientation="vertical" >
+		
+		<LinearLayout
+			android:layout_width="fill_parent" 
+			android:layout_height="32dp" 
+			android:orientation="horizontal" 
+			android:layout_marginBottom="4dp" 
+			android:gravity="center" >
+			
+			<ImageView	
+				android:layout_width="32dp" 
+				android:layout_height="32dp" 
+				android:src="@drawable/provider" 
+				android:scaleType="center" />
+			<TextView 
+				android:layout_width="wrap_content" 
+				android:layout_height="fill_parent" 
+				android:text="@string/guides_provider_mso" 
+				android:textColor="@color/orange" 
+				android:textSize="20sp" 
+				android:textStyle="bold" 
+				android:gravity="center" 
+				android:layout_marginLeft="4dp" />
+		</LinearLayout>
+		
+		<ListView android:id="@+id/channel_list_listview"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:cacheColorHint="#00000000"  
+			android:listSelector="@drawable/fanwave_row_press"/>
+		
+	</LinearLayout>
+	
+	<LinearLayout	
+		android:layout_width="fill_parent" 
+		android:layout_height="0dp" 
+		android:layout_weight="1" />
+		
+	<RelativeLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="60dp" 
+			android:gravity="center" 
+			android:padding="10dp" >
+			<!-- Prevoius Button -->	
+			<Button android:id="@+id/wizard_pre_button"
+				android:layout_width="100dip"
+				android:layout_height="40dip"
+				android:text="@string/wizard_pre_step"
+				android:textSize="@dimen/wizard_button_textsize"
+				android:textColor="@color/white"
+				android:background="@drawable/login_signin_selector" 
+				android:layout_alignParentLeft="true" 
+				android:paddingLeft="10dp" 
+				android:layout_marginLeft="40dp"
+				android:drawableLeft="@drawable/pre_arrow" 
+				android:drawablePadding="-16dp" />
+				
+			<!-- Next Button -->	
+			<Button android:id="@+id/wizard_next_button"
+				android:layout_width="100dip"
+				android:layout_height="40dip" 
+				android:text="@string/wizard_next_step"
+				android:textSize="@dimen/wizard_button_textsize"
+				android:textColor="@color/white"
+				android:background="@drawable/login_signin_selector" 
+				android:layout_alignParentRight="true" 
+				android:paddingRight="10dp" 
+				android:layout_marginLeft="20dp" 
+				android:layout_marginRight="40dp"
+				android:drawableRight="@drawable/next_arrow" 
+				android:drawablePadding="-16dp" />
+		</RelativeLayout>
+</LinearLayout>

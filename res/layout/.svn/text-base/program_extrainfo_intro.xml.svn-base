@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+
+	<ScrollView android:id="@+id/intro_scrollview" 
+		android:background="@drawable/divider_repeat"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:clickable="true" >
+
+		<!-- Intro Text View -->
+		<TextView android:id="@+id/intro_textview"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" 
+			android:text="detaildetail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail    detail  detail detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail   detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  detail  " 
+			android:textColor="@color/gray" 
+			android:textSize="14sp"
+			android:background="@drawable/divider_repeat" 
+			android:paddingTop="4dp" 
+			android:paddingLeft="10dp" 
+			android:paddingRight="10dp" 
+			android:lineSpacingExtra="10.5dp"
+			android:clickable="false" />
+		
+	</ScrollView>
+
+</FrameLayout>

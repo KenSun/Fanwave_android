@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical" 
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content" >
+		<LinearLayout
+				  android:orientation="horizontal" 
+			  	  android:layout_width="fill_parent"	  	
+				  android:layout_height="wrap_content" 
+				  android:gravity="center_vertical"
+				  android:layout_marginTop="5dp"
+				  android:layout_marginBottom="5dp">	
+				  		  				
+			<!-- Credit Score Text View -->
+	 		<TextView android:id="@+id/topfan_rank_textview"
+					android:layout_width="30dp" 
+					android:layout_height="wrap_content" 
+					android:text="2" 
+					android:textColor="@color/hot_top_color" 
+					android:textSize="15dip" 
+					android:textStyle="bold" 
+					android:gravity="center" />
+	
+				<!-- Avatar Image View -->
+				<ImageView android:id="@+id/topfan_imageview"
+					style="@style/avatar_small"
+					android:layout_width="50dp" 
+					android:layout_height="50dp" 
+					android:layout_marginLeft="5dp"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true" />
+					<!-- Topfan Name TextView -->
+					
+			  <TextView android:id="@+id/topfan_name_textview"
+						android:layout_width="100dp"
+						android:layout_height="wrap_content"
+						android:text="Top Fan Name"
+						android:textSize="12sp"
+						android:textColor="@color/light_blue"
+						android:textStyle="bold"
+						android:lines="1"
+						android:layout_marginLeft="5dp"/>
+						
+				<!-- Points Layout -->
+				<LinearLayout android:id="@+id/points_layout"
+					android:layout_width="fill_parent" 
+					android:layout_height="fill_parent" 
+					android:orientation="horizontal"
+					android:layout_marginLeft="10dp"
+					android:weightSum="3"
+					android:layout_toRightOf="@+id/topfan_imageview"
+					android:layout_below="@+id/topfan_name_layout" 
+					android:gravity="center">
+						
+					<!-- Credit Layout -->
+					<LinearLayout android:id="@+id/credit_layout"
+						android:orientation="vertical"
+						android:layout_height="wrap_content"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:gravity="center">
+							
+						<!-- Credit Score Text View -->
+						<TextView android:id="@+id/credit_score_textview"
+							style="@style/topfan_score_box"
+							android:text="235" />
+								
+						<!-- icon Image View -->
+						<ImageView 
+							android:layout_height="13dp"
+							android:layout_width="15dp"						
+							android:background="@drawable/topfan_rows_credits"/>
+						
+					</LinearLayout>
+						
+					<!-- wavein Layout -->
+					<LinearLayout 
+						android:orientation="vertical"
+						android:layout_height="wrap_content"
+						android:layout_width="0dp"
+						android:layout_weight="1" 
+						android:gravity="center">
+							
+						<!-- wavein Score Text View -->
+						<TextView android:id="@+id/waveins_score_textview"
+							style="@style/topfan_score_box"
+							android:text="235" />
+							
+						<!--wavein icon Image View -->
+						<ImageView
+							android:layout_height="13dp"
+							android:layout_width="15dp"						
+							android:background="@drawable/topfan_rows_waveins"/>
+						
+					</LinearLayout>
+						
+					<!-- comments Layout -->
+					<LinearLayout android:id="@+id/credit_layout"
+						android:orientation="vertical"
+						android:layout_height="wrap_content"
+						android:layout_width="0dp"
+						android:layout_weight="1" 
+						android:gravity="center">
+							
+						<!-- comments Score Text View -->
+						<TextView android:id="@+id/comments_score_textview"
+							style="@style/topfan_score_box"
+							android:text="235" />
+								
+						<!--comments icon Image View -->
+						<ImageView
+							android:layout_height="13dp"
+							android:layout_width="15dp"						
+							android:background="@drawable/topfan_rows_comments"/>
+						
+					</LinearLayout>
+				</LinearLayout>	
+		</LinearLayout>	
+		<!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+	
+						
+</LinearLayout>

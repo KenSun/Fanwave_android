@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobileware_tvguide/!svn/ver/5154/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/c2dm
+END
+C2DMManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mobileware_tvguide/!svn/ver/5154/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/c2dm/C2DMManager.java
+END
+C2DMReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/mobileware_tvguide/!svn/ver/5107/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/c2dm/C2DMReceiver.java
+END
+UrbanAirshipReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/mobileware_tvguide/!svn/ver/5107/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/c2dm/UrbanAirshipReceiver.java
+END

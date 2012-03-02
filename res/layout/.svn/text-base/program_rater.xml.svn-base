@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.wildmind.fanwave.widget.ProgramRater xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical" 
+	android:background="#DD000000" 
+	android:padding="20dip"
+	android:clickable="true" >
+	
+	<RelativeLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="300dip" 
+		android:gravity="center_horizontal" >
+		
+		<!-- Rating Title Layout -->
+		<LinearLayout android:id="@+id/title_layout"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:orientation="vertical" 
+			android:layout_centerHorizontal="true" 
+			android:layout_alignParentTop="true" >
+			
+			<TextView android:id="@+id/rating_textview" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="@string/program_rating" 
+				android:textColor="@color/white" 
+				android:textSize="22dip" 
+				android:textStyle="bold" 
+				android:layout_gravity="center" />
+			
+			<!-- Program Title Text View -->
+			<TextView android:id="@+id/program_title_textview"
+				android:layout_width="fill_parent" 
+				android:layout_height="36dp" 
+				android:gravity="center" 
+				android:text="Glee" 
+				android:textColor="@color/white"
+				android:textSize="24sp" 
+				android:textStyle="bold"
+				android:layout_gravity="center" 
+				android:marqueeRepeatLimit="marquee_forever"
+           		android:ellipsize="marquee" 
+           		android:singleLine="true" />
+				
+		</LinearLayout>
+		
+		<!-- Rating Bar -->		
+		<RatingBar android:id="@+id/rating_bar" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:numStars="5" 
+			android:rating="0" 
+			android:stepSize="1"
+			android:isIndicator="false" 
+			android:fitsSystemWindows="true" 
+			android:progressDrawable="@drawable/star_layer_list" 
+			android:paddingTop="10dp" 
+			android:paddingBottom="12dp" 
+			android:layout_alignParentBottom="true" 
+			android:layout_centerHorizontal="true" />
+		
+		<!-- Star Image View -->
+		<FrameLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" 
+			android:layout_centerInParent="true">
+			
+			<!-- Ray Image View -->
+			<ImageView android:id="@+id/ray_imageview" 
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:src="@drawable/star_burst"
+				android:scaleType="fitXY" />	
+				
+			<!-- Star Image View -->
+			<ImageView android:id="@+id/star_imageview" 
+				android:src="@drawable/star_icon" 
+				android:scaleType="fitXY" 
+				android:layout_width="124dp" 
+				android:layout_height="124dp" 
+				android:layout_marginLeft="12dp"
+				android:layout_gravity="center" />	
+				
+            <!-- Success Check Image View -->			
+            <ImageView android:id="@+id/success_check_imageview" 
+                android:layout_width="50dip" 
+                android:layout_height="40dip" 
+                android:src="@drawable/success_check_icon" 
+                android:scaleType="fitXY" 
+				android:layout_marginLeft="36dp" 
+				android:layout_marginTop="28dp"
+				android:layout_gravity="center"  />
+		</FrameLayout>	
+		
+				
+	</RelativeLayout>
+			
+	<FrameLayout android:id="@+id/action_layout"
+		android:layout_width="fill_parent" 
+		android:layout_height="0dip" 
+		android:layout_weight="24" 
+		android:gravity="center_horizontal" 
+		android:paddingTop="10dip" 
+		android:paddingLeft="60dip" 
+		android:paddingRight="60dip" >
+		
+        <!-- Rating Button -->		
+        <Button android:id="@+id/rating_button" 
+                android:layout_width="fill_parent" 
+                android:layout_height="50dp" 
+                android:background="@drawable/black_frame_button_selector" 
+                android:text="@string/program_rating_send" 
+                android:textColor="@color/white" 
+                android:textSize="20dip" 
+                android:textStyle="bold" />
+        
+		<!-- Success Text View -->
+        <TextView android:id="@+id/rating_success_textview"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:text="@string/program_rating_sucess" 
+            android:textColor="@color/white"
+            android:textSize="30sp" 
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" 
+            android:visibility="invisible" />
+		
+		
+				
+		<!-- Retry Layout -->
+		<LinearLayout android:id="@+id/retry_layout" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:orientation="vertical" >
+					
+			<Button android:id="@+id/retry_button" 
+				android:layout_width="fill_parent" 
+				android:layout_height="50dip" 
+				android:background="@drawable/black_frame_button_selector" 
+				android:text="@string/action_retry" 
+				android:textColor="@color/white" 
+				android:textSize="20dip" 
+				android:textStyle="bold" />
+				
+			<TextView android:id="@+id/retry_textview"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:layout_gravity="center_horizontal" 
+				android:gravity="center" 
+				android:text="@string/program_rating_fail" 
+				android:textColor="@color/white" 
+				android:textSize="16dip" 
+				android:layout_marginTop="10dip" />
+				
+				</LinearLayout>
+				
+			</FrameLayout>
+
+</com.wildmind.fanwave.widget.ProgramRater>

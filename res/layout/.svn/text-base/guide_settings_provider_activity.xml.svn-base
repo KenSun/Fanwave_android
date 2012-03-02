@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+	android:background="@drawable/fanwave_background_white" >
+	
+		<!-- Title Bar Layout -->	
+		<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+			
+			<RelativeLayout android:id="@+id/title_sense_region"
+                style="@style/title_bar_sense_region" >
+                <!-- Title Image View -->
+                <ImageView android:id="@+id/title_imageview"
+                style="@style/title_bar_image" />
+                
+                <!-- Title Text View -->	
+                <TextView android:id="@+id/title_textview"
+				style="@style/title_bar_text"
+				android:text="@string/guides_program_setting_myprovider" />
+            </RelativeLayout>
+				
+			<!-- Back Image Button -->
+			<ImageButton android:id="@+id/back_imagebutton" 
+				style="@style/title_bar_back"
+				android:src="@drawable/settings_icon" />
+				
+		</RelativeLayout>	
+	
+	<!-- android:background="@drawable/account_settings_activity_linearlayout_shape" -->
+	<LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:orientation="vertical" 
+		android:paddingBottom="20dip" 
+        android:layout_marginTop="-3dp">
+		<LinearLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:orientation="vertical" >
+			
+			<RelativeLayout android:id="@+id/region_relativelayout" 
+				android:layout_width="fill_parent" 
+				android:layout_height="50dip" 
+				android:clickable="true" 
+				android:background="@color/white" 
+				android:padding="10dp" >
+				
+				<TextView 
+					android:layout_width="wrap_content" 
+					android:layout_height="fill_parent" 
+					android:text="@string/guides_program_setting_region" 
+					android:textColor="@drawable/textcolor_gray_orange_selector" 
+					android:textSize="17dip" 
+					android:textStyle="bold" 
+					android:gravity="center_vertical" 
+					android:layout_centerVertical="true" 
+					android:duplicateParentState="true" />
+				<TextView 
+					android:id="@+id/textview_region" 
+					android:layout_width="wrap_content" 
+					android:layout_height="fill_parent" 
+					android:text="Taiwan" 
+					android:textColor="@drawable/textcolor_blue_orange_selector" 
+					android:textSize="17dip" 
+					android:textStyle="bold" 
+					android:gravity="center_vertical" 
+					android:layout_centerVertical="true" 
+					android:layout_alignParentRight="true" 
+					android:duplicateParentState="true" />
+			</RelativeLayout>
+			
+			<ImageView 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:background="@drawable/list_divider" />
+			
+			<RelativeLayout  android:id="@+id/city_relativelayout"
+				android:layout_width="fill_parent" 
+				android:layout_height="50dip" 
+				android:clickable="true" 
+				android:background="@color/white" 
+				android:padding="10dp" >
+				
+				<TextView 
+					android:layout_width="wrap_content" 
+					android:layout_height="fill_parent" 
+					android:text="@string/wizard_location_city" 
+					android:textColor="@drawable/textcolor_gray_orange_selector"  
+					android:textSize="17dip" 
+					android:textStyle="bold" 
+					android:gravity="center_vertical" 
+					android:layout_centerVertical="true" 
+					android:duplicateParentState="true" />
+				<TextView 
+					android:id="@+id/textview_city" 
+					android:layout_width="wrap_content" 
+					android:layout_height="fill_parent" 
+					android:text="Taipei" 
+					android:textColor="@drawable/textcolor_blue_orange_selector" 
+					android:textSize="17dip" 
+					android:textStyle="bold" 
+					android:gravity="center_vertical" 
+					android:layout_centerVertical="true" 
+					android:layout_alignParentRight="true" 
+					android:duplicateParentState="true" />
+			</RelativeLayout>
+			
+			<ImageView 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:background="@drawable/list_divider" />
+			
+			<RelativeLayout  android:id="@+id/zip_code_relativelayout"
+				android:layout_width="fill_parent" 
+				android:layout_height="50dip" 
+				android:clickable="true" 
+				android:background="@color/white" 
+				android:padding="10dp" >
+				
+				<TextView 
+					android:layout_width="wrap_content" 
+					android:layout_height="fill_parent" 
+					android:text="@string/guides_program_setting_zipcode" 
+					android:textColor="@drawable/textcolor_gray_orange_selector"  
+					android:textSize="17dip" 
+					android:textStyle="bold" 
+					android:gravity="center_vertical" 
+					android:layout_centerVertical="true" 
+					android:duplicateParentState="true" />
+				<TextView 
+					android:id="@+id/textview_zip" 
+					android:layout_width="wrap_content" 
+					android:layout_height="fill_parent" 
+					android:text="Neihu, 114" 
+					android:textColor="@drawable/textcolor_blue_orange_selector" 
+					android:textSize="17dip" 
+					android:textStyle="bold" 
+					android:gravity="center_vertical" 
+					android:layout_centerVertical="true" 
+					android:layout_alignParentRight="true" 
+					android:duplicateParentState="true" />
+			</RelativeLayout>
+			
+			
+			<ImageView 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:background="@drawable/list_divider" />
+			
+			<RelativeLayout  android:id="@+id/provider_relativelayout"
+				android:layout_width="fill_parent" 
+				android:layout_height="50dip" 
+				android:clickable="true" 
+				android:background="@color/white" 
+				android:padding="10dp" >
+				<TextView 
+					android:layout_width="wrap_content" 
+					android:layout_height="fill_parent" 
+					android:text="@string/guides_program_setting_provider" 
+					android:textColor="@drawable/textcolor_gray_orange_selector"  
+					android:textSize="17dip" 
+					android:textStyle="bold" 
+					android:gravity="center_vertical" 
+					android:layout_centerVertical="true" 
+					android:duplicateParentState="true" />
+				<TextView 
+					android:id="@+id/textview_provider" 
+					android:layout_width="wrap_content" 
+					android:layout_height="fill_parent" 
+					android:text="DVBT-Digital Taiwan" 
+					android:textColor="@drawable/textcolor_blue_orange_selector" 
+					android:textSize="17dip" 
+					android:textStyle="bold" 
+					android:gravity="center_vertical" 
+					android:layout_centerVertical="true" 
+					android:layout_alignParentRight="true" 
+					android:duplicateParentState="true" />
+			</RelativeLayout>
+			
+			<ImageView 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:background="@drawable/list_divider" />
+		</LinearLayout>
+		
+	</LinearLayout>
+
+</LinearLayout>

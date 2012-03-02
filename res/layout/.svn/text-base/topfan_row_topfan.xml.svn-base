@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="118dp"
+	android:orientation="vertical">
+	
+	<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="90dp"
+					android:background="@drawable/fanwave_background_white">
+
+			<!-- Avatar Image View -->
+			<ImageView android:id="@+id/topfan_imageview"
+				style="@style/avatar"
+				android:layout_width="80dp" 
+				android:layout_height="80dp" 
+				android:layout_marginLeft="5dp"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true" />
+				
+			<!-- Topfan Name Layout -->
+			<LinearLayout android:id="@+id/topfan_name_layout"
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="15dp"
+				android:layout_alignTop="@+id/topfan_imageview"
+				android:layout_toRightOf="@+id/topfan_imageview" >
+					
+				<!-- Crown Image View -->
+				<ImageView android:id="@+id/crown_imageview"
+					android:layout_width="22dp"
+					android:layout_height="14dp"
+					android:src="@drawable/topfan_crown"
+					android:scaleType="fitXY" 
+					android:layout_gravity="center"  />
+						
+				<!-- Topfan Name TextView -->
+				<TextView android:id="@+id/topfan_name_textview"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Top Fan Name"
+					android:textSize="15sp"
+					android:textColor="@color/light_blue"
+					android:textStyle="bold"
+					android:layout_marginLeft="10dp"
+					android:lines="1" />
+			</LinearLayout>
+			
+			<!-- Points Layout -->
+			<LinearLayout android:id="@+id/points_layout"
+				android:layout_width="230dp" 
+				android:layout_height="fill_parent" 
+				android:orientation="horizontal"
+				android:layout_marginTop="5dp"
+				android:layout_marginLeft="10dp"
+				android:weightSum="3"
+				android:layout_toRightOf="@+id/topfan_imageview"
+				android:layout_below="@+id/topfan_name_layout" >
+				
+				<!-- Credit Layout -->
+				<LinearLayout android:id="@+id/credit_layout"
+					android:orientation="vertical"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:layout_weight="1">
+						
+					<!-- Credit Score Text View -->
+					<TextView android:id="@+id/credit_score_textview"
+						style="@style/topfan_score_box_topfan"
+						android:drawableLeft="@drawable/topfan_rows_credits_orange"
+						android:text="23500" 
+						android:drawablePadding="3dp" />
+							
+					<!-- Credit Text View -->
+					<TextView
+						style="@style/topfan_points_text"
+						android:layout_marginTop="-10dp"
+						android:text="@string/topfan_credit" />
+					
+				</LinearLayout>
+					
+				<!-- waveins Layout -->
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:layout_weight="1" >
+						
+					<!-- waveins Score Text View -->
+					<TextView android:id="@+id/waveins_score_textview"
+						style="@style/topfan_score_box_topfan"
+						android:drawableLeft="@drawable/topfan_rows_waveins_orange"
+						android:text="23500" 
+						android:drawablePadding="3dp" />
+						
+					<!-- waveins Text View -->
+					<TextView 
+						style="@style/topfan_points_text"
+						android:layout_marginTop="-10dp"
+						android:text="@string/topfan_wavein" />
+					
+				</LinearLayout>
+					
+				<!-- comments Layout -->
+				<LinearLayout 
+					android:orientation="vertical"
+					android:layout_height="wrap_content"
+					android:layout_width="0dp"
+					android:layout_weight="1" >
+						
+					<!-- comments Score Text View -->
+					<TextView android:id="@+id/comments_score_textview"
+						style="@style/topfan_score_box_topfan"
+						android:drawableLeft="@drawable/topfan_rows_comments_orange"
+						android:text="23500" 
+						android:drawablePadding="3dp" />
+							
+					<!-- comments Text View -->
+					<TextView 
+						style="@style/topfan_points_text"
+						android:layout_marginTop="-10dp"
+						android:text="@string/topfan_comments" />
+					
+				</LinearLayout>
+			</LinearLayout>
+	</RelativeLayout>
+	
+	<!-- Rank Title Text View -->
+	<TextView android:id="@+id/rank_title_textview"
+		android:layout_width="fill_parent" 
+		android:layout_height="28dp"  
+		android:gravity="center_vertical" 
+		android:paddingLeft="4dp" 
+		android:paddingRight="4dp" 
+		android:text="@string/topfan_rank" 
+		android:textColor="@color/white" 
+		android:textSize="14sp" 
+		android:textStyle="bold" 
+		android:background="@drawable/bar_gray" />
+		
+</LinearLayout>
+		

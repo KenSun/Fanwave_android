@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+	android:background="@drawable/fanwave_background_white"   >
+	
+			<!-- Title Bar Layout -->
+		<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+			
+			<RelativeLayout android:id="@+id/title_sense_region"
+                style="@style/title_bar_sense_region" >
+                <!-- Title Image View -->
+                <ImageView android:id="@+id/title_imageview"
+                style="@style/title_bar_image" />
+                
+                <!-- Title Text View -->	
+                <TextView android:id="@+id/title_textview"
+				style="@style/title_bar_text"
+				android:text="@string/main_page_account_settings_tutorial" />
+            </RelativeLayout>				
+			
+				
+			<!-- Back Image Button -->
+			<ImageButton android:id="@+id/back_imagebutton" 
+				style="@style/title_bar_back"
+				android:src="@drawable/settings_icon" />
+						
+		</RelativeLayout>
+		
+    <!-- android:background="@drawable/account_settings_activity_linearlayout_shape" -->
+    <LinearLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:orientation="vertical" 
+		android:paddingTop="20dip" 
+		android:paddingLeft="60dip" 
+		android:paddingRight="60dip" 
+        android:layout_marginTop="-3dp" 
+        android:gravity="center_horizontal" >
+		
+		<TextView 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/main_page_account_settings_tutorial_title" 
+			android:textColor="@color/gray" 
+			android:textSize="18sp" 
+			android:textStyle="bold" 
+			android:gravity="center"  />
+		
+		<TextView 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:text="@string/main_page_account_settings_tutorial_detail" 
+			android:textColor="@color/gray" 
+			android:textSize="14sp" 
+			android:gravity="center" 
+			android:layout_marginTop="6dip" 
+			android:layout_marginBottom="20dip" />
+		
+		<Button android:id="@+id/initial_tutorial_button" 
+        android:layout_width="120dip" 
+        android:layout_height="42dip" 
+        android:gravity="center" 
+        android:text="@string/main_page_account_settings_tutorial_button" 
+        android:textColor="@color/white" 
+        android:textSize="18dip" 
+        android:textStyle="bold" 
+        android:background="@drawable/login_signin_selector" />
+		
+		
+	</LinearLayout>
+</LinearLayout>

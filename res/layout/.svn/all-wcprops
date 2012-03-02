@@ -1,0 +1,701 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/mobileware_tvguide/!svn/ver/5156/trunk_android/Fanwave.TV_4.0/res/layout
+END
+program_comment_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobileware_tvguide/!svn/ver/4540/trunk_android/Fanwave.TV_4.0/res/layout/program_comment_row.xml
+END
+notification_black.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobileware_tvguide/!svn/ver/5075/trunk_android/Fanwave.TV_4.0/res/layout/notification_black.xml
+END
+login_facebook_email_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mobileware_tvguide/!svn/ver/4958/trunk_android/Fanwave.TV_4.0/res/layout/login_facebook_email_activity.xml
+END
+login_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobileware_tvguide/!svn/ver/4255/trunk_android/Fanwave.TV_4.0/res/layout/login_activity.xml
+END
+loading_indicator_mask.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobileware_tvguide/!svn/ver/4697/trunk_android/Fanwave.TV_4.0/res/layout/loading_indicator_mask.xml
+END
+launching_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobileware_tvguide/!svn/ver/5102/trunk_android/Fanwave.TV_4.0/res/layout/launching_activity.xml
+END
+personal_extrainfo_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mobileware_tvguide/!svn/ver/4785/trunk_android/Fanwave.TV_4.0/res/layout/personal_extrainfo_detail.xml
+END
+wizard_channel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobileware_tvguide/!svn/ver/4808/trunk_android/Fanwave.TV_4.0/res/layout/wizard_channel.xml
+END
+comment_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/mobileware_tvguide/!svn/ver/4785/trunk_android/Fanwave.TV_4.0/res/layout/comment_row.xml
+END
+row_more.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/mobileware_tvguide/!svn/ver/4146/trunk_android/Fanwave.TV_4.0/res/layout/row_more.xml
+END
+message_splash_poster.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobileware_tvguide/!svn/ver/5123/trunk_android/Fanwave.TV_4.0/res/layout/message_splash_poster.xml
+END
+login_fanwave_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobileware_tvguide/!svn/ver/4395/trunk_android/Fanwave.TV_4.0/res/layout/login_fanwave_activity.xml
+END
+main_page_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobileware_tvguide/!svn/ver/5057/trunk_android/Fanwave.TV_4.0/res/layout/main_page_activity.xml
+END
+personal_follow_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobileware_tvguide/!svn/ver/4400/trunk_android/Fanwave.TV_4.0/res/layout/personal_follow_row.xml
+END
+splash_program_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobileware_tvguide/!svn/ver/4761/trunk_android/Fanwave.TV_4.0/res/layout/splash_program_activity.xml
+END
+image_present_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobileware_tvguide/!svn/ver/4761/trunk_android/Fanwave.TV_4.0/res/layout/image_present_activity.xml
+END
+friends_facebook_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mobileware_tvguide/!svn/ver/5102/trunk_android/Fanwave.TV_4.0/res/layout/friends_facebook_activity.xml
+END
+topfan_row_more.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobileware_tvguide/!svn/ver/4329/trunk_android/Fanwave.TV_4.0/res/layout/topfan_row_more.xml
+END
+program_extrainfo_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobileware_tvguide/!svn/ver/4958/trunk_android/Fanwave.TV_4.0/res/layout/program_extrainfo_activity.xml
+END
+program_extrainfo_reminder_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mobileware_tvguide/!svn/ver/4540/trunk_android/Fanwave.TV_4.0/res/layout/program_extrainfo_reminder_row.xml
+END
+topfan_row_fan.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobileware_tvguide/!svn/ver/4634/trunk_android/Fanwave.TV_4.0/res/layout/topfan_row_fan.xml
+END
+guide_settings_provider_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/mobileware_tvguide/!svn/ver/4730/trunk_android/Fanwave.TV_4.0/res/layout/guide_settings_provider_activity.xml
+END
+feed_row_wavein.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobileware_tvguide/!svn/ver/4958/trunk_android/Fanwave.TV_4.0/res/layout/feed_row_wavein.xml
+END
+provider_dialog_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobileware_tvguide/!svn/ver/4402/trunk_android/Fanwave.TV_4.0/res/layout/provider_dialog_view.xml
+END
+wizard_channel_hidder.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobileware_tvguide/!svn/ver/4823/trunk_android/Fanwave.TV_4.0/res/layout/wizard_channel_hidder.xml
+END
+guide_channel_list_item_left.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/mobileware_tvguide/!svn/ver/4200/trunk_android/Fanwave.TV_4.0/res/layout/guide_channel_list_item_left.xml
+END
+program_search_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobileware_tvguide/!svn/ver/5096/trunk_android/Fanwave.TV_4.0/res/layout/program_search_activity.xml
+END
+account_settings_password_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mobileware_tvguide/!svn/ver/4847/trunk_android/Fanwave.TV_4.0/res/layout/account_settings_password_activity.xml
+END
+personal_friend_row_simple.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobileware_tvguide/!svn/ver/4400/trunk_android/Fanwave.TV_4.0/res/layout/personal_friend_row_simple.xml
+END
+guide_settings_reorder_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mobileware_tvguide/!svn/ver/4954/trunk_android/Fanwave.TV_4.0/res/layout/guide_settings_reorder_activity.xml
+END
+wizard_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobileware_tvguide/!svn/ver/4542/trunk_android/Fanwave.TV_4.0/res/layout/wizard_activity.xml
+END
+personal_extrainfo_intro.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/mobileware_tvguide/!svn/ver/4594/trunk_android/Fanwave.TV_4.0/res/layout/personal_extrainfo_intro.xml
+END
+comment_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mobileware_tvguide/!svn/ver/4854/trunk_android/Fanwave.TV_4.0/res/layout/comment_activity.xml
+END
+tutorial_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobileware_tvguide/!svn/ver/4711/trunk_android/Fanwave.TV_4.0/res/layout/tutorial_activity.xml
+END
+splash_group_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobileware_tvguide/!svn/ver/4723/trunk_android/Fanwave.TV_4.0/res/layout/splash_group_item.xml
+END
+splash_history_row_more.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobileware_tvguide/!svn/ver/4808/trunk_android/Fanwave.TV_4.0/res/layout/splash_history_row_more.xml
+END
+splash_private_send_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobileware_tvguide/!svn/ver/5046/trunk_android/Fanwave.TV_4.0/res/layout/splash_private_send_row.xml
+END
+attach_file_option_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobileware_tvguide/!svn/ver/4643/trunk_android/Fanwave.TV_4.0/res/layout/attach_file_option_view.xml
+END
+topfan_row_topfan.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobileware_tvguide/!svn/ver/5102/trunk_android/Fanwave.TV_4.0/res/layout/topfan_row_topfan.xml
+END
+guide_epg_list_item_pg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobileware_tvguide/!svn/ver/4829/trunk_android/Fanwave.TV_4.0/res/layout/guide_epg_list_item_pg.xml
+END
+account_settings_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mobileware_tvguide/!svn/ver/5027/trunk_android/Fanwave.TV_4.0/res/layout/account_settings_activity.xml
+END
+personal_friend_row_complex.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/mobileware_tvguide/!svn/ver/4808/trunk_android/Fanwave.TV_4.0/res/layout/personal_friend_row_complex.xml
+END
+wizard_location.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobileware_tvguide/!svn/ver/5097/trunk_android/Fanwave.TV_4.0/res/layout/wizard_location.xml
+END
+friends_search_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobileware_tvguide/!svn/ver/5096/trunk_android/Fanwave.TV_4.0/res/layout/friends_search_activity.xml
+END
+splash_search_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobileware_tvguide/!svn/ver/5094/trunk_android/Fanwave.TV_4.0/res/layout/splash_search_activity.xml
+END
+personal_badge_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobileware_tvguide/!svn/ver/4958/trunk_android/Fanwave.TV_4.0/res/layout/personal_badge_row.xml
+END
+splash_private_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobileware_tvguide/!svn/ver/5094/trunk_android/Fanwave.TV_4.0/res/layout/splash_private_activity.xml
+END
+feed_row_topfan.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobileware_tvguide/!svn/ver/5097/trunk_android/Fanwave.TV_4.0/res/layout/feed_row_topfan.xml
+END
+waves_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobileware_tvguide/!svn/ver/5076/trunk_android/Fanwave.TV_4.0/res/layout/waves_activity.xml
+END
+notification_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobileware_tvguide/!svn/ver/5076/trunk_android/Fanwave.TV_4.0/res/layout/notification_activity.xml
+END
+program_extrainfo_link.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobileware_tvguide/!svn/ver/4540/trunk_android/Fanwave.TV_4.0/res/layout/program_extrainfo_link.xml
+END
+program_rater.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobileware_tvguide/!svn/ver/5075/trunk_android/Fanwave.TV_4.0/res/layout/program_rater.xml
+END
+badge_program_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobileware_tvguide/!svn/ver/5102/trunk_android/Fanwave.TV_4.0/res/layout/badge_program_activity.xml
+END
+friends_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mobileware_tvguide/!svn/ver/5076/trunk_android/Fanwave.TV_4.0/res/layout/friends_activity.xml
+END
+splash_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobileware_tvguide/!svn/ver/5094/trunk_android/Fanwave.TV_4.0/res/layout/splash_activity.xml
+END
+guide_settings_hidder_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mobileware_tvguide/!svn/ver/4954/trunk_android/Fanwave.TV_4.0/res/layout/guide_settings_hidder_activity.xml
+END
+loading_indicator.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobileware_tvguide/!svn/ver/4134/trunk_android/Fanwave.TV_4.0/res/layout/loading_indicator.xml
+END
+guide_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobileware_tvguide/!svn/ver/5076/trunk_android/Fanwave.TV_4.0/res/layout/guide_activity.xml
+END
+notification_bar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mobileware_tvguide/!svn/ver/4639/trunk_android/Fanwave.TV_4.0/res/layout/notification_bar.xml
+END
+feed_row_thumb_comment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobileware_tvguide/!svn/ver/4958/trunk_android/Fanwave.TV_4.0/res/layout/feed_row_thumb_comment.xml
+END
+program_waver.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobileware_tvguide/!svn/ver/5075/trunk_android/Fanwave.TV_4.0/res/layout/program_waver.xml
+END
+wizard_intro.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobileware_tvguide/!svn/ver/4830/trunk_android/Fanwave.TV_4.0/res/layout/wizard_intro.xml
+END
+feed_row_comment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mobileware_tvguide/!svn/ver/4958/trunk_android/Fanwave.TV_4.0/res/layout/feed_row_comment.xml
+END
+splash_list_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobileware_tvguide/!svn/ver/4808/trunk_android/Fanwave.TV_4.0/res/layout/splash_list_row.xml
+END
+splash_private_receive_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobileware_tvguide/!svn/ver/5046/trunk_android/Fanwave.TV_4.0/res/layout/splash_private_receive_row.xml
+END
+personal_extrainfo_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/mobileware_tvguide/!svn/ver/4958/trunk_android/Fanwave.TV_4.0/res/layout/personal_extrainfo_activity.xml
+END
+badge_type_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobileware_tvguide/!svn/ver/4761/trunk_android/Fanwave.TV_4.0/res/layout/badge_type_activity.xml
+END
+message_poster.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobileware_tvguide/!svn/ver/5102/trunk_android/Fanwave.TV_4.0/res/layout/message_poster.xml
+END
+hot_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/mobileware_tvguide/!svn/ver/4728/trunk_android/Fanwave.TV_4.0/res/layout/hot_row.xml
+END
+program_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mobileware_tvguide/!svn/ver/5096/trunk_android/Fanwave.TV_4.0/res/layout/program_activity.xml
+END
+main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/mobileware_tvguide/!svn/ver/4240/trunk_android/Fanwave.TV_4.0/res/layout/main.xml
+END
+comment_enter_program.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobileware_tvguide/!svn/ver/4936/trunk_android/Fanwave.TV_4.0/res/layout/comment_enter_program.xml
+END
+account_settings_username_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mobileware_tvguide/!svn/ver/4847/trunk_android/Fanwave.TV_4.0/res/layout/account_settings_username_activity.xml
+END
+badge_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/mobileware_tvguide/!svn/ver/4958/trunk_android/Fanwave.TV_4.0/res/layout/badge_row.xml
+END
+friend_row_find.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobileware_tvguide/!svn/ver/4683/trunk_android/Fanwave.TV_4.0/res/layout/friend_row_find.xml
+END
+program_poster.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobileware_tvguide/!svn/ver/4269/trunk_android/Fanwave.TV_4.0/res/layout/program_poster.xml
+END
+hot_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/mobileware_tvguide/!svn/ver/5076/trunk_android/Fanwave.TV_4.0/res/layout/hot_activity.xml
+END
+friend_row_request.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/mobileware_tvguide/!svn/ver/4321/trunk_android/Fanwave.TV_4.0/res/layout/friend_row_request.xml
+END
+loading_indicator_white.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobileware_tvguide/!svn/ver/4214/trunk_android/Fanwave.TV_4.0/res/layout/loading_indicator_white.xml
+END
+feed_row_gain_badge.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobileware_tvguide/!svn/ver/4958/trunk_android/Fanwave.TV_4.0/res/layout/feed_row_gain_badge.xml
+END
+account_settings_tutorial_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mobileware_tvguide/!svn/ver/5046/trunk_android/Fanwave.TV_4.0/res/layout/account_settings_tutorial_activity.xml
+END
+program_extrainfo_reminder.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/mobileware_tvguide/!svn/ver/4286/trunk_android/Fanwave.TV_4.0/res/layout/program_extrainfo_reminder.xml
+END
+personal_extrainfo_link.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobileware_tvguide/!svn/ver/5075/trunk_android/Fanwave.TV_4.0/res/layout/personal_extrainfo_link.xml
+END
+sign_up_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mobileware_tvguide/!svn/ver/4711/trunk_android/Fanwave.TV_4.0/res/layout/sign_up_activity.xml
+END
+guide_channel_reorder_listitem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mobileware_tvguide/!svn/ver/4954/trunk_android/Fanwave.TV_4.0/res/layout/guide_channel_reorder_listitem.xml
+END
+account_settings_privacy_listitem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mobileware_tvguide/!svn/ver/4723/trunk_android/Fanwave.TV_4.0/res/layout/account_settings_privacy_listitem.xml
+END
+howtotopfan_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobileware_tvguide/!svn/ver/5046/trunk_android/Fanwave.TV_4.0/res/layout/howtotopfan_activity.xml
+END
+webview_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mobileware_tvguide/!svn/ver/4788/trunk_android/Fanwave.TV_4.0/res/layout/webview_activity.xml
+END
+account_settings_privacy_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mobileware_tvguide/!svn/ver/4847/trunk_android/Fanwave.TV_4.0/res/layout/account_settings_privacy_activity.xml
+END
+about_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/mobileware_tvguide/!svn/ver/4808/trunk_android/Fanwave.TV_4.0/res/layout/about_activity.xml
+END
+guide_settings_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobileware_tvguide/!svn/ver/4958/trunk_android/Fanwave.TV_4.0/res/layout/guide_settings_activity.xml
+END
+badge_player_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobileware_tvguide/!svn/ver/5075/trunk_android/Fanwave.TV_4.0/res/layout/badge_player_activity.xml
+END
+account_settings_socialnetwork_listitem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mobileware_tvguide/!svn/ver/4723/trunk_android/Fanwave.TV_4.0/res/layout/account_settings_socialnetwork_listitem.xml
+END
+feed_row_set_reminder.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobileware_tvguide/!svn/ver/5097/trunk_android/Fanwave.TV_4.0/res/layout/feed_row_set_reminder.xml
+END
+program_sofa_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobileware_tvguide/!svn/ver/5108/trunk_android/Fanwave.TV_4.0/res/layout/program_sofa_activity.xml
+END
+guide_epg_pgbuch_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mobileware_tvguide/!svn/ver/5076/trunk_android/Fanwave.TV_4.0/res/layout/guide_epg_pgbuch_activity.xml
+END
+account_settings_socialnetwork_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/mobileware_tvguide/!svn/ver/4847/trunk_android/Fanwave.TV_4.0/res/layout/account_settings_socialnetwork_activity.xml
+END
+tutorial_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobileware_tvguide/!svn/ver/5156/trunk_android/Fanwave.TV_4.0/res/layout/tutorial_view.xml
+END
+message_poster_short.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/mobileware_tvguide/!svn/ver/4384/trunk_android/Fanwave.TV_4.0/res/layout/message_poster_short.xml
+END
+personal_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobileware_tvguide/!svn/ver/5076/trunk_android/Fanwave.TV_4.0/res/layout/personal_activity.xml
+END
+personal_reminder_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobileware_tvguide/!svn/ver/4587/trunk_android/Fanwave.TV_4.0/res/layout/personal_reminder_row.xml
+END
+account_settings_sound_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/mobileware_tvguide/!svn/ver/5108/trunk_android/Fanwave.TV_4.0/res/layout/account_settings_sound_activity.xml
+END
+program_loading_indicator.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/mobileware_tvguide/!svn/ver/4146/trunk_android/Fanwave.TV_4.0/res/layout/program_loading_indicator.xml
+END
+guide_epg_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobileware_tvguide/!svn/ver/4829/trunk_android/Fanwave.TV_4.0/res/layout/guide_epg_list_item.xml
+END
+friend_row_status.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobileware_tvguide/!svn/ver/4937/trunk_android/Fanwave.TV_4.0/res/layout/friend_row_status.xml
+END
+program_content.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobileware_tvguide/!svn/ver/4958/trunk_android/Fanwave.TV_4.0/res/layout/program_content.xml
+END
+program_extrainfo_intro.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/mobileware_tvguide/!svn/ver/4593/trunk_android/Fanwave.TV_4.0/res/layout/program_extrainfo_intro.xml
+END
+inviteall_facebook_friend_button.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/mobileware_tvguide/!svn/ver/4958/trunk_android/Fanwave.TV_4.0/res/layout/inviteall_facebook_friend_button.xml
+END
+general_user_row.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mobileware_tvguide/!svn/ver/4706/trunk_android/Fanwave.TV_4.0/res/layout/general_user_row.xml
+END
+topfan_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/mobileware_tvguide/!svn/ver/5076/trunk_android/Fanwave.TV_4.0/res/layout/topfan_activity.xml
+END
+account_dialog_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/mobileware_tvguide/!svn/ver/4557/trunk_android/Fanwave.TV_4.0/res/layout/account_dialog_view.xml
+END
+epg_indicator.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/mobileware_tvguide/!svn/ver/4928/trunk_android/Fanwave.TV_4.0/res/layout/epg_indicator.xml
+END
+notif_row_system.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/mobileware_tvguide/!svn/ver/5123/trunk_android/Fanwave.TV_4.0/res/layout/notif_row_system.xml
+END
+wizard_channel_reorder.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobileware_tvguide/!svn/ver/4808/trunk_android/Fanwave.TV_4.0/res/layout/wizard_channel_reorder.xml
+END
+guide_epg_list_item_ch.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/mobileware_tvguide/!svn/ver/4243/trunk_android/Fanwave.TV_4.0/res/layout/guide_epg_list_item_ch.xml
+END
+guide_channel_hidder_listitem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/mobileware_tvguide/!svn/ver/4808/trunk_android/Fanwave.TV_4.0/res/layout/guide_channel_hidder_listitem.xml
+END

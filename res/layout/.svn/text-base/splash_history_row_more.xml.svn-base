@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="40dp" 
+	android:gravity="center" >
+	
+	<RelativeLayout android:id="@+id/relativeLayout1" 
+		 android:layout_height="40dp" 
+		 android:layout_width="fill_parent" 
+		 android:background="@drawable/fanwave_row_selector" >
+		 
+		<ProgressBar android:id="@+id/loading_progressbar"
+			android:layout_width="30dp" 
+			android:layout_height="30dp"
+			style="@android:style/Widget.ProgressBar.Small.Inverse"
+			android:gravity="center" 
+			android:layout_centerInParent="true" />
+	
+		<TextView android:id="@+id/no_more_textview"
+			android:layout_width="wrap_content" 
+			android:layout_height="17dip" 
+			android:layout_marginTop="-5dp" 
+			android:layout_marginLeft="5dip"
+			android:text="@string/waves_no_more"
+			android:textSize="14sp"
+			android:textColor="@color/orange" 
+			android:gravity="center"
+			android:layout_centerInParent="true" />
+	</RelativeLayout>
+	
+	<!-- Divider Image View -->		  
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+</LinearLayout>

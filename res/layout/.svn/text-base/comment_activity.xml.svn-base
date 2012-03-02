@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/fanwave_background_content"  >
+	
+	<!-- Title Bar Layout -->
+	<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+	
+		<RelativeLayout android:id="@+id/title_sense_region"
+            style="@style/title_bar_sense_region" >
+            <!-- Title Image View -->
+            <ImageView android:id="@+id/title_imageview"
+            style="@style/title_bar_image" />
+            
+            <!-- Title Text View -->	
+            <TextView android:id="@+id/title_textview"
+			style="@style/title_bar_text"
+			android:text="@string/comment_title" />
+        </RelativeLayout>			
+		
+			
+		<ImageButton android:id="@+id/back_imagebutton" 
+			style="@style/title_bar_back" />
+
+		</RelativeLayout>
+
+		<!--  Layout -->
+		<FrameLayout 
+			android:layout_width="fill_parent"
+			android:layout_height="0dp" 
+			android:layout_weight="1"
+			android:background="@drawable/fanwave_background_content" 
+            android:layout_marginTop="-3dp">
+		
+			<!-- Loading Indicator Layout -->
+			<include android:id="@+id/loading_indicator" layout="@layout/loading_indicator" />
+			
+			<LinearLayout android:id="@+id/comment_layout" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:orientation="vertical"
+				android:visibility="gone">
+				<RelativeLayout 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content" >
+					
+					<ImageView 
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" 
+						android:background="@drawable/fanwave_background_white" 
+						android:layout_alignTop="@+id/comment_row_indicator" 
+						android:layout_alignBottom="@+id/comment_row_indicator" />
+						
+					
+					<include android:id="@+id/comment_row_indicator" layout="@layout/comment_row"/>
+					
+				</RelativeLayout>
+				<include android:id="@+id/comment_row_enter_program" layout="@layout/comment_enter_program" />
+				
+			</LinearLayout>
+			
+		</FrameLayout>
+		<TextView android:id="@+id/comment_409_textview"
+		    		android:visibility="invisible"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="10dp"
+					android:text="@string/comment_409"
+					android:textColor="@color/light_gray" 
+					android:gravity="center" 
+					android:textSize="10sp" />
+		<LinearLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="55dip" 
+			android:orientation="horizontal" 
+			android:background="@drawable/tabbar_background" 
+			android:paddingLeft="10dip" 
+			android:paddingRight="10dip" 
+			android:paddingTop="5dip" 
+			android:paddingBottom="5dip" 
+			android:layout_marginBottom="-3dp" >
+			
+			<LinearLayout android:id="@+id/like_comment_button" 
+				android:layout_width="0dip" 
+				android:layout_height="fill_parent" 
+				android:layout_weight="1" 
+				android:orientation="horizontal" 
+				android:gravity="center" 
+				android:layout_marginRight="10dip" 
+				android:clickable="true" 
+				android:background="@drawable/comment_btn_selector" >
+				<ImageView 
+					android:layout_width="25dp" 
+					android:layout_height="36dp" 
+					android:src="@drawable/comment_like_large" 
+					android:scaleType="fitXY" 
+					android:padding="5dip" 
+					android:layout_marginRight="5dip" 
+					android:duplicateParentState="true" />
+				
+				<TextView android:id="@+id/comment_like_textview" 
+					android:layout_width="wrap_content" 
+					android:layout_height="fill_parent" 
+					android:text="@string/comment_like" 
+					android:textColor="#428dac" 
+					android:textSize="15dip" 
+					android:textStyle="bold" 
+					android:gravity="center" 
+					android:duplicateParentState="true" />
+			</LinearLayout>
+			
+			<LinearLayout android:id="@+id/dislike_comment_button" 
+				android:layout_width="0dip" 
+				android:layout_height="fill_parent" 
+				android:layout_weight="1" 
+				android:orientation="horizontal" 
+				android:gravity="center" 
+				android:clickable="true" 
+				android:background="@drawable/comment_btn_selector" >
+				<ImageView 
+					android:layout_width="25dp" 
+					android:layout_height="36dp" 
+					android:src="@drawable/comment_dislike_large" 
+					android:scaleType="fitXY" 
+					android:padding="5dip" 
+					android:layout_marginRight="5dip" 
+					android:duplicateParentState="true" />
+				
+				<TextView android:id="@+id/comment_dislike_textview" 
+					android:layout_width="wrap_content" 
+					android:layout_height="fill_parent" 
+					android:text="@string/comment_dislike" 
+					android:textColor="#b83900" 
+					android:textSize="15dip" 
+					android:textStyle="bold" 
+					android:gravity="center" 
+					android:duplicateParentState="true" />
+					
+			</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

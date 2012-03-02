@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingTop="10dp" >
+	
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	
+		<!-- Email Layout -->
+		<LinearLayout android:id="@+id/email_layout" style="@style/detail_layout" >
+			<ImageView style="@style/detail_icon"
+				android:src="@drawable/personal_extrainfo_email_icon" />
+				
+			<TextView style="@style/detail_item"
+				android:text="@string/personal_extrainfo_detail_email" />
+				
+			<TextView style="@style/detail_colon" />
+			
+			<TextView android:id="@+id/email_textview"
+				style="@style/detail_value" 
+				 />
+				
+		</LinearLayout>
+		<ImageView style="@style/list_divider" />
+		
+		<!-- Gender Layout -->
+		<RelativeLayout android:id="@+id/gender_layout" style="@style/detail_layout" >
+		
+			<ImageView android:id="@+id/imv_1"
+				style="@style/detail_icon"
+				android:src="@drawable/personal_extrainfo_gender_icon" 
+				android:layout_centerVertical="true" />
+				
+			<TextView android:id="@+id/tv_1"
+				style="@style/detail_item"
+				android:text="@string/personal_extrainfo_detail_gender" 
+				android:layout_toRightOf="@+id/imv_1" 
+				android:layout_centerVertical="true" />
+				
+			<TextView android:id="@+id/tv_2"
+				 style="@style/detail_colon" 
+				 android:layout_toRightOf="@+id/tv_1" 
+				 android:layout_centerVertical="true" />
+			
+			<TextView android:id="@+id/gender_textview"
+				style="@style/detail_value" 
+				android:layout_toRightOf="@+id/tv_2" 
+				android:layout_toLeftOf="@+id/imv_edit" 
+				android:layout_centerVertical="true" />
+				
+			<ImageView android:id="@+id/imv_edit"
+					android:layout_width="28dp" 
+					android:layout_height="28dp" 
+					android:src="@drawable/android_moreentry" 
+					android:scaleType="fitXY" 
+					android:layout_alignParentRight="true" 
+					android:layout_centerVertical="true" 
+					android:layout_marginRight="10dp" 
+					android:visibility="gone" />
+		</RelativeLayout>
+		<ImageView style="@style/list_divider" />
+		
+		<!-- Birthday Layout -->
+		<RelativeLayout android:id="@+id/birth_layout" style="@style/detail_layout" >
+		
+			<ImageView android:id="@+id/imv_1"
+				style="@style/detail_icon"
+				android:src="@drawable/personal_extrainfo_birth_icon" 
+				android:layout_centerVertical="true" />
+				
+			<TextView android:id="@+id/tv_1"
+				style="@style/detail_item"
+				android:text="@string/personal_extrainfo_detail_birth" 
+				android:layout_toRightOf="@+id/imv_1" 
+				android:layout_centerVertical="true"/>
+				
+			<TextView android:id="@+id/tv_2"
+				 style="@style/detail_colon" 
+				 android:layout_toRightOf="@+id/tv_1" 
+				 android:layout_centerVertical="true" />
+			
+			<TextView android:id="@+id/birth_textview"
+				style="@style/detail_value" 
+				android:layout_toRightOf="@+id/tv_2" 
+				android:layout_toLeftOf="@+id/imv_edit" 
+				android:layout_centerVertical="true" />
+				
+			<ImageView android:id="@+id/imv_edit"
+					android:layout_width="28dp" 
+					android:layout_height="28dp" 
+					android:src="@drawable/android_moreentry" 
+					android:scaleType="fitXY" 
+					android:layout_alignParentRight="true" 
+					android:layout_centerVertical="true"
+					android:layout_marginRight="10dp" 
+					android:visibility="gone"/>
+		</RelativeLayout>
+		<ImageView style="@style/list_divider" />
+		
+		<!-- Location Layout -->
+		<RelativeLayout android:id="@+id/location_layout" style="@style/detail_layout" >
+		
+			<ImageView android:id="@+id/imv_1" 
+				style="@style/detail_icon"
+				android:src="@drawable/personal_extrainfo_location_icon" 
+				android:layout_centerVertical="true" />
+				
+			<TextView android:id="@+id/tv_1"
+				style="@style/detail_item"
+				android:text="@string/personal_extrainfo_detail_loaction" 
+				android:layout_centerVertical="true" 
+				android:layout_toRightOf="@+id/imv_1" />
+				
+			<TextView android:id="@+id/tv_2"
+				style="@style/detail_colon" 
+				android:layout_toRightOf="@+id/tv_1" 
+				android:layout_centerVertical="true" />
+			
+			<TextView android:id="@+id/location_textview"
+				style="@style/detail_value"
+				android:text="Taipei, Taiwan" 
+				android:layout_toRightOf="@+id/tv_2" 
+				android:layout_toLeftOf="@+id/imv_edit" 
+				android:layout_centerVertical="true" />
+				
+			<ImageView android:id="@+id/imv_edit"
+					android:layout_width="28dp" 
+					android:layout_height="28dp" 
+					android:src="@drawable/android_moreentry" 
+					android:scaleType="fitXY" 
+					android:layout_alignParentRight="true" 
+					android:layout_centerVertical="true" 
+					android:layout_marginRight="10dp" 
+					android:visibility="gone" />
+		</RelativeLayout>
+		<ImageView style="@style/list_divider" />
+	
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	
+	<!-- Link Google Image Button -->
+	<ImageButton android:id="@+id/link_google_button"
+		android:layout_width="250dp" 
+		android:layout_height="40dp" 
+		android:layout_marginTop="40dp"
+		android:layout_marginBottom="30dp"
+		android:src="@drawable/google_selector"
+		android:background="@drawable/link_button_selector" 
+		android:layout_alignLeft="@+id/link_youtube_button"
+		android:layout_alignParentTop="true"  />
+				
+	<!-- Link Youtube Image Button -->
+	<ImageButton android:id="@+id/link_youtube_button" 
+		android:layout_width="250dp" 
+		android:layout_height="40dp" 
+		android:src="@drawable/youtube_selector"
+		android:background="@drawable/link_button_selector" 
+		android:layout_below="@+id/link_google_button" 
+		android:layout_centerHorizontal="true" />
+		
+	<!-- Link Website Button -->
+	<Button android:id="@+id/link_website_button" 
+		android:layout_width="250dp" 
+		android:layout_height="40dp" 
+		android:layout_marginTop="30dp"  
+		android:text="Website" 
+		android:textSize= "18sp"
+		android:textColor="@drawable/color_light_brown_white_selector"
+		android:background="@drawable/link_button_selector"
+		android:layout_below="@+id/link_youtube_button"
+		android:layout_alignLeft="@+id/link_youtube_button" />
+	
+</RelativeLayout>

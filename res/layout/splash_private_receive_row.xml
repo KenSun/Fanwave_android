@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="5dp"
+	android:paddingRight="80dp"
+	android:paddingTop="5dp" >
+	
+	<!-- Avatar Image View -->
+	<ImageView android:id="@+id/avatar_imageview"
+		style="@style/avatar_small"
+		android:layout_width="50dp"
+		android:layout_height="50dp" />
+		
+	<RelativeLayout android:id="@+id/content_layout"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" >
+		
+		<ImageView 
+			android:layout_width="wrap_content" 
+			android:layout_height="fill_parent"
+			android:src="@drawable/dialog_send" 
+			android:scaleType="fitXY" 
+			android:layout_alignBottom="@+id/content_linearlayout" 
+			android:layout_alignRight="@+id/content_linearlayout" 
+			android:layout_alignLeft="@+id/content_linearlayout"/>
+	
+		<LinearLayout android:id="@+id/content_linearlayout"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:paddingRight="10dp"
+			android:paddingTop="5dp"
+			android:paddingBottom="5dp" 
+			android:layout_centerVertical="true" 
+			android:orientation="vertical" 
+			android:paddingLeft="20dp" >
+			
+			<!-- Content Text View -->
+			<TextView android:id="@+id/content_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Don't do that。Don't do that。Don't do that。Don't do that。Don't do that。Don't do that。Don't do that。Don't do that。Don't do that。Don't do that。Don't do that。Don't do that。Don't do that。"
+				android:textSize="14sp"
+				android:textColor="@color/gray"/>
+				
+			<!-- Created Time Text View -->
+			<TextView android:id="@+id/created_time_textview"	
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:text="yy/mm/dd hh:mm:ss"
+				android:textColor="@color/light_blue"
+				android:textSize="10sp"/>
+		</LinearLayout>
+	</RelativeLayout>
+	
+</LinearLayout>

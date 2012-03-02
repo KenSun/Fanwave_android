@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:background="@drawable/fanwave_background_white" >
+	
+	<!-- Title Bar Layout -->
+	<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+		
+		<RelativeLayout android:id="@+id/title_sense_region"
+            style="@style/title_bar_sense_region" >
+            <!-- Title Image View -->
+            <ImageView android:id="@+id/title_imageview"
+            style="@style/title_bar_image" />
+            
+            <!-- Title Text View -->	
+            <TextView android:id="@+id/title_textview"
+			style="@style/title_bar_text"
+			android:text="Splash XXX Friends" />
+        </RelativeLayout>
+			
+		<!-- Back Image Button -->
+		<ImageButton android:id="@+id/back_imagebutton" 
+			style="@style/title_bar_back" />
+			
+		<!-- Next Button -->
+		<ImageButton android:id="@+id/next_imagebutton" 
+			style="@style/title_bar_next"
+			android:src="@drawable/select_all" />
+			
+	</RelativeLayout>
+	
+	<com.wildmind.fanwave.widget.SoftKeyboardFrameLayout android:id="@+id/keyboard_listener_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:weightSum="1" >
+		
+			<!-- Splash List Layout -->
+			<FrameLayout android:id="@+id/splash_list_layout" 
+				android:layout_width="fill_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1" >
+		
+				<!-- Splash List Grid View -->
+				<GridView android:id="@+id/splash_list_gridview" 
+				    android:layout_width="fill_parent"  
+				    android:layout_height="fill_parent"
+				    android:columnWidth="75dp" 
+				    android:numColumns="auto_fit" 
+				    android:verticalSpacing="6dp" 
+				    android:horizontalSpacing="8dp" 
+				    android:stretchMode="columnWidth" 
+				    android:gravity="center"
+				    android:listSelector="@android:color/transparent" />
+					
+				<!-- Loading Indicator Layout -->
+				<include android:id="@+id/loading_indicator" layout="@layout/loading_indicator" />
+					
+			</FrameLayout>
+			
+			<!-- Message Splash Poster -->
+			<include android:id="@+id/message_splash_poster" layout="@layout/message_splash_poster" />
+			
+			<!-- Splash Poster Entry -->
+			<include android:id="@+id/splash_poster_entry" layout="@layout/message_poster_short" />
+		
+		
+		</LinearLayout>
+		
+	</com.wildmind.fanwave.widget.SoftKeyboardFrameLayout>
+	
+</LinearLayout>

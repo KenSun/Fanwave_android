@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/activity_layout"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical"  
+	android:background="@drawable/fanwave_background_white" >
+	
+	<!-- Notification Title Layout -->	
+	<RelativeLayout android:id="@+id/notification_layout"
+		android:layout_width="fill_parent" 
+		android:layout_height="50dp"
+		android:clickable="true"
+		android:background="@drawable/titlebar_background_selector" >
+        
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent" 
+			android:layout_centerInParent="true" >
+			
+			<!-- Icon Image View -->
+			<ImageView android:id="@+id/icon_imageview"
+            android:layout_width="20dp" 
+            android:layout_height="20dp"
+            android:src="@drawable/notification_icon" 
+            android:scaleType="fitXY"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center" />
+            
+			<!-- Notification Text View -->
+			<TextView android:id="@+id/notification_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" 
+            android:text="@string/main_page_notification" 
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" 
+            android:gravity="center" />
+			
+		</LinearLayout>
+        
+	</RelativeLayout>
+	
+	<!-- Notification List Layout -->
+	<FrameLayout android:id="@+id/notification_list_layout" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		
+		<!-- Notification List View -->
+		<ListView android:id="@+id/notification_list_listview"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:listSelector="@drawable/fanwave_row_press"
+        android:cacheColorHint="#00000000" />
+        
+		<!-- Loading Indicator Layout -->
+		<include android:id="@+id/loading_indicator" layout="@layout/loading_indicator" />
+        
+        
+		<!-- Description Text View -->
+		<TextView android:id="@+id/descr_textview" style="@style/description_textview_style" android:text="@string/main_page_no_notification"/>
+	</FrameLayout>
+	
+</LinearLayout>

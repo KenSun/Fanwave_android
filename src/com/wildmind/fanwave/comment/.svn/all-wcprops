@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/mobileware_tvguide/!svn/ver/5154/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/comment
+END
+CommentListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mobileware_tvguide/!svn/ver/5154/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/comment/CommentListAdapter.java
+END
+Comment.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/mobileware_tvguide/!svn/ver/5012/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/comment/Comment.java
+END
+AttachImageAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mobileware_tvguide/!svn/ver/5154/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/comment/AttachImageAdapter.java
+END
+Attachment.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/mobileware_tvguide/!svn/ver/4764/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/comment/Attachment.java
+END
+CommentManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/mobileware_tvguide/!svn/ver/4826/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/comment/CommentManager.java
+END
+CommentInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/mobileware_tvguide/!svn/ver/5001/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/comment/CommentInfo.java
+END

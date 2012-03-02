@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="main_page_text_color">#84685f</color>
+	<color name="no_result_text_color">#9f7864</color>
+	<color name="limpid">#00000000</color>
+	<color name="transparent_75">#AF000000</color>
+	<color name="transparent">#DD000000</color>
+	<color name="light_transparent">#55000000</color>
+	<color name="blue_sky">#A0C8FF</color>
+	<color name="vert_manu">#CCFF00</color>
+	<color name="black">#000000</color>
+	<color name="white">#FFFFFF</color>
+	<color name="red">#FF0000</color>
+	<color name="gray">#545454</color>
+	<color name="light_gray">#757575</color>
+	<color name="white_gray">#dddddd</color>
+	<color name="orange">#e65715</color>
+	<color name="dark_red">#b83900</color>
+	<color name="light_blue">#4295b8</color>
+    <color name="light_brown">#9f7864</color>
+    <color name="dark_brown">#715f57</color>
+    <color name="mood_color">#7a675e</color>
+    <color name="hot_top_color">#c8bfae</color>
+    <color name="hot_time_color">#7e7a77</color>
+    <color name="facebook_blue">#506ea0</color>
+	<color name="darkBlue">#385487</color>
+	<color name="topfan_score">#717171</color>
+
+</resources>

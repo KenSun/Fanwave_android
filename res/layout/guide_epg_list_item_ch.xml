@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:layout_height="82dip" 
+	android:orientation="horizontal" >
+	
+	<FrameLayout 
+		android:layout_width="fill_parent" 
+		android:layout_height="82dip" >
+		
+		<Button android:id="@+id/guide_epg_channel_button" 
+			android:layout_width="fill_parent" 
+			android:layout_height="82dip" 
+			android:background="@drawable/guide_epg_channel_btn_selector" />
+			
+		<RelativeLayout 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent">
+		
+			<TextView android:id="@+id/guide_epg_channel_id_textview" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:text="065" 
+				android:textColor="#6f5d55" 
+				android:textSize="10dip" 
+				android:layout_marginLeft="2dip" 
+				android:layout_marginTop="2dip" />
+			
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent" 
+				android:orientation="vertical" 
+				android:layout_marginTop="5dp"  
+				android:gravity="center_horizontal|center_vertical">
+				
+				
+				<ImageView android:id="@+id/guide_epg_channel_imageview" 
+					android:layout_width="wrap_content" 
+					android:layout_height="40dip" 
+					android:scaleType="fitXY" 
+					android:layout_marginLeft="3dp"/>
+					
+				<TextView android:id="@+id/guide_epg_channel_title_textview" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:text="衛視體育台" 
+					android:textColor="@color/gray" 
+					android:textSize="12dip" 
+					android:gravity="center"
+					android:layout_marginLeft="3dp" 
+					android:layout_marginTop="5dp"   />
+			</LinearLayout>
+			
+		</RelativeLayout>
+<!-- 		<ImageView 
+			 	android:layout_width="wrap_content" 
+			 	android:layout_height="fill_parent" 
+			 	android:src="@drawable/guide_straight_line" 
+			 	android:scaleType="fitXY" 
+			 	android:layout_gravity="right" /> -->
+	</FrameLayout>
+	 
+</LinearLayout>

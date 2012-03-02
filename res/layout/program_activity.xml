@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="@drawable/fanwave_background_white" >
+	
+	<!-- Title Bar Layout -->
+	<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+		
+		<RelativeLayout android:id="@+id/title_sense_region"
+            style="@style/title_bar_sense_region" >
+            <!-- Title Image View -->
+            <ImageView android:id="@+id/title_imageview"
+            style="@style/title_bar_image" />
+            
+            <!-- Title Text View -->	
+            <TextView android:id="@+id/title_textview"
+			style="@style/title_bar_text"
+			android:text="ProgramProgramProgramProgramProgramProgram" />
+        </RelativeLayout>
+		
+		
+			
+		<!-- Back Image Button -->
+		<ImageButton android:id="@+id/back_imagebutton" 
+			style="@style/title_bar_back" />
+			
+		<!-- Next Image Button -->
+		<ImageButton android:id="@+id/next_imagebutton" 
+			style="@style/title_bar_next"
+			android:src="@drawable/program_info_icon" />
+			
+	</RelativeLayout>
+
+	<FrameLayout android:id="@+id/program_activity_body_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:layout_marginTop="-3dp" >
+		
+		<!-- Program Content Layout -->
+		<include android:id="@+id/program_content_layout" layout="@layout/program_content" />
+		
+		<!-- Program Poster -->
+		<include android:id="@+id/program_poster" layout="@layout/program_poster"/>
+	
+		<!-- Program Waver -->
+		<include android:id="@+id/program_waver" layout="@layout/program_waver" />
+		
+		<!-- Program Rater -->
+		<include android:id="@+id/program_rater" layout="@layout/program_rater" />
+	
+	</FrameLayout>
+
+</LinearLayout>

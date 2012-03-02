@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="53dp" 
+	android:paddingLeft="5dp" 
+	android:paddingRight="5dp"
+	android:background="@drawable/post_background" 
+	android:gravity="center_horizontal"
+	android:focusableInTouchMode="true"
+	android:clickable="true" >		
+	
+	<!-- Post Edit Text -->
+	<EditText android:id="@+id/post_edittext"
+		android:layout_width="0dp"
+		android:layout_weight="1" 
+		android:layout_height="fill_parent" 
+		android:layout_marginTop="5dp"
+		android:textColor="@color/black" 
+		android:textSize="14sp"
+		android:gravity="top" />
+		
+	<!-- Post Button -->	
+	<Button android:id="@+id/post_button"
+		android:layout_width="80dp"
+		android:layout_height="40dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginBottom="3dp"
+		android:text="@string/message_poster_post"
+		android:textSize="16sp"
+		android:textColor="@color/white"
+		android:textStyle="bold"
+		android:background="@drawable/button_2_selector"
+		android:layout_gravity="bottom" />
+		
+</LinearLayout>

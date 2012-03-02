@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="50dp"
+	android:clickable="true"
+	android:background="@drawable/notification_selector" >
+		
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent" 
+		android:layout_centerInParent="true" >
+		
+		<!-- Icon Image View -->
+		<ImageView android:id="@+id/icon_imageview"
+			android:layout_width="20dp" 
+			android:layout_height="20dp"
+			android:src="@drawable/notification_icon" 
+			android:scaleType="fitXY"
+			android:layout_marginRight="10dp"
+			android:layout_gravity="center" />
+
+		<!-- Notificaiton Text View -->
+		<TextView android:id="@+id/notification_textview"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent" 
+			android:text="@string/main_page_notification" 
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:textColor="@color/white" 
+			android:gravity="center" />
+		
+	</LinearLayout>
+
+</RelativeLayout>

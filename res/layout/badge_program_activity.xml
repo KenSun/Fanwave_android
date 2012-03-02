@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	android:orientation="vertical" 
+	android:background="@drawable/fanwave_background_white" >
+	
+	<!-- Title Bar Layout -->
+	<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+			
+		<RelativeLayout android:id="@+id/title_sense_region"
+            style="@style/title_bar_sense_region" >
+            <!-- Title Image View -->
+            <ImageView android:id="@+id/title_imageview"
+            style="@style/title_bar_image" />
+            
+            <!-- Title Text View -->	
+            <TextView android:id="@+id/title_textview"
+			style="@style/title_bar_text"
+			android:text="@string/badge_title" />
+        </RelativeLayout>
+			
+		<!-- Back Image Button -->
+		<ImageButton android:id="@+id/back_imagebutton" 
+			style="@style/title_bar_back" />
+				
+	</RelativeLayout>
+		
+	<!-- Wearing Layout -->
+	<RelativeLayout android:id="@+id/wearing_layout"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="100dp" >
+				
+		<!-- Badge Image View -->
+		<ImageView android:id="@+id/badge_imageview"
+			android:layout_width="70dp" 
+			android:layout_height="70dp"
+			android:layout_marginLeft="5dp" 
+			android:src="@drawable/badge_loading" 
+			android:scaleType="fitXY"
+			android:layout_centerVertical="true" />
+				
+		<!-- Badge Detail Layout -->
+		<LinearLayout android:id="@+id/badge_detail_layout"
+			android:orientation="vertical"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:layout_marginLeft="8dp" 
+			android:layout_marginRight="4dp" 
+			android:layout_toRightOf="@+id/badge_imageview"
+			android:layout_toLeftOf="@+id/wear_button"
+			android:gravity="center_vertical" >
+					
+				
+			<!-- Badge Description Text View -->
+			<TextView android:id="@+id/description_textview"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:text="detail" 
+				android:textColor="@color/mood_color" 
+				android:textSize="12sp" />
+			
+		</LinearLayout>
+				
+		<!-- Wear Button -->
+		<Button android:id="@+id/wear_button"
+			android:layout_width="66dp" 
+			android:layout_height="32dp" 
+			android:layout_gravity="center_vertical" 
+			android:background="@drawable/button_selector"
+			android:text="@string/badge_wear" 
+			android:textColor="@drawable/color_light_brown_white_selector" 
+			android:textSize="14sp" 
+			android:layout_marginRight="10dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true" />
+			
+	</RelativeLayout>
+	
+	<!-- List Title Text View -->
+	<TextView android:id="@+id/list_title_textview"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"  
+		android:gravity="center_vertical" 
+		android:paddingLeft="16dp" 
+		android:text="@string/badge_program_earned_title" 
+		android:textColor="@color/white" 
+		android:textSize="14sp" 
+		android:background="@drawable/bar_gray" >
+	</TextView>
+			
+	<!-- Program List Layout -->
+	<FrameLayout android:id="@+id/program_list_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/fanwave_background_content" >
+			
+		<!-- Program List View -->
+		<ListView android:id="@+id/program_list_listview"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:divider="@drawable/list_divider" 
+			android:cacheColorHint="#00000000"
+			android:listSelector="@color/limpid"/>
+				
+		<!-- Loading Indicator Layout -->
+		<include android:id="@+id/loading_indicator" layout="@layout/loading_indicator" />
+		
+		<!-- Description Text View -->
+		<TextView android:id="@+id/descr_textview" style="@style/description_textview_style"
+			android:text="@string/badge_program_no_result" />
+				
+	</FrameLayout>
+	
+</LinearLayout>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/mobileware_tvguide/!svn/ver/4211/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/xmpp/packet
+END
+FWExtend.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/mobileware_tvguide/!svn/ver/4046/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/xmpp/packet/FWExtend.java
+END
+InfoExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/mobileware_tvguide/!svn/ver/4046/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/xmpp/packet/InfoExtension.java
+END
+FWBadgeExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/mobileware_tvguide/!svn/ver/4046/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/xmpp/packet/FWBadgeExtension.java
+END
+FWMucExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/mobileware_tvguide/!svn/ver/4211/trunk_android/Fanwave.TV_4.0/src/com/wildmind/fanwave/xmpp/packet/FWMucExtension.java
+END

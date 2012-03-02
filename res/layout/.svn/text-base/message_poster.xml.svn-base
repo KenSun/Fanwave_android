@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.wildmind.fanwave.widget.MessagePoster xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="150dp"  
+	android:gravity="center"
+	android:focusableInTouchMode="true" >
+	
+	<!-- Attachment Layout -->
+	<FrameLayout android:id="@+id/attach_layout" 
+		android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:background="@drawable/post_background" >
+		
+		<!-- Attach Link Layout -->
+		<LinearLayout android:id="@+id/attach_link_layout" 
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:gravity="center_vertical"
+			android:visibility="gone" >	
+				
+			<TextView android:id="@+id/attach_link_constant_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:text="Link : "
+				android:textSize="16sp"
+				android:textColor="@color/light_brown"
+				android:gravity="center_vertical" />
+			
+			<!-- Link Text View -->	
+			<TextView android:id="@+id/attach_link_textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:lines="2"
+				android:text="www.wildmindcorp.com"
+				android:textSize="16sp"
+				android:textColor="@color/gray"
+				android:gravity="center_vertical" />
+						
+		</LinearLayout>
+			
+		<!-- Attach Image Layout -->
+		<LinearLayout android:id="@+id/attach_image_layout" 
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:gravity="center_vertical"
+			android:weightSum="1" >	
+				
+			<!-- Attach Image View -->
+			<ImageView android:id="@+id/attach_imageview"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:padding="4dp"
+				android:src="@drawable/fanwave_avatar"
+				android:scaleType="fitXY" />
+				
+			<!-- Attach Upload Progress Bar -->	
+			<ProgressBar android:id="@+id/attach_image_progressbar"
+				style="@android:style/Widget.ProgressBar.Horizontal"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="10dp" 
+				android:layout_marginLeft="3dp" />
+				
+			<!-- Upload Finish Text View -->
+			<TextView android:id="@+id/attach_image_textview"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dp"
+				android:text="@string/attach_finish"
+				android:textColor="@color/gray"
+				android:textSize="16sp"
+				android:gravity="center_vertical" />
+				
+			<ImageView android:src="@drawable/android_moreentry"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_marginLeft="32dp"
+				android:layout_marginRight="30dp"
+				android:scaleType="fitXY" />
+						
+		</LinearLayout>
+		
+	</FrameLayout>
+	
+	<!-- Message Post Layout -->
+	<LinearLayout android:id="@+id/message_post_layout"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:background="@drawable/post_background"
+		android:gravity="center_vertical"
+		android:weightSum="1" >
+		
+		<!-- Attachment Button -->
+		<Button android:id="@+id/attach_button"
+			android:layout_width="40dp"
+			android:layout_height="80dp"
+			android:layout_marginLeft="5dp"
+			android:background="@drawable/attachment_selector" />
+			
+		<!-- Message Edit Text -->
+		<EditText android:id="@+id/message_edittext"
+			android:layout_width="0dp"
+			android:layout_weight="1" 
+			android:layout_height="85dp" 
+			android:layout_marginTop="3dp"
+			android:layout_marginLeft="3dp"
+			android:padding="10dp"
+			android:textColor="@color/black" 
+			android:textSize="14sp"
+			android:gravity="top" />
+			
+		<LinearLayout android:id="@+id/post_action_layout"
+			android:orientation="vertical"
+			android:layout_width="90dp"
+			android:layout_height="fill_parent"
+			android:gravity="center" >
+			
+			<!-- Facebook Post Button -->
+			<Button android:id="@+id/facebook_post_button"
+				android:layout_width="80dp"
+				android:layout_height="40dp"
+				android:paddingLeft="20dp"
+				android:text="@string/message_poster_post"
+				android:textSize="16sp"
+				android:textColor="@color/white"
+				android:textStyle="bold"
+				android:background="@drawable/facebook_post_selector" />
+			
+			<!-- Post Button -->	
+			<Button android:id="@+id/post_button"
+				android:layout_width="80dp"
+				android:layout_height="40dp"
+				android:layout_marginTop="2dp"
+				android:text="@string/message_poster_post"
+				android:textSize="16sp"
+				android:textColor="@color/white"
+				android:textStyle="bold"
+				android:background="@drawable/button_2_selector" />
+			
+		</LinearLayout>
+		
+	</LinearLayout>
+
+</com.wildmind.fanwave.widget.MessagePoster>

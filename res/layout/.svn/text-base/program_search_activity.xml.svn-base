@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:background="@drawable/fanwave_background_white" >
+	
+	<!-- Title Bar Layout -->
+	<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+		
+		<RelativeLayout android:id="@+id/title_sense_region"
+            style="@style/title_bar_sense_region" >
+            <!-- Title Image View -->
+            <ImageView android:id="@+id/title_imageview"
+            style="@style/title_bar_image" />
+            
+            <!-- Title Text View -->	
+            <TextView android:id="@+id/title_textview"
+			style="@style/title_bar_text"
+			android:text="@string/program_search_title" />
+        </RelativeLayout>
+        
+		<!-- Back Image Button -->
+		<ImageButton android:id="@+id/back_imagebutton" 
+        style="@style/title_bar_back"
+        android:src="@drawable/home_icon" />
+        
+	</RelativeLayout>
+	
+	<FrameLayout android:id="@+id/user_list_layout" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="-3dp" >
+        
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" >
+			
+			<!-- Search Bar Layout -->
+			<LinearLayout android:id="@+id/search_layout" style="@style/search_bar_layout" >
+				
+				<!-- Search Edit Text -->
+				<EditText android:id="@+id/search_edittext" style="@style/search_bar"
+                android:hint="@string/program_search_hint" />
+                
+				<!-- Search Icon Image View -->
+				<ImageView android:id="@+id/search_imageview" style="@style/search_button" />
+				
+			</LinearLayout>
+			
+			<!-- Layout for list drag down effect -->	
+			<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                
+				<!-- Program List View -->
+				<ListView android:id="@+id/program_list_listview"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/fanwave_row_press"
+                android:cacheColorHint="#00000000" />
+                
+			</FrameLayout>
+            
+		</LinearLayout>
+        
+		<!-- Loading Indicator Layout -->
+		<include android:id="@+id/loading_indicator" layout="@layout/loading_indicator_mask" />
+		
+		<!-- Description Text View -->
+        <TextView android:id="@+id/descr_textview" style="@style/description_textview_style"
+        	android:layout_marginTop="100dp"
+        	android:text="@string/app_search_no_result" />
+        
+	</FrameLayout>
+	
+</LinearLayout>

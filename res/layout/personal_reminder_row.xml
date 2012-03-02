@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:orientation="vertical" >
+	
+	<LinearLayout android:id="@+id/content_layout"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_margin="5dp" 
+		android:gravity="center"
+		android:weightSum="1" >
+		
+		<!-- Program Icon Image View -->
+		<ImageView android:id="@+id/program_icon_imageview"
+			style="@style/program_small"
+			android:layout_height="50dp" 
+			android:layout_width="50dp"  />
+	
+		<LinearLayout android:id="@+id/content_Layout"
+			android:orientation="vertical"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="fill_parent"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="6dp"
+			android:layout_marginTop="3dp"
+			android:layout_marginBottom="3dp" >
+					
+			<!-- Program Title Text View -->
+			<TextView android:id="@+id/title_textview"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="5dp" 
+				android:lines="1"
+				android:text="Title" 
+				android:textColor="@color/orange" 
+				android:textSize="15sp" 
+				android:textStyle="bold" />
+				
+			<!-- Subtitle Text View -->
+			<TextView android:id="@+id/subtitle_textview" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="channelchannelchannel"
+				android:textColor="@color/mood_color" 
+				android:textSize="10sp" />
+		
+		</LinearLayout>
+				
+		<!-- Modify Button -->
+		<Button android:id="@+id/modify_button"
+			android:layout_height="32dp" 
+			android:layout_width="66dp"
+			android:focusable="false"
+			android:textColor="@drawable/color_light_brown_white_selector"
+			android:text="@string/action_modify" 
+			android:background="@drawable/button_selector"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp" />
+				
+	</LinearLayout>
+	
+	<!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+		
+</LinearLayout>

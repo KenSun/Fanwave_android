@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" >
+
+	<!-- Reminder List View -->
+	<ListView android:id="@+id/reminder_list_listview"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:listSelector="@drawable/fanwave_row_press"
+		android:cacheColorHint="#00000000" />
+
+	<!-- Loading Indicator Layout -->
+	<include android:id="@+id/loading_indicator" layout="@layout/loading_indicator" />
+
+</FrameLayout>

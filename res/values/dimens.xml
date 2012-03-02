@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="no_result_TextSize">16sp</dimen>
+	<dimen name="textview_3option">35dip</dimen>
+	<dimen name="main_page_TextSize">15sp</dimen>
+	<dimen name="wizard_button_textsize">15sp</dimen>
+    
+    <dimen name="drag_item_normal_height">48dip</dimen>
+    <dimen name="drag_item_expand_height">96dip</dimen>
+</resources>

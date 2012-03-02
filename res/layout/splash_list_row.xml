@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:paddingTop="5dp" >
+	
+	<RelativeLayout android:id="@+id/splash_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="5dp" >
+	
+		<!-- Avatar Image View -->
+		<ImageView android:id="@+id/avatar_imageview"
+			style="@style/avatar_small"
+			android:layout_width="50dp"
+			android:layout_height="50dp" 
+			android:layout_marginRight="5dp"
+			android:layout_alignParentLeft="true" />
+			
+		<!-- Nickname Text View -->
+		<TextView android:id="@+id/nickname_textview"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:maxWidth="170dp"
+			android:text="Nickname"
+			android:textSize="14sp"
+			android:textColor="@color/light_blue" 
+			android:textStyle="bold"
+			android:layout_toRightOf="@+id/avatar_imageview"
+			android:layout_alignTop="@+id/avatar_imageview" />
+			
+		<!-- Content Text View -->
+		<TextView android:id="@+id/content_textview" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="comment comment comment comment comment comment"
+			android:textColor="@color/light_gray" 
+			android:textSize="12sp"
+			android:lines="2"
+			android:layout_below="@+id/nickname_textview"
+			android:layout_toRightOf="@+id/avatar_imageview" />
+		
+		<!-- Created Time Text View -->
+		<TextView android:id="@+id/created_time_textview"	
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="yy/mm/dd hh:mm:ss"
+			android:textColor="@color/light_blue"
+			android:textSize="10sp"
+			android:layout_alignParentRight="true"
+			android:layout_alignTop="@+id/nickname_textview" />
+			
+	</RelativeLayout>
+	
+	<!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+	
+</LinearLayout>

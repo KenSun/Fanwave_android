@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	
+	<!-- Link Facebook Button -->
+	<Button android:id="@+id/link_facebook_button"
+		android:layout_width="250dp" 
+		android:layout_height="40dp" 
+		android:layout_marginBottom="20dp"
+		android:text="facebook" 
+		android:textSize= "18sp"
+		android:textColor="@drawable/color_facebook_blue_white_selector"
+		android:background="@drawable/link_button_selector" 
+		android:layout_alignLeft="@+id/link_blog_button" 
+		android:layout_above="@+id/link_blog_button" />
+				
+	<!-- Link Blog Button -->
+	<Button android:id="@+id/link_blog_button" 
+		android:layout_width="250dp" 
+		android:layout_height="40dp" 
+		android:text="@string/extrainfo_link_blog" 
+		android:textSize= "18sp"
+		android:textColor="@drawable/color_light_brown_white_selector"
+		android:background="@drawable/link_button_selector" 
+		android:layout_centerInParent="true"/>
+		
+	<!-- Link Website Button -->
+	<Button android:id="@+id/link_website_button" 
+		android:layout_width="250dp" 
+		android:layout_height="40dp" 
+		android:layout_marginTop="20dp"  
+		android:text="@string/extrainfo_link_website" 
+		android:textSize= "18sp"
+		android:textColor="@drawable/color_light_brown_white_selector"
+		android:background="@drawable/link_button_selector"
+		android:layout_below="@+id/link_blog_button"
+		android:layout_alignLeft="@+id/link_blog_button" />
+	
+</RelativeLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/fanwave_background_content"  >
+	
+	<!-- Title Bar Layout -->
+	<RelativeLayout android:id="@+id/title_bar_layout" style="@style/title_bar_layout">
+			
+		<RelativeLayout android:id="@+id/title_sense_region"
+            style="@style/title_bar_sense_region" >
+            <!-- Title Image View -->
+            <ImageView android:id="@+id/title_imageview"
+            style="@style/title_bar_image" />
+            
+            <!-- Title Text View -->	
+            <TextView android:id="@+id/title_textview"
+			style="@style/title_bar_text"
+			android:text="@string/topfan_be_on_top" />
+        </RelativeLayout>
+			
+						
+		<!-- Back Image Button -->
+		<ImageButton android:id="@+id/back_imagebutton" 
+			style="@style/title_bar_back"
+			android:src="@drawable/topfan_icon" />
+						
+	</RelativeLayout>	    
+	    
+	    	
+	<LinearLayout 
+	        android:layout_width="fill_parent"
+		    android:layout_height="130dp" 
+		    android:orientation="horizontal"  
+		    android:background="@drawable/fanwave_background_white">
+		
+	    
+			<ImageView 
+                android:layout_width="100dp" 
+                android:layout_height="100dp" 
+                android:layout_marginTop="10dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/topfan_badge" />
+	    
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="110dp" 
+				android:orientation="vertical" 
+				android:gravity="center"
+                android:layout_marginTop="10dip">
+				
+				
+				
+	           <TextView 
+					android:layout_width="fill_parent" 
+                	android:layout_height="wrap_content"
+                 	android:textStyle="bold"
+                	android:textSize="16dp"
+                	android:text="@string/topfan_be_on_top_title" 
+                	android:gravity="center"
+                	android:textColor="@color/orange"/>
+
+	           <TextView
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:gravity="center"
+	               android:layout_marginTop="2dp"
+	               android:text="@string/topfan_be_on_top_topfan"
+	               android:textColor="@color/orange"
+	               android:textSize="20dp"
+	               android:textStyle="bold" />
+	           
+	           	<TextView
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:gravity="center"
+	               android:layout_marginTop="12dp"
+	               android:text="@string/topfan_be_on_top_message"
+	               android:textColor="@color/hot_top_color"
+	               android:textSize="12dp"/>
+			
+		</LinearLayout>
+    </LinearLayout>
+    
+	 <!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+	    	
+	<LinearLayout 
+	        android:layout_width="fill_parent"
+		    android:layout_height="50dp" 
+		    android:background="#00000000"
+		    android:orientation="horizontal" 
+		    android:gravity="center_vertical" >
+		
+	    
+			<ImageView 
+                android:layout_width="25dp" 
+                android:layout_height="25dp" 
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/topfan_follow" />
+	    
+	        <TextView
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:text="@string/topfan_be_on_top_follow"
+                   android:layout_marginRight="15dip"
+	               android:textColor="@color/gray"
+	               android:textSize="12dp"/>
+			
+    </LinearLayout>	   
+     
+	 <!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+
+	<LinearLayout 
+	        android:layout_width="fill_parent"
+		    android:layout_height="50dp" 
+		    android:background="#00000000"
+		    android:orientation="horizontal" 
+		    android:gravity="center_vertical" >
+		
+	    
+			<ImageView 
+                android:layout_width="25dp" 
+                android:layout_height="25dp" 
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/topfan_ratings" />
+	    
+	        <TextView
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:text="@string/topfan_be_on_top_share"
+                   android:layout_marginRight="15dip"
+	               android:textColor="@color/gray"
+	               android:textSize="12dp"/>
+			
+    </LinearLayout>	   
+     
+	 <!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+	
+	<LinearLayout 
+	        android:layout_width="fill_parent"
+		    android:layout_height="50dp" 
+		    android:background="#00000000"
+		    android:orientation="horizontal" 
+		    android:gravity="center_vertical" >
+		
+	    
+			<ImageView 
+                android:layout_width="25dp" 
+                android:layout_height="25dp" 
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/topfan_wavein" />
+	    
+	        <TextView
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:text="@string/topfan_be_on_top_wavein"
+                   android:layout_marginRight="15dip"
+	               android:textColor="@color/gray"
+	               android:textSize="12dp"/>
+			
+    </LinearLayout>	   
+     
+	 <!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+	
+	<LinearLayout 
+	        android:layout_width="fill_parent"
+		    android:layout_height="50dp" 
+		    android:background="#00000000"
+		    android:orientation="horizontal" 
+		    android:gravity="center_vertical" >
+		
+	    
+			<ImageView 
+                android:layout_width="25dp" 
+                android:layout_height="25dp" 
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/topfan_comment" />
+	    
+	        <TextView
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:text="@string/topfan_be_on_top_comment"
+                   android:layout_marginRight="15dip"
+	               android:textColor="@color/gray"
+	               android:textSize="12dp"/>
+			
+    </LinearLayout>	   
+     
+	 <!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+	
+	<LinearLayout 
+	        android:layout_width="fill_parent"
+		    android:layout_height="50dp" 
+		    android:background="#00000000"
+		    android:orientation="horizontal" 
+		    android:gravity="center_vertical" >
+		
+	    
+			<ImageView 
+                android:layout_width="25dp" 
+                android:layout_height="25dp" 
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/topfan_like" />
+	    
+	        <TextView
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:text="@string/topfan_be_on_top_like"
+                   android:layout_marginRight="15dip"
+	               android:textColor="@color/gray"
+	               android:textSize="12dp"/>
+			
+    </LinearLayout>	   
+     
+	 <!-- Divider Image View -->
+	<ImageView android:id="@+id/divider_imageview" style="@style/list_divider" />
+			    
+</LinearLayout>

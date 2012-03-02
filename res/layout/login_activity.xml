@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:gravity="center_horizontal|bottom"
+	android:background="@drawable/fanwave_background"
+	android:weightSum="10" >
+	
+	<ImageView 
+		android:layout_width="200dp" 
+		android:layout_height="90dp" 
+		android:src="@drawable/fanwave_logo_large" 
+		android:scaleType="fitXY" 
+		android:layout_marginBottom="40dp" />
+	
+    	<Button android:id="@+id/login_facebook_button" 
+    		android:layout_width="280dp" 
+    		android:layout_height="40dp"
+    		android:text="@string/login_facebook_account" 
+    		android:textColor="@color/white" 
+    		android:background="@drawable/login_facebook_selector" />
+    
+    	<Button android:id="@+id/login_fanwave_button" 
+    		android:layout_width="280dp"
+    		android:layout_height="40dp"
+    		android:textColor="@color/white"  
+    		android:text="@string/login_fanwave_account"  
+    		android:background="@drawable/login_fanwave_selector"
+    		android:layout_marginTop="20dp" />
+    		
+	     <Button android:id="@+id/login_register_button"
+	      	android:layout_height="40dp" 
+	      	android:layout_width="280dp"  
+	      	android:textColor="@color/white" 
+	      	android:text="@string/login_new_account" 
+	      	android:background="@drawable/login_register_selector"
+	      	android:layout_marginTop="20dp"
+	      	android:layout_marginBottom="30dp" />		
+		
+		
+		
+		<FrameLayout android:layout_width="fill_parent" 
+			android:layout_height="0dip" 
+			android:layout_weight="2"
+			android:gravity="bottom" />
+		<ImageView 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:src="@drawable/fanwave_footer_wildmind" 
+			android:scaleType="fitXY" 
+			android:layout_marginBottom="10dp" />
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:background="@drawable/fanwave_background_clear" >
+	
+	<!-- Title Bar Layout -->
+	<RelativeLayout android:id="@+id/title_bar_layout" style="@style/main_title_bar_layout">
+		
+		<!-- Back Image Button -->
+		<ImageButton android:id="@+id/back_imagebutton" 
+			style="@style/main_title_bar_back" 
+			android:background="@drawable/back_btn_selector" />
+			
+		<!-- Logo Image -->
+		<ImageView style="@style/main_title_bar_logo" />
+			
+	</RelativeLayout>
+	
+	<!-- Email Layout -->
+	<LinearLayout android:id="@+id/email_layout"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="50dip"
+		android:layout_marginTop="50dip" >
+		
+		<!-- Email Text View -->
+		<TextView android:id="@+id/email_textview"
+			android:layout_width="90dip"
+			android:layout_height="fill_parent"
+			android:text="@string/login_email"
+			android:textSize="18dip"
+			android:textColor="@color/orange"
+			android:gravity="center_vertical|left"
+			android:layout_marginLeft="20dip" />
+		
+		<!-- Email Edit Text -->	
+		<EditText android:id="@+id/email_edittext"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:singleLine="true" 
+			android:textSize="15dip"
+			android:inputType="textEmailAddress"
+			android:layout_marginRight="15dip" />
+			
+	</LinearLayout>
+	
+	<!-- Password Layout -->
+	<LinearLayout android:id="@+id/password_layout"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="50dip" >
+		
+		<!-- Password Text View -->
+		<TextView android:id="@+id/password_textview"
+			android:layout_width="90dip"
+			android:layout_height="fill_parent"
+			android:text="@string/login_password"
+			android:textSize="18dip"
+			android:textColor="@color/orange"
+			android:gravity="center_vertical|left"
+			android:layout_marginLeft="20dip" />
+			
+		<!-- Email Edit Text -->	
+		<EditText android:id="@+id/password_edittext"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:singleLine="true" 
+			android:textSize="15dip"
+			android:inputType="textPassword"
+			android:layout_marginRight="15dip" />
+		
+	</LinearLayout>
+	
+	<!-- Function Layout -->
+	<RelativeLayout android:id="@+id/function_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="50dip" 
+		android:layout_marginLeft="30dip" 
+		android:layout_marginRight="15dip" 
+		android:layout_marginTop="10dip" >
+		
+		<!-- Forgot Password Image View -->
+		<ImageView android:id="@+id/forgot_password_imageview"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:background="@drawable/login_forgot_selector"/>
+			
+		<!-- Forgot Password Text View -->
+		<TextView android:id="@+id/forgot_password_textview"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:text="@string/login_forgot"
+			android:textColor="@color/orange"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="5dip" 
+			android:layout_toRightOf="@+id/forgot_password_imageview" 
+			android:layout_alignTop="@+id/forgot_password_imageview" 
+			android:layout_alignBottom="@+id/forgot_password_imageview" />
+		
+		<!-- Sign In Button -->	
+		<Button android:id="@+id/sign_in_button"
+			android:layout_width="100dip"
+			android:layout_height="40dip"
+			android:text="@string/login_sign_in"
+			android:textSize="14dip"
+			android:textColor="@color/white"
+			android:background="@drawable/login_signin_selector" 
+			android:layout_marginLeft="10dip" 
+			android:layout_alignParentRight="true" />
+	
+	</RelativeLayout>
+
+</LinearLayout>

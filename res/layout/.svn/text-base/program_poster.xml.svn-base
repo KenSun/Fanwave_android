@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.wildmind.fanwave.widget.SoftKeyboardFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" >
+		
+	<!-- Comment Poster Layout -->
+	<FrameLayout android:id="@+id/comment_post_short_layout" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom" >
+			
+		<!-- Post Layout -->
+		<include android:id="@+id/message_poster_short" layout="@layout/message_poster_short" />
+			
+	</FrameLayout>
+			
+	<!-- Comment Full Poster Layout  -->
+	<FrameLayout android:id="@+id/comment_post_layout" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom" >
+			
+		<!-- Post Layout -->
+		<include android:id="@+id/message_poster" layout="@layout/message_poster" />
+			
+	</FrameLayout>
+	
+	<!-- Notification Layout -->
+	<FrameLayout android:id="@+id/notification_layout" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom" >
+			
+		<include android:id="@+id/message_notification" layout="@layout/notification_black" />
+			
+	</FrameLayout>
+			
+</com.wildmind.fanwave.widget.SoftKeyboardFrameLayout>
